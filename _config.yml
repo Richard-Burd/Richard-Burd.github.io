@@ -1,10 +1,10 @@
 # Site settings
-title: Text & No Graphics
+title: Learn, Code, and Draw it Out
 header-img: img/home-bg.png
 email: richardburdx@yahoo.com
-copyright_name: Richard-Burd
+copyright_name: Richard Burd
 description: > # this means to ignore newlines until "baseurl:"
-  My Latest Misadventures in Technology
+  Making Sense of a World Written in Code
 baseurl: "" # the subpath of your site, e.g. /blog
 twitter_username: 
 github_username:  Richard-Burd
