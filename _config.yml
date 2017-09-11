@@ -1,0 +1,21 @@
+# Site settings
+title: Text & No Graphics
+header-img: img/home-bg.png
+email: richardburdx@yahoo.com
+copyright_name: Richard-Burd
+description: > # this means to ignore newlines until "baseurl:"
+  My Latest Misadventures in Technology
+baseurl: "" # the subpath of your site, e.g. /blog
+twitter_username: 
+github_username:  Richard-Burd
+learn_profile: Richard-Burd
+email_username: richardburdx@yahoo.com
+
+# Build settings
+markdown: kramdown
+highlighter: rouge
+permalink: pretty
+paginate: 5
+exclude: ["less","node_modules","Gruntfile.js","package.json","README.md"]
+
+gems: [jekyll-paginate, jekyll-feed]
