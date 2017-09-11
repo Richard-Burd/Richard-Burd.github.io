@@ -18,4 +18,4 @@ Reason number four: The most difficult design problems today are software proble
 In the end, everything we touch, feel, or see is increasingly software driven, and this trend is likely to continue for a while, so that is (in a nutshell) why I decided to learn software development.
 
 ![](https://github.com/Richard-Burd/blog_graphics/blob/master/network_detail.jpg)
-.
+
