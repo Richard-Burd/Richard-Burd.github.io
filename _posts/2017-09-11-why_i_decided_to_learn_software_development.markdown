@@ -44,7 +44,9 @@ puts fido.speak_up
 puts avi.send_dog_to_get_paper
 ```
 
+
 **Drawing chunks of code** 
+
 First, let’s start out with the Dog class in Fig. 1 below.  There you can see the Class represented as a simple green box.  The instance variables are red boxes and the methods are pink ellipses.
 
 ![Imgur](https://i.imgur.com/zjZh05H.png)
@@ -59,7 +61,9 @@ Here we can see the relationships expressed as curvy little red lines with arrow
 
 Here’s where the rubber meets the road, but first, we need some housekeeping.  On the right we have a symbol legend that tells us what is going on.  As programs get more complex, we need these to remind ourselves (let alone others) what we were drawing and why; so far I’m up to a library of some +30 symbols.  The full text of this program (which is up above) wouldn’t fit in this diagram unless we shrunk the text size way down.  Here we don’t need to read through anything to see the most important relationship: that each instance of `class Owner` is the value of `owner` in the `class Dog`.  Additionally, we see that `class Owner` and `class Dog` collaborate with each other.
 
+
 **Following the Path of Abstraction**
+
 A while back I was working on the Tic Tac Toe with AI project [here](https://learn.co/lessons/ttt-with-ai-project) and got totally stuck on it.  I could not keep track of all the collaboration and so my solution to one `rspec` test would invariably cause another one somewhere else to fail.  In particular, I couldn’t figure out the `current_player.move` call that was supposed to go in the `turn` method inside the `class Game`.  Where the heack was `current_player` getting the ability to call `move`!?  And more importantly, how was the user expected to input a value for that method when there were no calls for the user to do so in the `class Game`!?  This was frustrating, so I began to develop my methodology for graphically representing the program and then came up with the idea of what I call ‘abstraction markers.’  These little numbered diamonds show the “plumbing” of code; you can trace inheritance through variables & methods to their point of origin.  In this example below, we can see that in the `class Game`, there are a series of what look like little blue pills with a method inside, accompanied by an abstraction marker diamond.  From here I can see that the illusive user input originated in the `class Human` located inside the `module Players`;  at this point I can solve the lab with ease.
 
 ![Imgur](https://i.imgur.com/L6ooeVe.jpg)
@@ -76,7 +80,9 @@ Fig. 6 above is really just a repeat of the cycle described in Fig. 5 previously
 
 ![Imgur](https://i.imgur.com/EKeTIGz.png)
 
+
 **OK great, but what program do we use to make graphics like this?**
+
 I use [Inkscape](https://inkscape.org/en/) which is the free and open source equivalent to Adobe Illustrator.  You only need to learn about 1% of what the program is capable of, Google & YouTube around for it if you’re interested. 
 
 
