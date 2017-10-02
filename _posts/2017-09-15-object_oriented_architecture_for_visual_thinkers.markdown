@@ -1,14 +1,14 @@
 ---
 layout: post
-title:  "Object Oriented Architecture for Visual Thinkers"
-date:   2017-09-15 15:55:14 -0400
+title:      "Object Oriented Architecture for Visual Thinkers"
+date:       2017-09-15 15:55:14 -0400
+permalink:  object_oriented_architecture_for_visual_thinkers
 ---
 
 
-The basic problem with learning code is that, at some point, there are simply too many pieces & parts to keep track of.  If you’re a visual learner like me, you’ll often be frustrated that you can’t see some sort of ‘grand-scheme’ or floor-plan for what is going on in front of you.  Since I work with programmers, I can see how they do things; they have multiple computer monitors on their desk that let them see five or six collaborating methods (or functions) all at once, and make judgements based on this view.  The actual workspaces wherein we divvy up classes & methods into separate folders are largely designed (at least in part) to help the programmer make sense of all their code.
+The basic problem with learning code is that, at some point, there are simply too many pieces & parts to keep track of.  If you’re a visual thinker like me, you’ll often find yourself frustrated that you can’t see some sort of ‘grand-scheme’ or floor-plan for what is going on in front of you.  Since I work with programmers, I can see how they do things; they have multiple computer monitors on their desk to display five or six collaborating methods (or functions) all at once, and make judgements based on this interface.  The actual workspaces wherein we divvy up classes & methods into separate folders are largely designed (at least in part) to help the programmer make sense of all their code.
 
-A while back I finally had enough and decided that I needed to develop some sort of symbology to represent the code I was reading and designing.  I needed a two-dimensional representation of what I was doing so I could track classes & methods that were collaborating with each other and see how they were doing it; what follows is the system I came up with.
-For starters, let’s look at some code familiar to all Flatiron School students, the Dog class, Fido the `Dog.new`, and Avi the dog `owner`:
+A while back I finally had enough and decided that I needed to develop some sort of symbology for representing the code I was reading and designing.  I needed a two-dimensional 'plan-view' of what I was doing so I could track classes & methods that were collaborating with each other and see how they were doing it; what follows is the system I came up with.  For starters, let’s look at some object-oriented Ruby code familiar to all the full-stack web development Flatiron School students, the Dog class, Fido the `Dog.new`, and `Avi` the dog `owner`:
 ```
 class Dog 
   attr_accessor :name, :owner
@@ -49,11 +49,11 @@ puts avi.send_dog_to_get_paper
 
 **Drawing chunks of code**
 
-First, let’s start out with the Dog class in Fig. 1 below.  There you can see the Class represented as a simple green box.  The class is green box, inside of which the instance variables are red boxes and the methods are pink ellipses.
+First, let’s start out with the Dog class in Fig. 1 below.  There you can see the Class represented as a simple green box, inside of which the instance variables are red boxes and the methods are pink ellipses.
 
 ![Imgur](https://i.imgur.com/zjZh05H.png)
 
-The idea here is to have a different symbol for each type of data; we can quickly glance at `class Dog` and see its overall structure, but what we can’t what each individual method actually doing; for that we need the actual code.  This isn’t particularly helpful when we compare it to the `class Dog` code because at this point, the class is fairly small and it isn’t collaborating with any other class or module.  We also don’t have any sense of what instance variables or modules are collaborating with each other or why, which brings us to Fig.2.
+The idea here is to have a different symbol for each type of data; we can quickly glance at `class Dog` and see its overall structure, even though we can't see what the individual Ruby methods are actually doing, for that we need the actual code.  This isn’t particularly helpful when we compare it to the `class Dog` code because at this point, the class is fairly small and it isn’t collaborating with any other class or module.  We also don’t have any sense of what instance variables or modules are collaborating with each other or why, which brings us to Fig.2.
 
 ![Imgur](https://i.imgur.com/z2iNePE.png)
 
@@ -82,17 +82,17 @@ Here I’ve got a hypothetical method to scrape data from a live website that co
 
 ![Imgur](https://i.imgur.com/3Vwx09T.png)
 
-Here, my second, third, and fifth methods all work towards some common goal or have a unified purpose; for that reason they can be housed in a class together.  Not shown here is the fact that, now when I want to use these methods, I need to instantiate (or create an instance of) my `class FirstClass`.  This brings up a whole other issue I haven’t figured out how to illustrate yet; *time*.  Classes are created with the idea that at some point in *time*, an instance of that class will be created in order to do something; sometimes a program will create (and run on) just one instance of that class whereas other times it will create multiple instances.  I found the issue isn’t whether or not you will create multiple instances of a class, but rather if a chunk of code needs to happen at a certain point in a sequence of events, that determines what methods get put into a single class together.  Methods are similar but generally can be used at multiple points in time along the program’s life-cycle.
+Here, my second, third, and fifth methods all work towards some common goal or have a unified purpose; for that reason they can be housed in a class together.  Not shown here is the fact that, now when I want to use these methods, I need to instantiate (or create an instance of) my `class FirstClass`.  This brings up a whole other issue I haven’t figured out how to illustrate yet; *time*.  Classes are created with the idea that at some point in *time*, an instance of that class will be created in order to do something; sometimes a program will create (and run on) just one instance of that class whereas other times it will create multiple instances.  Through my own observation and experimentation, I’ve discovered that class creation isn’t so much governed by if and where you need multiple instances of a given data set, but rather, *when* in a sequence of events that new object, complicated in nature, needs to be brought forth in order to accomplish some given task.  In this way, a class may only have one instance of itself such as with the `class Game` and `class Board` in the Tic Tac Toe (with AI) project mentioned above.  A class may also have only one method or variable such as with the `class DataScraper` and `class DataRequester` shown in my Boulder Weather-Check program discussed below.
 
 ![Imgur](https://i.imgur.com/2gUm05e.png)
 
-Fig. 6 above is really just a repeat of the cycle described in Fig. 5 previously.  Here the fourth, sixth, and seventh methods finally have a home whereas the fate of the remaining three methods is still up for grabs; they could end up in a class or module together, or with newer yet uncreated methods.  In an overly simplistic nutshell, this is how I went about designing my [CLI Data App Portfolio project](https://learn.co/lessons/cli-data-gem-assessment), but stay tuned for more on that in my next blog post.  Here’s what my app it looks like in graphic form:
+Fig. 6 above is really just a repeat of the cycle described in Fig. 5 previously.  Here the fourth, sixth, and seventh methods finally have a home whereas the fate of the remaining three methods are still up for grabs; they could end up in a class or module together, or with newer yet uncreated methods.  In an overly simplistic nutshell, this is how I went about designing my [CLI Data App Portfolio project](https://learn.co/lessons/cli-data-gem-assessment), but stay tuned for more on that in my next blog post.  Here’s what that project it looks like in graphic form:
 
 ![Imgur](https://i.imgur.com/8g2XrVp.png)
 
-As you can see, there is a plethora of symbols in the legend on the right of the page; and these are somewhat different than the symbols in the “Tic-Tac-Toe With AI illustration” above.  The truth is, this drawing is sort of like comments [in the code] but on steroids; in a few split seconds I can check the requirement blocks, see what methods are where and talking to what other methods, and see where each class is located in the program’s subdirectories.  I can see where classes are instantiated and how they relate to other classes in the program.  I can even use my “blue-pills & pink-pills” to track abstracted information as it moves through the program.  
+As you can see, there is a plethora of symbols in the legend on the right of the page, and these are somewhat different than the symbols in the “Tic-Tac-Toe With AI illustration” above.  The truth is, this drawing is sort of like comments [in the code] but on steroids; in a few split seconds I can check the requirement blocks, see what methods are where and what methods are collaborating with each other across class boundaries, and see where each class is located in the program’s subdirectories.  I can see where classes are instantiated and how they relate to other classes in the program.  I can even use my “blue-pills & pink-pills” to track abstracted information as it moves through the program.  
 
-If you’re thinking all this drawing might be too hard to maintain for a large project you are correct, which is why at some point, we need to abstract things out a bit.  In example, Fig. 7 below takes us all the way back to the same formate we encountered in Fig 1:
+If you’re thinking all this drawing might be too hard to maintain for a large project you are correct, which is why at some point, we need to abstract things out a bit.  In example, Fig. 7 below takes us all the way back to the same format we encountered in Fig 1:
 
 ![Imgur](https://i.imgur.com/HY63sqE.png)
 
