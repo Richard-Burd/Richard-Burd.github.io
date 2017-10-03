@@ -88,7 +88,7 @@ Here, my second, third, and fifth methods all work towards some common goal or h
 
 Fig. 6 above is really just a repeat of the cycle described in Fig. 5 previously.  Here the fourth, sixth, and seventh methods finally have a home whereas the fate of the remaining three methods are still up for grabs; they could end up in a class or module together, or with newer yet uncreated methods.  In an overly simplistic nutshell, this is how I went about designing my [CLI Data App Portfolio project](https://learn.co/lessons/cli-data-gem-assessment), but stay tuned for more on that in my next blog post.  Here’s what that project it looks like in graphic form:
 
-![Imgur](https://i.imgur.com/8g2XrVp.png)
+![Imgur](https://i.imgur.com/NJVwawn.png)
 
 As you can see, there is a plethora of symbols in the legend on the right of the page, and these are somewhat different than the symbols in the “Tic-Tac-Toe With AI illustration” above.  The truth is, this drawing is sort of like comments [in the code] but on steroids; in a few split seconds I can check the requirement blocks, see what methods are where and what methods are collaborating with each other across class boundaries, and see where each class is located in the program’s subdirectories.  I can see where classes are instantiated and how they relate to other classes in the program.  I can even use my “blue-pills & pink-pills” to track abstracted information as it moves through the program.  
 
