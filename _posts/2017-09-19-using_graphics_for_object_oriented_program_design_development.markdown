@@ -99,5 +99,5 @@ By moving some purpose-defined green boxes around, and connecting them with some
 
 Having a good way to draw out your program can be super-helpful when you’re learning to code, and may even come in handy when you try and get multiple programmers to collaborate on a project.  I personally found that once I started drawing out all my code in graphic form, I was able to work much faster and actually get things done.  Prior to developing a graphic system, I would spend hours or days trying to get an `rspec` test to pass whereas now I can get this done in a fraction of the time.  In terms of starting a project from scratch, I found this portfolio project to be much easier (and more fun) then the previous labs where I had no way of seeing what I was doing.  Relying on code alone can be like flying a plane at night and relying solely on instruments to land…having the graphics in front of you can be like putting on a pair of night-vision goggles so you’re able to see what you’re doing in physical space, as opposed to relying on a bunch of numbers.  Here is my CLI Data App project fully illustrated in final form:
 
-![Imgur](https://i.imgur.com/8g2XrVp.png)
+![Imgur](https://i.imgur.com/NJVwawn.png)
 
