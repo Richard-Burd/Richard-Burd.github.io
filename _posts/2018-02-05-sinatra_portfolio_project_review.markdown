@@ -20,7 +20,7 @@ The second and most complex, as it involves the definition of six methods (two i
 
 Getting the object models working is the easy part because you can first draw up the model relations, then type out the code based on what your drawing tells you to type.  When I created my migrations the first time around, everything just *worked* out of the box because I had this illustration to work from:
 
-![Imgur](https://i.imgur.com/VGZtqg5.png)
+![Imgur](https://i.imgur.com/1xYHSc0.png)
 Because of the dynamic *time* dimension in the controller-view relationships however, it isn’t possible to illustrate them in the same fashion and so other methods of visual aid need to be relied upon to track the code’s progression.  This is where the idea of a *paradigm* comes in handy.  First let’s look at Fig.2. below to better understand the relationship between views & controllers:
 
 ![Imgur](https://i.imgur.com/vxXw4ye.png)
