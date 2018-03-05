@@ -23,7 +23,7 @@ Getting the object models working is the easy part because you can first draw up
 ![Imgur](https://i.imgur.com/1xYHSc0.png)
 Because of the dynamic *time* dimension in the controller-view relationships however, it isn’t possible to illustrate them in the same fashion and so other methods of visual aid need to be relied upon to track the code’s progression.  This is where the idea of a *paradigm* comes in handy.  First let’s look at Fig.2. below to better understand the relationship between views & controllers:
 
-![Imgur](https://i.imgur.com/dFMmiF2.png)
+![Imgur](https://i.imgur.com/vxXw4ye.png)
 
 I like to think of this as a ping-pong match with the controller on one side, and the view on the other.  You first have to create instance methods on the control side (within the various *get, post, & delete* requests) that define the interaction; this is analogous to good opening serve.  From there the form inside the view has to receive these instance variables and produce a hash out of it; the hash will be as nested or as large as the serve it receives requires it to be.  That hash then becomes the ball being thrown back to the controller who then has to read it and then transfer the relevant data back to the database via Active-Record.  From here the controller is ready for the next view that requires yet another set of instance variables to then define the view’s hash properly…the process then repeats itself until the user stops clicking on submit buttons.
 
