@@ -12,7 +12,7 @@ Before starting this portfolio project, I began a paradigm shift away from illus
 **Principles of Object Model Relation**
 
 The diagram below (Fig.1) shows the three different kinds of relationships that you can use to tie object models together.  The first one (the has-many-belongs-to relationship) is shown with a simple green arrow between the methods inside the Artist & Song classes:
-![Imgur](https://i.imgur.com/uXDVEGZ.png)
+![Imgur](https://i.imgur.com/h068dVf.png)
 The second and most complex, as it involves the definition of six methods (two in each object model) is the join table relation.  Here I have the join table colored blue and the relation arrows also colored in blue.  This is done to highlight what I call the *relationship-loop* between all six methods.  If you look closely, these six blue arrows form a contagious, unbroken, loop between all six methods.  If any of these six methods are missing, Active Record will produce a cryptic error message and you won’t always know which of the six you’re missing…so it’s a good idea to diagram them all out.
 
 
