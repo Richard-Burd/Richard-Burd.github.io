@@ -11,7 +11,11 @@ If you are building a Sinatra app and you want to use Rack::Flash to generate al
 * Displaying the right message(s) on the correct views.
 * Refactoring the code used to trigger your messages
 
-I have this implemented in my Sinatra portfolio project available [here]( https://github.com/Richard-Burd/sinatra-portfolio-project) for reference.  First go to your Gemfile and add the gem: ` gem "rack-flash3"`  Next, go into your application controller and add the following block: ` use Rack::Flash` this can be put anywhere but I have it in the `configure` block:
+I have this implemented in my Sinatra portfolio project available [here]( https://github.com/Richard-Burd/sinatra-portfolio-project) for reference.  First go to your Gemfile and add the gem:
+```
+gem 'rack-flash3'
+```
+Next, go into your application controller and add the following block: `use Rack::Flash` this can be put anywhere but I have it in the `configure` block:
 ```
   configure do
      use Rack::Flash
@@ -21,7 +25,7 @@ I have this implemented in my Sinatra portfolio project available [here]( https:
      set :session_secret, "fwitter_secret"
   end
 ```
-…you will also need to `enable :sessions` somewhere in the controller as shown above.
+You will also need to `enable :sessions` somewhere in the controller as shown above.
 
 The final two steps are setting a place for the message to appear in the view as well as establishing the conditions for that message to appear in the controller; let’s do the latter first.  If you look at [./app/views/users/create_user.erb]( https://github.com/Richard-Burd/sinatra-portfolio-project/blob/master/app/views/users/create_user.erb) you will see the flash message designated on lines 5 through 7:
 ```
