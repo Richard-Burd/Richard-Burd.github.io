@@ -1,7 +1,7 @@
 ---
 layout: post
 title:      "Using Flash Messages to Generate Errors on Multiple Pages (Sinatra)"
-date:       2018-03-08 23:38:11 +0000
+date:       2018-03-08 18:38:12 -0500
 permalink:  using_flash_messages_to_generate_errors_on_multiple_pages_sinatra
 ---
 
@@ -11,7 +11,7 @@ If you are building a Sinatra app and you want to use Rack::Flash to generate al
 * Displaying the right message(s) on the correct views.
 * Refactoring the code used to trigger your messages
 
-I have this implemented in my Sinatra portfolio project available [here]( https://github.com/Richard-Burd/sinatra-portfolio-project) for reference.  First go to your Gemfile and add the gem: ` gem 'rack-flash3'`.  Next, go into your application controller and add the following block: ` use Rack::Flash` … this can be put anywhere but I have it in the `configure` block:
+I have this implemented in my Sinatra portfolio project available [here]( https://github.com/Richard-Burd/sinatra-portfolio-project) for reference.  First go to your Gemfile and add the gem: ` gem 'rack-flash3'`  Next, go into your application controller and add the following block: ` use Rack::Flash` this can be put anywhere but I have it in the `configure` block:
 ```
   configure do
      use Rack::Flash
@@ -29,7 +29,7 @@ The final two steps are setting a place for the message to appear in the view as
     <%= flash[:signup_page_message] %>
    <% end %>
 ```
-…now the important thing here is the variable name ` signup_page_message` - you can name this variable anything you want but each view (i.e. the actual erb file) should have its own unique variable name set to a flash message that it *does not share* with any other flash message on any other view.  This is important because if the message *does* trigger, it will stay in memory, and each time you go to a new page in the web app, the flash message will render if it finds the `flash.has?` block shown above.  If we look at the login page at [./app/views/users/login.erb]( https://github.com/Richard-Burd/sinatra-portfolio-project/blob/master/app/views/users/login.erb) for example, we can see that the flash message variable is set to `message_for_login_page` - this ensures that the message being passed to it is intended to be viewed only on the login page.  Finally, let’s have a look at lines 14 to 7 on the [./app/controllers/users_controller.rb]( https://github.com/Richard-Burd/sinatra-portfolio-project/blob/master/app/controllers/users_controller.rb): 
+…now the important thing here is the variable name ` signup_page_message`  you can name this variable anything you want but each view (i.e. the actual erb file) should have its own unique variable name set to a flash message that it *does not share* with any other flash message on any other view.  This is important because if the message *does* trigger, it will stay in memory, and each time you go to a new page in the web app, the flash message will render if it finds the `flash.has?` block shown above.  If we look at the login page at [./app/views/users/login.erb]( https://github.com/Richard-Burd/sinatra-portfolio-project/blob/master/app/views/users/login.erb) for example, we can see that the flash message variable is set to `message_for_login_page` - this ensures that the message being passed to it is intended to be viewed only on the login page.  Finally, let’s have a look at lines 14 to 7 on the [./app/controllers/users_controller.rb]( https://github.com/Richard-Burd/sinatra-portfolio-project/blob/master/app/controllers/users_controller.rb): 
 ```
 post '/signup' do
   if params[:username] == "" || params[:email] == "" || params[:password] == ""
