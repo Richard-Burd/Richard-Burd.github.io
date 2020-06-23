@@ -1,0 +1,24 @@
+I"�<p>In the Sinatra module we learn about restful routes and how to properly incorporate an object id number into our app’s URLs.  In this lab <a href="https://learn.co/tracks/full-stack-web-development-v3/sinatra/activerecord/sinatra-playlister">here</a> we encountered a workspace that puts the object’s name into the URL rather than the object’s id number.  I thought this was cool and wanted to do the same thing for <a href="https://github.com/Richard-Burd/sinatra-portfolio-project">my Sinatra portfolio project here</a> since I already knew how to use the object id.  What follows is a step-by-step process for anyone who wants to do the same thing.</p>
+
+<p><strong>Step 1 – Setup a Ruby Method to ‘Slug’ the Strings</strong>
+The playlister workspace has a module to do this <a href="https://github.com/learn-co-students/playlister-sinatra-v-000/blob/solution/app/models/concerns/slugifiable.rb">here</a> and I made something similar in the commensurate directory for my project <a href="https://github.com/Richard-Burd/sinatra-portfolio-project/blob/master/app/models/concearns/slugifiable.rb">here</a>.  These are methods that ‘slug’ the string going into your URL. Sluging a string means to make it appropriate for something…in this case we are deleting all spaces and replacing them with dashes; we are also making all letters in the string lower case.  By doing this, we are ensuring the string will appear without ‘20%’ markings or capital letters in the URL itself.</p>
+
+<p><strong>Step 2 – Add the Validation(s) in the Object Model(s)</strong>
+This is the important part and you have two options.  The first way is to write some code in the controller that asks if the string you want to slug is already in use.  In example, if I have a book I want to create and I want the book’s title to appear in the URL rather than the book’s id number, I will want to see a URL like <code class="language-plaintext highlighter-rouge">www.example.com/books/moby-dick</code> and <em>not</em> a URL like <code class="language-plaintext highlighter-rouge">www.example.com/books/15</code> because the <code class="language-plaintext highlighter-rouge">15</code> doesn’t really tell me anything.  Now to do this I can write some code like this <a href="https://github.com/Richard-Burd/sinatra-portfolio-project/blob/8ddbb992ea726b755e97109cde75aae7903883fc/app/controllers/books_controller.rb#L21">here</a> inside the controller:</p>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>taken_book_title = Book.find_by(:title =&gt; params[:book][:title])
+  if taken_book_title.present?
+  flash[:message] = "Sorry, but that book title is already taken, please choose another title."
+  redirect to '/books/new'
+end
+</code></pre></div></div>
+<p>The problem here is that this will not check for alternative capitalizations, and even if it did, this code is beginning to make this post request rather dense, that is, it has more lines of code than it really needs.</p>
+
+<p>OK so here’s the correct way to go about doing all this.  First, you add something like the following line of code to the object model (in this case, the book object model) <a href="https://github.com/Richard-Burd/sinatra-portfolio-project/blob/master/app/models/book.rb#L12">here</a>:</p>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>validates :title, uniqueness: { case_sensitive: false }
+</code></pre></div></div>
+<p>This is known as an ActiveRecord <a href="http://guides.rubyonrails.org/active_record_validations.html">validation</a> and it basically checks to see if a book’s title is going to be unique among all the other book titles before it is ever created.  It will also disregard the case of the letters in the book title string such that <code class="language-plaintext highlighter-rouge">Moby Dick</code>, <code class="language-plaintext highlighter-rouge">moby dick</code>, and <code class="language-plaintext highlighter-rouge">MOBY DICK</code> will all be considered to be one in the same title, and ActiveRecord will only allow one of them to be used.  Next you add a series of statements like this one <a href="https://github.com/Richard-Burd/sinatra-portfolio-project/blob/master/app/controllers/books_controller.rb#L21">here</a> in the controllers:</p>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Book.new(params[:book]).valid?
+</code></pre></div></div>
+<p>This checks to see if the book being created is in fact valid or not.  If it is then the code will go onto create the new book and if it isn’t (because that book title is already taken) then the code will issue a flash message telling the user to choose another name for the book title.</p>
+
+:ET

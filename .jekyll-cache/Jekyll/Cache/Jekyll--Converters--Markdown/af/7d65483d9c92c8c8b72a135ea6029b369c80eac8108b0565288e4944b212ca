@@ -1,0 +1,6 @@
+I"o<p>One of the most frustrating aspects of this module (14) in the Flatiron curriculum was the total lack of any framework around Document Object Model (DOM) manipulation.   The adding &amp; removing of DOM elements seemed to exist in a vacuum with no rhyme or reason to it.   This is either how things are done in the real world, or I assume there is some framework that solves this problem which I have not yet encountered.  Either way, I came up with my own system of adding &amp; deleting DOM elements that I’ll just call the <strong>builder-method.</strong>  and used it on my front-end portfolio project <a href="https://github.com/Richard-Burd/front-end-portfolio-project">here</a>.<br />
+<br /><br /><br />
+In my protfolio project, I have a DOM element called “pallet,” let’s look at the code for generating a single pallet in the DOM from this file <a href="https://github.com/Richard-Burd/front-end-portfolio-project/blob/master/front-end/src/index.js">here</a>:
+```javascript
+function createPallet(storageAreaID, palletId, palletName, timeScale, weightScale, firstItem, secondItem, thirdItem, weight, hazmat ){</p>
+:ET

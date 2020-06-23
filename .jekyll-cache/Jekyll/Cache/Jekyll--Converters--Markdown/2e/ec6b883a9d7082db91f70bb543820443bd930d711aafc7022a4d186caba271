@@ -1,0 +1,32 @@
+I"<p><strong>Background</strong></p>
+
+<p>For my <a href="https://github.com/Richard-Burd/rails-portfolio-project/">Rails portfolio project</a> I decided to build an app that could be used by military and aid organizations operating in expeditionary environments, that is, out in the middle of nowhere, in a war zone, or in a developing economic zone.  For safety, people in such environments often travel in convoys (a bunch of cars, one behind the other)  that rarely stop to get gas because doing so is either unsafe, or impractical.  Here is a United Nations (UN) convoy delivering humanitarian aid to civilians in Syria during the civil war in that country:</p>
+
+<p><img src="https://i.imgur.com/k2SHPSe.jpg" alt="Imgur" /></p>
+
+<p>My app is pretty simple, it considers the following variables and tells the user if a convoy has enough fuel (or not) to reach a given destination:</p>
+<ul>
+  <li>The miles per gallon for each individual vehicle in the convoy.</li>
+  <li>The total amount of fuel each vehicle in the convoy is carrying.</li>
+  <li>What type of terrain the convoy is traveling on during different segments of the journey: paved road, dirt road, or off road.</li>
+  <li>The slope of the grade the convoy is traveling on; the convoy will need more fuel to travel uphill and less to travel downhill.</li>
+</ul>
+
+<p><strong>Curve Fitting to Generate a Polynomial Equation</strong></p>
+
+<p>I quickly ran into a problem with this project when I realized I can’t do math.  I needed a way to get an equation to calculate the impact of terrain sloping on fuel consumption.  The steeper the hill, the more fuel will be used…conversely, if you drove downhill for 7 straight miles you would use less fuel then you would going uphill or even on flat terrain.  Enter the imprecise art of something called curve fitting.  This is where you do fancy math-y stuff without doing any actual math.  To do this yourself, you will need to create an account on <a href="http://geogebra.org">geogebra.org</a> and watch this video <a href="https://www.youtube.com/watch?v=OWn84PqFp-Q">here</a>.  I took a stab at guessing some data points and created this workspace <a href="https://www.geogebra.org/m/wxsaesvw">here</a> and in turn, got a polynomial equation I could use in my code to calculate the impact of terrain slope on fuel consumption <a href="https://github.com/Richard-Burd/rails-portfolio-project/blob/master/app/models/leg.rb">here</a>.  Here is what the equation looks like:</p>
+
+<p><img src="https://i.imgur.com/yRfRBSY.jpg" alt="Imgur" /></p>
+
+<p>The basic idea is to add the data points on the x-y axis that you think may be correct, or that you know are correct from some source of information such as field testing.  In my example, I am guessing that, on average, a vehicle will consume twice as much fuel on a 1:1 slope (which is 45°) as it would if it were on flat terrain.  I don’t know this to be a fact, and my research indicates that fuel consumption varies widely between vehicle types…but for purposes of my app I will use this guess as a starting point.  When I have data that is more realistic, I will change the ruby method below (and only that ruby method) once I have a newer, more accurate polynomial equation:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>def graphed_function_1(x)
+	1.87*x**3 + 0.11*x
+end
+</code></pre></div></div>
+
+<p><strong>Conclusion</strong></p>
+
+<p>Curve fitting has a wide variety of applications in programming, particularly when you are trying to optimize efficiencies.  The next step of course is to have your program do the curve fitting for you so that your users enter in data points and then get polynomial equations as outputs that in turn expose the user to the optimal settings for whatever problems they are trying to solve.</p>
+
+:ET

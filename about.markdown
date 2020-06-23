@@ -1,0 +1,7 @@
+---
+layout: page
+title: About
+header-img: "img/about-bg.2.png"
+---
+
+Polymath & perennial life student, more about me <a href="https://www.linkedin.com/in/richard-burd-2b521555/">here</a>.

@@ -1,0 +1,7 @@
+I"š<p>If you are building a Sinatra app and you want to use Rack::Flash to generate all of your warning messages displayed to your users, then this is the blog post for you.  Below I will walk you through how to set this all up and get it running.  To be sure, the Learn.co (Flatiron) curriculum <em>sort-of</em> covers this <a href="https://learn.co/tracks/full-stack-web-development-v3/sinatra/activerecord/sinatra-playlister">here</a> but I will cover these additional topics:</p>
+<ul>
+  <li>How to get flash installed properly</li>
+  <li>Displaying the right message(s) on the correct views.</li>
+  <li>Refactoring the code used to trigger your messages</li>
+</ul>
+:ET

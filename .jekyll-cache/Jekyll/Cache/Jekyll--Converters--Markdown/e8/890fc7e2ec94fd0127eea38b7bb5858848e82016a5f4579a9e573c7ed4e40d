@@ -1,0 +1,54 @@
+I"�<p>If you are building a Sinatra app and you want to use Rack::Flash to generate all of your warning messages displayed to your users, then this is the blog post for you.  Below I will walk you through how to set this all up and get it running.  To be sure, the Learn.co (Flatiron) curriculum <em>sort-of</em> covers this <a href="https://learn.co/tracks/full-stack-web-development-v3/sinatra/activerecord/sinatra-playlister">here</a> but I will cover these additional topics:</p>
+<ul>
+  <li>How to get flash installed properly</li>
+  <li>Displaying the right message(s) on the correct views.</li>
+  <li>Refactoring the code used to trigger your messages</li>
+</ul>
+
+<p>I have this implemented in my Sinatra portfolio project available <a href="https://github.com/Richard-Burd/sinatra-portfolio-project">here</a> for reference.  First go to your Gemfile and add the gem:</p>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>gem 'rack-flash3'
+</code></pre></div></div>
+<p>Next, go into your application controller and add the following block: <code class="language-plaintext highlighter-rouge">use Rack::Flash</code> this can be put anywhere but I have it in the <code class="language-plaintext highlighter-rouge">configure</code> block:</p>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>  configure do
+     use Rack::Flash
+     set :public_folder, 'public'
+     set :views, 'app/views'
+     enable :sessions
+     set :session_secret, "fwitter_secret"
+  end
+</code></pre></div></div>
+<p>You will also need to <code class="language-plaintext highlighter-rouge">enable :sessions</code> somewhere in the controller as shown above.</p>
+
+<p>The final two steps are setting a place for the message to appear in the view as well as establishing the conditions for that message to appear in the controller; let’s do the latter first.  If you look at <a href="https://github.com/Richard-Burd/sinatra-portfolio-project/blob/master/app/views/users/create_user.erb">./app/views/users/create_user.erb</a> you will see the flash message designated on lines 5 through 7:</p>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>   &lt;% if flash.has?(:signup_page_message) %&gt;
+    &lt;%= flash[:signup_page_message] %&gt;
+   &lt;% end %&gt;
+</code></pre></div></div>
+<p>Now the important thing here is the variable name <code class="language-plaintext highlighter-rouge">signup_page_message</code>  you can name this variable anything you want but each view (i.e. the actual erb file) should have its own unique variable name set to a flash message that it <em>does not share</em> with any other flash message on any other view.  This is important because if the message <em>does</em> trigger, it will stay in memory, and each time you go to a new page in the web app, the flash message will render if it finds the <code class="language-plaintext highlighter-rouge">flash.has?</code> block shown above.  If we look at the login page at <a href="https://github.com/Richard-Burd/sinatra-portfolio-project/blob/master/app/views/users/login.erb">./app/views/users/login.erb</a> for example, we can see that the flash message variable is set to <code class="language-plaintext highlighter-rouge">message_for_login_page</code> - this ensures that the message being passed to it is intended to be viewed only on the login page.  Finally, let’s have a look at lines 14 to 7 on the <a href="https://github.com/Richard-Burd/sinatra-portfolio-project/blob/master/app/controllers/users_controller.rb">./app/controllers/users_controller.rb</a>:</p>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>post '/signup' do
+  if params[:username] == "" || params[:email] == "" || params[:password] == ""
+  flash[:signup_page_message] = "Sorry, can you make sure to fill out all three fields: Name, Email, and Password?"
+  redirect to 'signup'
+end
+</code></pre></div></div>
+<p>Here we have a condition wherein if a new user signing up fails to fill out all three fields (username, email, and password) they will receive an error message telling them what they did wrong.  This error message will only show up on the signup page (<code class="language-plaintext highlighter-rouge">create_user.erb</code> is the view of this page) and nowhere else.  If we look at lines 48 and 49 we see another flash message in the <code class="language-plaintext highlighter-rouge">post ‘/login’</code> request:</p>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>flash[:message_for_login_page] = "Oops, your username &amp; password combo is incorrect; click here to sign in as a new user."
+erb :'users/login'
+</code></pre></div></div>
+<p>…the difference here is that now we are defining the flash message input parameter as ` message_for_login_page<code class="language-plaintext highlighter-rouge"> instead of </code> signup_page_message`.  This means that the code in the block above will only render if (and when) the warning message is fired and only on the login page where this parameter is defined <a href="https://github.com/Richard-Burd/sinatra-portfolio-project/blob/master/app/views/users/login.erb#L5">here</a>:</p>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>&lt;% if flash.has?(:message_for_login_page) %&gt;
+  &lt;a href="/signup"&gt;&lt;%= flash[:message_for_login_page] %&gt;&lt;/a&gt;
+&lt;% end %&gt;
+</code></pre></div></div>
+<p>…and thus, this message will not render (under any circumstances) on the signup page.</p>
+
+<p><strong>Bottom Line</strong></p>
+
+<p>Don’t put this code in any of your erb files:</p>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>&lt;% if flash.has?(:message) %&gt;
+  &lt;%= flash[:message] %&gt;
+&lt;% end %&gt;
+</code></pre></div></div>
+<p>…because simply defining all this variable as <code class="language-plaintext highlighter-rouge">message</code> will cause messages you intended for one view to show up on other views as well.  Be specific with defining this variable as belonging to the view you want it to render on.</p>
+
+:ET

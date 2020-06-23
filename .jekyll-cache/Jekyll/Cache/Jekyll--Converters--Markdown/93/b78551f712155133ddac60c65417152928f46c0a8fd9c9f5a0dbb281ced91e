@@ -1,0 +1,81 @@
+I"A"<h2 id="background">Background</h2>
+
+<p>I’ve had trouble tackling the concepts of scope &amp; hoisitng in Javascript and sought to create a single testbed script I can use as a reference moving forward.  Here is that testscript:</p>
+
+<div class="language-javascript highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nx">a</span> <span class="o">=</span> <span class="mi">1</span>
+<span class="kd">var</span> <span class="nx">b</span> <span class="o">=</span> <span class="mi">2</span>
+<span class="kd">let</span> <span class="nx">c</span> <span class="o">=</span> <span class="mi">3</span>
+<span class="kd">const</span> <span class="nx">d</span> <span class="o">=</span> <span class="mi">4</span>
+
+<span class="k">if</span> <span class="p">(</span><span class="kc">true</span><span class="p">){</span>
+  <span class="nx">w</span> <span class="o">=</span> <span class="mi">5</span>
+  <span class="kd">var</span> <span class="nx">x</span> <span class="o">=</span> <span class="mi">6</span>
+  <span class="kd">let</span> <span class="nx">y</span> <span class="o">=</span> <span class="mi">7</span>
+  <span class="kd">const</span> <span class="nx">z</span> <span class="o">=</span> <span class="mi">8</span>
+<span class="p">}</span>
+
+<span class="kd">function</span> <span class="nx">myFunc1</span><span class="p">(</span><span class="nx">variable</span><span class="p">){</span>
+  <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">variable</span><span class="p">)</span>
+<span class="p">}</span>
+
+<span class="k">if</span> <span class="p">(</span><span class="kc">true</span><span class="p">){</span>
+  <span class="nx">w</span> <span class="o">=</span> <span class="mi">9</span>
+  <span class="kd">var</span> <span class="nx">x</span> <span class="o">=</span> <span class="mi">10</span>
+  <span class="kd">let</span> <span class="nx">y</span> <span class="o">=</span> <span class="mi">11</span>
+  <span class="kd">const</span> <span class="nx">z</span> <span class="o">=</span> <span class="mi">12</span>
+<span class="p">}</span>
+
+<span class="nx">a</span> <span class="o">=</span> <span class="mi">14</span>
+<span class="kd">var</span> <span class="nx">b</span> <span class="o">=</span> <span class="mi">15</span>
+
+<span class="c1">// let c = 16 // =&gt; SyntaxError: Identifier 'c' has already been declared</span>
+<span class="c1">// const d = 17 // =&gt; SyntaxError: Identifier 'd' has already been declared</span>
+
+<span class="nx">myFunc1</span><span class="p">(</span><span class="nx">a</span><span class="p">)</span> <span class="c1">// =&gt; 1</span>
+<span class="nx">myFunc1</span><span class="p">(</span><span class="nx">b</span><span class="p">)</span> <span class="c1">// =&gt; 2</span>
+<span class="nx">myFunc1</span><span class="p">(</span><span class="nx">c</span><span class="p">)</span> <span class="c1">// =&gt; 3</span>
+<span class="nx">myFunc1</span><span class="p">(</span><span class="nx">d</span><span class="p">)</span> <span class="c1">// =&gt; 4</span>
+<span class="nx">myFunc1</span><span class="p">(</span><span class="nx">w</span><span class="p">)</span> <span class="c1">// =&gt; 9</span>
+<span class="nx">myFunc1</span><span class="p">(</span><span class="nx">x</span><span class="p">)</span> <span class="c1">// =&gt; 10</span>
+
+<span class="c1">// myFunc1(y) // =&gt; ReferenceError: y is not defined</span>
+<span class="c1">// myFunc1(z) // =&gt; ReferenceError: z is not defined</span>
+<span class="c1">// console.log(y) // =&gt; ReferenceError: y is not defined</span>
+<span class="c1">// console.log(z) // =&gt; ReferenceError: z is not defined</span>
+
+<span class="kd">function</span> <span class="nx">myFunc2</span><span class="p">(</span><span class="nx">variable</span><span class="p">){</span>
+  <span class="nx">variable</span> <span class="o">=</span> <span class="dl">"</span><span class="s2">some new value shadowing the previously defined value</span><span class="dl">"</span>
+  <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">variable</span><span class="p">)</span>
+<span class="p">}</span>
+
+<span class="nx">myFunc2</span><span class="p">(</span><span class="nx">a</span><span class="p">)</span> <span class="c1">// =&gt; "some new value shadowing the previously defined value"</span>
+<span class="nx">myFunc2</span><span class="p">(</span><span class="nx">b</span><span class="p">)</span> <span class="c1">// =&gt; "some new value shadowing the previously defined value"</span>
+<span class="nx">myFunc2</span><span class="p">(</span><span class="nx">c</span><span class="p">)</span> <span class="c1">// =&gt; "some new value shadowing the previously defined value"</span>
+<span class="nx">myFunc2</span><span class="p">(</span><span class="nx">d</span><span class="p">)</span> <span class="c1">// =&gt; "some new value shadowing the previously defined value"</span>
+<span class="nx">myFunc2</span><span class="p">(</span><span class="nx">w</span><span class="p">)</span> <span class="c1">// =&gt; "some new value shadowing the previously defined value"</span>
+<span class="nx">myFunc2</span><span class="p">(</span><span class="nx">x</span><span class="p">)</span> <span class="c1">// =&gt; "some new value shadowing the previously defined value"</span>
+
+<span class="c1">// myFunc2(y) // =&gt; ReferenceError: y is not defined</span>
+<span class="c1">// myFunc2(z) // =&gt; ReferenceError: z is not defined</span>
+
+<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">a</span><span class="p">)</span> <span class="c1">// =&gt; 14</span>
+<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">b</span><span class="p">)</span> <span class="c1">// =&gt; 15</span>
+
+<span class="kd">function</span> <span class="nx">myFunc3</span> <span class="p">()</span> <span class="p">{</span>
+  <span class="c1">// var myHoistedVariable has been hoised to this position by the engine...</span>
+  <span class="c1">// but the corresponding identifier "Hello!" has not, and so nothing gets printed.</span>
+  <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">myHoistedVariable</span><span class="p">);</span>
+  <span class="c1">// if this variable is declared with let, const, or no prefix at all...</span>
+  <span class="c1">// you will get: "ReferenceError: myHoistedVariable is not defined"</span>
+  <span class="kd">var</span> <span class="nx">myHoistedVariable</span> <span class="o">=</span> <span class="dl">'</span><span class="s1">Hello!</span><span class="dl">'</span><span class="p">;</span>
+<span class="p">}</span>
+
+<span class="nx">myFunc3</span><span class="p">();</span>
+</code></pre></div></div>
+<p>Now there’s a lot going on up there, so here is the same script annotated graphically:</p>
+
+<p><a href="https://imgur.com/r74HkiE"><img src="https://i.imgur.com/r74HkiE.jpg" title="source: imgur.com" /></a>
+You can copy &amp; paste the script into your environment or play around with it in this repl space <a href="https://repl.it/@Richard_Burd/Hoisting-and-Scope-Testbed">here</a>.   </p>
+<h2 id="source">Source</h2>
+<p>My main source of input was <strong>Section 3</strong> of <strong><em>You Don’t Know JS</em></strong> by Kyle Simpson available <a href="https://rileygelwicks.gitbooks.io/you-dont-know-js/content/scope%20&amp;%20closures/index.html">here</a>.  In <a href="https://rileygelwicks.gitbooks.io/you-dont-know-js/content/scope%20&amp;%20closures/ch1.html">Chapter 1</a> of that section he lays out an abstraction on a conversation between the Javascript (compiler) engine and the scope(s) involved in the code being read.   This helps the reader to understand a little bit of <em>why</em> Javascript acts thew way it does.   <a href="https://rileygelwicks.gitbooks.io/you-dont-know-js/content/scope%20&amp;%20closures/ch2.html">Chapter 2</a> discusses the phenomenon of <strong><em>shadowing</em></strong> that occurs in my script above inside the <code class="language-plaintext highlighter-rouge">myFunc3()</code> function.   <a href="https://rileygelwicks.gitbooks.io/you-dont-know-js/content/scope%20&amp;%20closures/ch4.html">Chapter 4</a> has an interesting discussion relevant to that same function which explains why it is exactly…that an assignment will be “…left in place…” and result in an <em>undefined</em> output as shown on the last line of my enclosed testbed script.  The other sections were interesting albeit a bit more detailed that what I’m looking for right now.</p>
+:ET
