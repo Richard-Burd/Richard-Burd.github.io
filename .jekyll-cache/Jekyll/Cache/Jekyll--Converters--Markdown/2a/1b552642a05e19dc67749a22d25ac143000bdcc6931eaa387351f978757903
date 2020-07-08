@@ -1,0 +1,2 @@
+I"<p>This walkthrough describes the process for setting up a Ruby on Rails (back-end) API server to work with a front-end React app.  This was used to create this project <a href="https://github.com/Richard-Burd/react-redux-portfolio-project">here</a>.  When properly set up, you will be able to go into your new application’s main directory and run <code class="language-plaintext highlighter-rouge">$ rails start</code> to boot up both the front &amp; back ends simultaneously.  As always, let’s do this through pictures:</p>
+:ET
