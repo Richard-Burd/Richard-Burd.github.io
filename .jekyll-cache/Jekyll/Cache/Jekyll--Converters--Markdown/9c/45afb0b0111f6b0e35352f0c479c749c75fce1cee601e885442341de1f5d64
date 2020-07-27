@@ -1,0 +1,4 @@
+I"<p>A few of my fellow students at <a href="https://flatironschool.com/">Flatiron School</a> asked me recently if I had anything that would show how Redux works without involving React at all.   Learning React &amp; Redux together, before understanding how they both work alone, is not recommended   .  A while back I watched a <a href="https://www.youtube.com/watch?v=3sjMRS1gJys">React-less tutorial on Redux here</a> published by Steven Grider so I could wrap my head around Redux.  The quick-reference study guide I produced while watching that video is here below…enjoy!
+(the cited <a href="https://codepen.io/sgrider/pen/oQjBvG?editors=0010">codepen environment is here</a>)
+<img src="https://i.imgur.com/gGvvD6e.jpg" alt="enter image description here" /></p>
+:ET
