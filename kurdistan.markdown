@@ -1,7 +1,8 @@
 ---
 layout: page
+title: Kurdistan
 header-img: "img/bg.3.png"
-alt-title: "Kurdistan Deployment"
+exclude: true
 ---
 
 ## Evolution of a Glorified Paper Airplane

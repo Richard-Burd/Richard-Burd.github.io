@@ -2,6 +2,7 @@
 layout: page
 title: About
 header-img: "img/about-bg.2.png"
+menu: main
 ---
 
 Hello, my name is Richard Burd, welcome to my personal website.  I am a polymath & perennial life student with a background in:
