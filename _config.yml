@@ -1,10 +1,10 @@
 # Site settings
 title: Learn, Code, and Draw it Out
 header-img: img/home-bg.3.png
-email: richardburdx@yahoo.com
+email: rick.a.burd@gmail.com
 copyright_name: Richard Burd
 description: > # this means to ignore newlines until "baseurl:"
-  Taking white boarding to the next level
+  A blog that takes white boarding to the next level
 baseurl: "" # the subpath of your site, e.g. /blog
 twitter_username:
 github_username:  Richard-Burd
