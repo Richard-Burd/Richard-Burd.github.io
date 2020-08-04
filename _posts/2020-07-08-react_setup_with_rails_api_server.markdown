@@ -14,7 +14,7 @@ The two gems you need to copy & paste here are:
 gem 'rack-cors', '~> 1.1.1'
 gen 'foreman', '~> 0.82.0
 ```
-...feel free to try newer versions if available...these are what I used.  Next, we need to go in and change some of the Rails boilerplate code:
+...feel free to try newer versions if available...these are what I used.&nbsp;  Next, we need to go in and change some of the Rails boilerplate code, note that you may not see this file `./config/initializers/omniauth.rb` unless you've setup or plan to worth with OmniAuth, if it is not there then ignore it and move on to `./config/application.rb`
 
 ![enter image description here](https://i.imgur.com/40Oh6XP.jpg)
 Here is the block of code shown above...copy & paste it into ./config/application.rb as shown above.
@@ -34,4 +34,6 @@ end
 ```
 Now when you run **$ rails start** the program should boot and you should be able to navigate to both the front & back ends as shown below.
 ![enter image description here](https://i.imgur.com/C0vGLhY.jpg)
+Once you see the Rails back-end graphic as shown above, you should be able to navigate to the actual JSON you want by typing in something like: **localhost:3001/posts** or **localhost:3001/author/1** depending on how you setup your Rails controllers and and routes.  
+
 If you would like more detailed information on this setup, see this blog post [here.](https://www.newline.co/fullstack-react/articles/how-to-get-create-react-app-to-work-with-your-rails-api/)&nbsp; It goes into more detail than this quick-reference guide blog-post.&nbsp;  Note that the author there does not utilize the ***rack-cors*** ruby gem, and I do not use the author's recommendation for [setting up the proxy](https://www.newline.co/fullstack-react/articles/how-to-get-create-react-app-to-work-with-your-rails-api/#setting-up-the-proxy).&nbsp;That said, they more or less accomplish the same thing.
