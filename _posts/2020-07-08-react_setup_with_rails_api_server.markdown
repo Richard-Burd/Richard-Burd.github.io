@@ -16,7 +16,7 @@ gen 'foreman', '~> 0.82.0
 ```
 ...feel free to try newer versions if available...these are what I used.&nbsp;  Next, we need to go in and change some of the Rails boilerplate code, note that you may not see this file `./config/initializers/omniauth.rb` unless you've setup or plan to worth with OmniAuth, if it is not there then ignore it and move on to `./config/initializers/cors.rb`
 
-![file to be changed w/their changes shown](https://i.imgur.com/6sTwC2L.jpg)
+![file to be changed w/their changes shown](https://i.imgur.com/sZ1KhWQ.jpg)
 Here is the block of code shown above...copy & paste it into ./config/application.rb as shown above.
 ```
 config.middleware.insert_before 0, Rack::Cors do
