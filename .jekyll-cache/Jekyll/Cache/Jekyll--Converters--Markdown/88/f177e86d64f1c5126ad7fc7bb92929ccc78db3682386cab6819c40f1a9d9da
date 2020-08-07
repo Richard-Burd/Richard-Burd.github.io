@@ -1,0 +1,32 @@
+I"�<p>This walkthrough describes the process for setting up a Ruby on Rails (back-end) API server to work with a front-end React app.  This was used to create this project <a href="https://github.com/Richard-Burd/react-redux-portfolio-project">here</a>.  When properly set up, you will be able to go into your new application’s main directory and run <code class="language-plaintext highlighter-rouge">$ rails start</code> to boot up both the front &amp; back ends simultaneously.  As always, let’s do this through pictures:</p>
+
+<p><img src="https://i.imgur.com/AXxXSBS.jpg" alt="some bash commands &amp; gemfile" /></p>
+
+<p>The two gems you need to copy &amp; paste here are:</p>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>gem 'rack-cors', '~&gt; 1.1.1'
+gen 'foreman', '~&gt; 0.82.0
+</code></pre></div></div>
+<p>…feel free to try newer versions if available…these are what I used.   Next, we need to go in and change some of the Rails boilerplate code, note that you may not see this file <code class="language-plaintext highlighter-rouge">./config/initializers/omniauth.rb</code> unless you’ve setup or plan to worth with OmniAuth, if it is not there then ignore it and move on to <code class="language-plaintext highlighter-rouge">./config/initializers/cors.rb</code></p>
+
+<p><img src="https://i.imgur.com/6sTwC2L.jpg" alt="file to be changed w/their changes shown" />
+Here is the block of code shown above…copy &amp; paste it into ./config/application.rb as shown above.</p>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>config.middleware.insert_before 0, Rack::Cors do
+  allow do
+    origins '*'
+    resource '*', headers: :any, methods: [:get, :post]
+  end
+end
+</code></pre></div></div>
+<p>NOTE: the specific reasons we are changing both <code class="language-plaintext highlighter-rouge">application.rb</code> and <code class="language-plaintext highlighter-rouge">cors.rb</code> are beyond the scope of this quick-start guide, if you would like more information, see this repo <a href="https://github.com/learn-co-students/js-rails-as-api-pokemon-teams-project-v-000">here</a>.</p>
+
+<p>Next, create the following directory:  <strong>./lib/tasks/start.rake</strong>   …then copy &amp; paste this code into it:</p>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>task :start do
+  exec 'foreman start -p 3000'
+end
+</code></pre></div></div>
+<p>Now when you run <strong>$ rails start</strong> the program should boot and you should be able to navigate to both the front &amp; back ends as shown below.
+<img src="https://i.imgur.com/C0vGLhY.jpg" alt="back end and front end displays" />
+Once you see the Rails back-end graphic as shown above, you should be able to navigate to the actual JSON you want by typing in something like: <strong>localhost:3001/users</strong> or <strong>localhost:3001/users/1</strong> depending on how you setup your Rails controllers and and routes.</p>
+
+<p>If you would like more detailed information on this setup, see this blog post <a href="https://www.newline.co/fullstack-react/articles/how-to-get-create-react-app-to-work-with-your-rails-api/">here.</a>  It goes into more detail than this quick-reference guide blog-post.   Note that the author there does not utilize the <strong><em>rack-cors</em></strong> ruby gem, and I do not use the author’s recommendation for <a href="https://www.newline.co/fullstack-react/articles/how-to-get-create-react-app-to-work-with-your-rails-api/#setting-up-the-proxy">setting up the proxy</a>. That said, they more or less accomplish the same thing.</p>
+:ET
