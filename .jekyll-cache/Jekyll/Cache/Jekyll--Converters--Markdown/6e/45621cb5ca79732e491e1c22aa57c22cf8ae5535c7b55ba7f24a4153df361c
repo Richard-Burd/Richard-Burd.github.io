@@ -8,7 +8,7 @@ gen 'foreman', '~&gt; 0.82.0
 </code></pre></div></div>
 <p>…feel free to try newer versions if available…these are what I used.   Next, we need to go in and change some of the Rails boilerplate code, note that you may not see this file <code class="language-plaintext highlighter-rouge">./config/initializers/omniauth.rb</code> unless you’ve setup or plan to worth with OmniAuth, if it is not there then ignore it and move on to <code class="language-plaintext highlighter-rouge">./config/initializers/cors.rb</code></p>
 
-<p><img src="https://i.imgur.com/6sTwC2L.jpg" alt="file to be changed w/their changes shown" />
+<p><img src="https://i.imgur.com/sZ1KhWQ.jpg" alt="file to be changed w/their changes shown" />
 Here is the block of code shown above…copy &amp; paste it into ./config/application.rb as shown above.</p>
 <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>config.middleware.insert_before 0, Rack::Cors do
   allow do
