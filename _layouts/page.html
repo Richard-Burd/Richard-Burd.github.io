@@ -13,7 +13,16 @@ layout: default
                         {% else %}{{ site.title }}{% endif %}</h1>
                     <hr class="small">
                     <!-- modified this so description doesn't show either About page or Design Portfolio page -->
-                    <span class="subheading">{% if page.title != "About" and page.title != "Design Portfolio" and page.header-img != "img/bg.3.png" %}{{ site.description }}{% endif %}</span>
+                    <span class="subheading">
+                      {% if page.title != "About"
+                        and page.title != "Design Portfolio"
+                        and page.title != "Kurdistan"
+                        and page.title != "Technical Writing & Illustration"  
+                      %}
+                      {{ site.description }}
+                      {% endif %}
+
+                    </span>
                 </div>
             </div>
         </div>

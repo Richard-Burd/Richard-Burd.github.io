@@ -19,3 +19,14 @@ paginate: 5
 exclude: ["less","node_modules","Gruntfile.js","package.json","README.md"]
 
 gems: [jekyll-paginate, jekyll-feed]
+
+# This video was used as a reference:
+# https://www.youtube.com/watch?v=mGMlLSM0HQM
+# This section will subdivide the portfolio section into subsections:
+#   1.) Technical Writing & Illustration Portfolio
+#   2.) Software Design Portfolio (with wireframes and URL links)
+#   3.) Hardware/ Drone & Architecture Design portfolio
+collections:
+  portfolio:
+    output: true
+    permalink: /portfolio/:path/

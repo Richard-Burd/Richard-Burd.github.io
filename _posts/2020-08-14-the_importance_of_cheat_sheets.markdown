@@ -2,7 +2,7 @@
 layout: post
 title:      "The Importance of Cheat Sheets"
 date:       2020-08-14 12:44:26 -0400
-permalink:  simple_redux_app_illustrated
+permalink:  the_importance_of_cheat_sheets
 ---
 
 Here's a cheat sheet I'm using to learn TypeScript:
