@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Design Portfolio
-header-img: "img/about-bg.2.png"
+header-img: "img/portfolio.png"
 description: This is a page to host portfolio items
 menu: main
 ---
