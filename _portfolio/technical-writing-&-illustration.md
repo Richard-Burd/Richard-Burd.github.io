@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Technical Writing & Illustration
-header-img: "img/about-bg.2.png"
+header-img: "img/technical-writing.png"
 exclude: true
 ---
 
