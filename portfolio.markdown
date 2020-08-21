@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Design Portfolio
-header-img: "img/portfolio.png"
+header-img: "img/banners/portfolio.png"
 description: This is a page to host portfolio items
 menu: main
 ---
@@ -13,3 +13,5 @@ Here is a link to the [technical writing & illustration](technical-writing-&-ill
 Here is a link to the [software design portfolio](software).
 
 Here is a link to the [hardware design portfolio](hardware).
+
+Here is a link to the [Executive (C-Level) graphics](executive).

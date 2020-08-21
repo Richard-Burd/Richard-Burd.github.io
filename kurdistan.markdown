@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Kurdistan
-header-img: "img/bg.3.png"
+header-img: "img/banners/bashur-flag.png"
 exclude: true
 ---
 

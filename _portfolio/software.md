@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Software Development Projects
-header-img: "img/home.png"
+header-img: "img/banners/home.png"
 exclude: true
 ---
 
