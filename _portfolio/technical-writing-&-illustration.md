@@ -28,12 +28,10 @@ The airfoil conversion cheatsheet will be discussed here:
 ![schematic of drone electronics](/img/previews/technical/airfoil.jpg)
 ](https://i.imgur.com/MxSuwo6.png){:target="_blank"}
 
-The PeshWing's schematic will be discussed here:
+The PeshWing's schematic will be discussed here, and in that disucssion ther will be a link to the Kurdistan page [here](/kurdistan)
 [
 ![schematic of drone electronics](/img/previews/technical/schematic.pesh.jpg)
 ](https://i.imgur.com/odznlxk.png){:target="_blank"}
-
-There should be a link to the Kurdistan page [here](/kurdistan)
 
 The cloud effects problems will be discussed here:
 [

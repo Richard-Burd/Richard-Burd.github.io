@@ -21,14 +21,17 @@ The TestWing will be discussed here:
 3D printing for drone parts will be discussed here:
 [
 ![camera pan mount built by makerbot](/img/previews/hardware/camera.jpg)
-](https://i.imgur.com/FgrXbx7.jpg){:target="_blank"}
-
-There should be a link to the Kurdistan page [here](/kurdistan)
+](https://i.imgur.com/EQrKTh3.jpg){:target="_blank"}
 
 The Hornet's elevon extensions will be discussed here:
 [
 ![a black hand-held drone](/img/previews/hardware/hornet.jpg)
 ](https://i.imgur.com/4RURyP8.jpg){:target="_blank"}
+
+There should be a link to the kurdistan page on this PeshWing image here, along with a reference [here](/kurdistan){:target="_blank"} in this paragraph.
+[
+![PeshWing UAV](/img/previews/hardware/peshwing.jpg)
+](/kurdistan){:target="_blank"}
 
 Some architectural stuff will be mentioned here:
 [
