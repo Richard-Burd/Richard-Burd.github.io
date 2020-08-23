@@ -13,5 +13,5 @@ The Pallet Tracker App will be introduced here
 
 This previews the image without loading up a full resolution version
 [
-![a black hand-held drone](https://i.imgur.com/O0VWS0t.jpg)
-](https://i.imgur.com/8MgRbQK.jpg){:target="_blank"}
+![schematic software diagram](https://i.imgur.com/O0VWS0t.jpg)
+](https://drive.google.com/file/d/1NrvuzRWSfcoiCbybQw29HBd4O9ObTcpo/view?usp=sharing){:target="_blank"}
