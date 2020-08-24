@@ -13,10 +13,15 @@ The ArduPilot Parameter Guide will be discussed here:
 ![a test-pilot's checklist](/img/previews/technical/arduparam.jpg)
 ](https://i.imgur.com/yzeb0vr.png){:target="_blank"}
 
-Here are some excerpts from a User's manual and flight book::
+Here are some excerpts from a User's manual and flight book:
 [
 ![flight book front cover](/img/previews/technical/user.jpg)
 ](https://drive.google.com/file/d/1f8DMw47fdqSKiiJZiQJo9zwNbjul3_6I/view?usp=sharing){:target="_blank"}
+
+Here is an example of software technical illustration:
+[
+![snippet from TypeScript cheat sheet](/img/previews/software/ts_snippet.jpg)
+](https://drive.google.com/file/d/1TsXNU8dgclsMJDegvNkv3W6qUnM8pUCt/view?usp=sharing){:target="_blank"}
 
 The ArduPilot PID Tuning Guide will be discussed here:
 [
@@ -36,7 +41,7 @@ The PeshWing's schematic will be discussed here, and in that disucssion ther wil
 The cloud effects problems will be discussed here:
 [
 ![sun and clouds effect drone imaging](/img/previews/technical/clouds.jpg)
-](https://i.imgur.com/shRK5MM.png){:target="_blank"}
+](https://drive.google.com/file/d/1DMURZ2NL_zmtrnnubsLnUFhnwVYmv2Xc/view?usp=sharing){:target="_blank"}
 
 The Preliminary Plan Check Report will be discussed here:
 [

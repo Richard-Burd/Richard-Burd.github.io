@@ -1,0 +1,66 @@
+I"�<h3 id="background">Background</h3>
+<p>In 2013, a group of bad guys with awesome haircuts took over some territory and committed a few <a href="https://en.wikipedia.org/wiki/Genocide_of_Yazidis_by_ISIL" target="_blank">war crimes</a>.   They called themselves the <a href="https://en.wikipedia.org/wiki/Islamic_State_of_Iraq_and_the_Levant" target="_blank">Islamic State of Iraq and Syria</a>, and later the Islamic State, but their original name stuck and they became forever known by their Acronym ‘ISIS.’   President Obama preferred to call them ISIL but let’s not get into that because it’s all same group, just one that has too many names.</p>
+
+<p>Anyway, at this time the U.S. Government was weary of getting itself involved in yet another confusing desert war so they sort-of stayed out of it but at the same time, also sort-of were involved.  This lack of full commitment let to a situation in which the indigenous Kurds were left to fend for themselves against ISIS, and that in turn spurred a volunteer movement of western adventurers who made their way to Kurdistan to help the Kurds in their fight against ISIS. 
+<img src="https://i.imgur.com/gdJ5YdQ.jpg" alt="daesheoun on a soviet APC" target="_blank" />
+Kurdish military commanders were looking for western military veterans with specialized skill sets that could be utilized in their low budget fight against ISIS.   Most such volunteers were former combat medics or who had served with NATO militaries in Iraq and Afghanistan.   A few had combat arms expertise as well.   I was brought on board because I could translate between English and Arabic.   Although Kurds are not Arabs and have their own language, Arabic is a sort-of lingua franca throughout the Middle East; everywhere you go, 1 out of 5 people will speak Arabic.</p>
+
+<p>Another reason I came on board was to fly reconnaissance missions with a home built UAV that could fly long distances and be maintained in an austere environment.    I had no such drone so I had to design, test, and build one quickly!</p>
+
+<hr />
+<h3 id="design-requirements">Design Requirements</h3>
+<p>The drone itself, along with all tools used to repair it, had to be allowed on international flights (by the TSA) and had to survive warzone conditions.   There would be no clean workspace to make repairs and troubleshoot things.   We had to assume we would loose at least one drone to enemy fire and be able to build a second one fast, and it had to survive heavy winds and abuse while being transported to different launch sites. </p>
+
+<p>The solution was to refine my <a href="https://drive.google.com/file/d/1T9fKWgwbUhu5n_UIkCMJMuk2MFkiGEwN/view" target="_blank">flying crash-test dummy</a> into something more aerodynamically efficient that could get some distance.</p>
+
+<hr />
+
+<h3 id="introducing-the-peshwing">Introducing the PeshWing</h3>
+<p>The PeshWing is named after the Kurdish <a href="https://en.wikipedia.org/wiki/Peshmerga">Peshmerga</a>,  the national army of the <a href="https://en.wikipedia.org/wiki/Kurdistan_Regional_Government">Kurdistan Regional Government</a>.   This was a low-cost hack to the problem of how to re-create something like the <a href="https://en.wikipedia.org/wiki/AeroVironment_RQ-11_Raven">RQ-11 Raven UAV system</a>.   The PeshWing could do about 75% of what the Kurds needed the Raven to do, but for a fraction of the price.  Below is my one-page bilingual brief for Kurdish commanders to understand the system:</p>
+
+<p><a href="https://drive.google.com/file/d/11NvkIcxMQvhy-umrxWHQeY0-i2WYY552/view?usp=sharing" target="_blank">
+<img src="/img/previews/kurdistan/peshbrief.jpg" alt="peshwing brief" />
+</a></p>
+
+<p>The big idea here is to build an <em>expendable</em> airframe as opposed to a ruggedized one.&amp;nbsp.  The wings are made out of 3/16 inch foamcore board and the fuselage is made from 1 inch extruded polystyrene (XPS) foam board.&amp;nbsp.  All of the pieces are cut at home and waterproof-coated before they travel on airline planes.  The pieces are then designed to fit in Tupperware containers that are in turn the right size for luggage bags.
+<a href="https://drive.google.com/file/d/1AkJgPMN3NgkpqPPmoYMYnH2lZecQDPwg/view?usp=sharing" target="_blank">
+<img src="/img/previews/kurdistan/2D_peshwing.jpg" alt="Page 1 of 5 from the PeshWing 2D fab documents" />
+</a></p>
+
+<p>The PeshWing can carry one battery for shorter sorties and two for longer ones.  It can travel a maximum of 15 kilometers, giving it a comfortable 7 kilometer combat radius depending on what the winds are doing. 
+<a href="https://drive.google.com/file/d/10ZuGIDeXtm0N71myGmhpH4qinqqLj3C2/view?usp=sharing" target="_blank">
+<img src="https://i.imgur.com/qbtPxID.jpg" alt="Fuselage made out of XPS board w/electronics" />
+</a></p>
+
+<p>The First iteration was back-packable but the folding wings were never employed as we always had vehicle transportation.&amp;nbsp. This let me use the second design iteration featuring my invention that I call <strong><em>splats</em></strong>. 
+<img src="https://i.imgur.com/XIgErRE.jpg" alt="three images with splats explained" />
+Splats are a portmanteau that combine the functionality of <a href="https://en.wikipedia.org/wiki/Spoiler_%28aeronautics%29" target="_blank">spoilers</a> and leading edge <a href="https://en.wikipedia.org/wiki/Leading-edge_slat" target="_blank">slats</a> of an aircraft wing.
+<img src="https://i.imgur.com/4NJJ9EH.jpg" alt="three images with splats explained" /></p>
+
+<p>The splats are deployed for takeoff and landing <em>(as shown above)</em> to enable laminar flow on the upper surface of the wing as the wing meets the air at higher angles of attack.   The slats are then retracted once the PeshWing is in level cruising flight <em>(as shown below)</em> so as to reduce drag.   The reason this works is because of the small chord length between the leading &amp; training edges of the aircraft.   For reasons beyond this photo essay, splats would not work on a larger, manned aircraft, but they <em>do</em> work on smaller wings.
+<img src="https://i.imgur.com/hSWj34T.jpg" alt="three images with splats explained" /></p>
+
+<p>When the PeshWing comes in for an aggressive combat landing, the splats are deployed as airbrakes that enable steep descent without over-speeding.</p>
+
+<p><img src="https://i.imgur.com/jyervAf.jpg" alt="three amigos w/ PeshWing drone" /></p>
+
+<p>The PeshWing needs to be launched with a bungee when carrying two batteries, and can be hand-launched when taking off with just one battery.
+<img src="https://i.imgur.com/dqKiR2T.jpg" alt="bungee launch of a drone" /></p>
+
+<p>The PeshWing’s main mission was to scout out ISIS positions in the myriad of abandoned villages covering northern Iraq.
+<img src="https://i.imgur.com/iPGHhj2.jpg" alt="a view from the drone" /></p>
+
+<p><img src="https://i.imgur.com/3azmhRK.jpg" alt="on the berm looking for the enemy" /></p>
+
+<p>The PeshWing also provided real-time intelligence for fire support missions.<img src="https://i.imgur.com/yI8huJC.jpg" alt="120mm Mortar Fire" /></p>
+
+<h3 id="first-aid-medical-training">First Aid Medical Training</h3>
+<p>When I wasn’t flying, I was teaching first aid to Peshmerga soldiers.   Here we are learning the basics while I give the lesson in Arabic.   My Arabic to Kurdish translator got a kick out of my accent and we all had a good time learning.  <img src="https://i.imgur.com/uyqs4wl.jpg" alt="Me approaching a notionally injured Peshmerga" /></p>
+
+<p>My team of veteran NATO medics was invited by the Kurdistan Regional Government’s Ministry of Health which ran our program and issued graduation certificates to each of our cohorts.   Here is graduation day for cohort 3.
+<img src="https://i.imgur.com/XJTBHws.jpg" alt="Peshmerga class cohort graduation" /></p>
+
+<p>Kurdistan (K24) cable news came out to film our final exercise and extend their appreciation to all of the volunteers who traveled to Iraq in support of the fight.
+<img src="https://i.imgur.com/T7JFS7c.jpg" alt="Kurdish news anchor" />
+Hi mom, I’m on TV!</p>
+:ET

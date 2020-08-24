@@ -15,3 +15,9 @@ This previews the image without loading up a full resolution version
 [
 ![schematic software diagram](https://i.imgur.com/O0VWS0t.jpg)
 ](https://drive.google.com/file/d/1NrvuzRWSfcoiCbybQw29HBd4O9ObTcpo/view?usp=sharing){:target="_blank"}
+
+
+Here is an example of software technical illustration:
+[
+![snippet from TypeScript cheat sheet](/img/previews/software/ts_snippet.jpg)
+](https://drive.google.com/file/d/1TsXNU8dgclsMJDegvNkv3W6qUnM8pUCt/view?usp=sharing){:target="_blank"}
