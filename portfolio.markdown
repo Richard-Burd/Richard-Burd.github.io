@@ -6,12 +6,18 @@ description: This is a page to host portfolio items
 menu: main
 ---
 
-This page is under construction while I try out some new stuff. In the meantime, my design portfolio is hosted [here](https://imgur.com/a/6GVwDBW).
+[
+![PeshWing UAV](/img/portfolio_subdivisions/technical.jpg)
+](technical-writing-&-illustration)
 
-Here is a link to the [technical writing & illustration](technical-writing-&-illustration).
+[
+![PeshWing UAV](/img/portfolio_subdivisions/software.jpg)
+](software)
 
-Here is a link to the [software design portfolio](software).
+[
+![PeshWing UAV](/img/portfolio_subdivisions/hardware.jpg)
+](hardware)
 
-Here is a link to the [hardware design portfolio](hardware).
-
-Here is a link to the [Executive (C-Level) graphics](executive).
+[
+![PeshWing UAV](/img/portfolio_subdivisions/technical.jpg)
+](executive)
