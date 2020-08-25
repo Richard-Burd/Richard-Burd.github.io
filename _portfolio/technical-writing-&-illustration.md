@@ -11,7 +11,7 @@ Below are some examples of my technical writing and illustration.&nbsp;
 The ArduPlane parameter guide is a cheat sheet and checklist used for experimental tinkering with the [ArduPlane parameters](https://ardupilot.org/plane/docs/parameters.html).&nbsp;  It organizes the parameters by functionality so the test pilot can go through and check off each box and write in the value assigned to each one.&nbsp;  The human eye can then scan the page and catch conflicting values within the settings.
 [
 ![a test-pilot's checklist](/img/previews/technical/arduparam.jpg)
-](https://i.imgur.com/yzeb0vr.png){:target="_blank"}
+](https://drive.google.com/file/d/16k_cKhio6_1nRtmCZmXdI2N8IDEYq_Ku/view?usp=sharing){:target="_blank"}
 
 I created the first generation user manual for a minimum viable product (MVP) drone system called the *Hornet.*&nbsp; The figure below links to a series of excerpts from that document.
 [
@@ -36,7 +36,7 @@ This *Airfoil Design & Transfer* document records a multi-step process of import
 This is the hardware schematic for the PeshWing UAV I [took with me to Iraqi Kurdistan](/kurdistan).&nbsp;  This particular style of *cartoon schematic* shows what the components look like and it ideal for use by manufacturing technicians and in field manuals.
 [
 ![schematic of drone electronics](/img/previews/technical/schematic.pesh.jpg)
-](https://i.imgur.com/odznlxk.png){:target="_blank"}
+](https://drive.google.com/file/d/1kKVaLi5L7LBjdyNQa8-Kol5wFY2j5-aq/view?usp=sharing){:target="_blank"}
 
 In the early days of agricultural drone flying, we discovered that clouds could have adverse effects on imaging results.&nbsp;  These drawings show the problem and are also cute & colorful.
 [
