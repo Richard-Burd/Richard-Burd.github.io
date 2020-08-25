@@ -19,5 +19,5 @@ menu: main
 ](hardware)
 
 [
-![PeshWing UAV](/img/portfolio_subdivisions/technical.jpg)
+![PeshWing UAV](/img/portfolio_subdivisions/executive.jpg)
 ](executive)
