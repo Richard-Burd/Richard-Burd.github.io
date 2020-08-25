@@ -1,0 +1,6 @@
+I"�<p>Here’s a cheat sheet I’m using to learn TypeScript:
+<a href="https://drive.google.com/file/d/1TsXNU8dgclsMJDegvNkv3W6qUnM8pUCt/view?usp=sharing" target="_blank">
+<img src="https://i.imgur.com/mMd1P88.jpg" alt="a typescript cheat sheet" />
+</a>
+I’ve been redacting this project <a href="https://github.com/Richard-Burd/front-end-portfolio-project">here</a> so as to slowly convert the whole thing from being written dynamically in JavaScript, to being statically typed in TypeScript.   Each time I return to it I’ve forgotten all of the TypeScript syntax I’ve ever learned, and even as I’m writing this, I would fail even the most basic TypeScript coding interview. </p>
+:ET
