@@ -7,17 +7,17 @@ menu: main
 ---
 
 [
-![PeshWing UAV](/img/portfolio_subdivisions/technical.jpg)
+![technical writing & illustration label](/img/portfolio_subdivisions/technical.jpg)
 ](technical-writing-&-illustration)
 
 [
-![PeshWing UAV](/img/portfolio_subdivisions/software.jpg)
+![software label](/img/portfolio_subdivisions/software.jpg)
 ](software)
 
 [
-![PeshWing UAV](/img/portfolio_subdivisions/hardware.jpg)
+![hardware label](/img/portfolio_subdivisions/hardware.jpg)
 ](hardware)
 
 [
-![PeshWing UAV](/img/portfolio_subdivisions/executive.jpg)
+![executive label](/img/portfolio_subdivisions/executive.jpg)
 ](executive)

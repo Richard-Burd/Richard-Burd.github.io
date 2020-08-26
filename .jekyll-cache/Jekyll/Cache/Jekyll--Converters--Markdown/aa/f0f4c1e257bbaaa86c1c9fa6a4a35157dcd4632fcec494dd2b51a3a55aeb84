@@ -1,4 +1,4 @@
-I"õ<style>
+I"?<style>
   .about-container
   {
     margin: 30px auto;
@@ -32,8 +32,9 @@
     </div>
     <br />
     <div class="about-text">
-      Once on-boarded to your team I will get rid of the tribal knowledge and miscommunications by creating an organized suite of visual aids using Inkscape, a free and open source software product I evangelize and mentor colleagues on how to use.  The best way to contact me is on LinkedIn, I hope to hear from you soon!
+      Once on-boarded to your team I will get rid of the tribal knowledge and miscommunications by creating an organized suite of visual aids using Inkscape, a free and open source software product I evangelize and mentor colleagues on how to use.  The best way to contact me is with the email address below, I hope to hear from you soon!
     </div>
   </div>
+  <img class="email" src="/img/misc/email.png" alt="" />
 </body>
 :ET

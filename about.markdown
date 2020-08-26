@@ -20,6 +20,13 @@ menu: main
     padding: 0 10px 0 0;
   }
 
+  .email
+  {
+    float: left;
+    width: 300px;
+    padding: 10px 10px 0 0;
+  }
+
   .about-text
   {
     text-align: justify;
@@ -39,7 +46,8 @@ menu: main
     </div>
     <br>
     <div class="about-text">
-      Once on-boarded to your team I will get rid of the tribal knowledge and miscommunications by creating an organized suite of visual aids using Inkscape, a free and open source software product I evangelize and mentor colleagues on how to use.  The best way to contact me is on LinkedIn, I hope to hear from you soon!
+      Once on-boarded to your team, I will help you reduce tribal knowledge and miscommunications by creating an organized suite of visual aids using Inkscape, a free and open source software product I evangelize and mentor colleagues on how to use. The best way to contact me is with the email address below, I hope to hear from you soon!
     </div>
+    <img class="email" src="/img/misc/email.jpg" alt="">
   </div>
 </body>
