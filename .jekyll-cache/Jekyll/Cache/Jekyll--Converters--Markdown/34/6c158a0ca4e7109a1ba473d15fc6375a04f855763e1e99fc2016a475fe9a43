@@ -1,0 +1,20 @@
+I"�<h2 id="data-visualization-for-decision-making">Data Visualization for Decision Making</h2>
+
+<p><strong>This section is under construction so I apologize for the mess!</strong></p>
+
+<p>These graphics showcase examples of data &amp; schematic visualization for strategic decision makers.   Although many tools currently exist  for organizing &amp; displaying information, there are many situations where you may need to combine the functionality of two or more such tools in order to see the bigger picture.   These situations merit customized visualization so that everybody on your team can understand <strong><em>all</em></strong> of the relevant variables effecting key decisions, rather than some parochial subset of such variables. </p>
+
+<p>Gnatt charts are often one of the least favorite and yet most essential visual aids in project management.   The customized Gnatt chart below summarizes data that I would normally track in both Microsoft Project &amp; Excel:</p>
+
+<p><a href="https://drive.google.com/file/d/1qg9KrtAckh5Ny2YoSbXlpb5pzjoz__UJ/view?usp=sharing" target="_blank">
+<img src="https://i.imgur.com/rmeH8AK.jpg" alt="a gnatt chart of an embedded system" />
+</a></p>
+
+<p>In the example above, we have a hypothetical project in which a firm is developing an embedded system with the printed circuit board assembly (PCBA) design in house, coupled with fabrication, software &amp; field testing all being contracted to third parties.   The firm’s leadership is most concerned with tracking monies spent on those contractors.  They are concerned about not only tracking what they are getting in terms of deliverables received, but also monitoring the monthly cash burn in terms of the monies allotted to this project as a whole.</p>
+
+<p>The firm’s product phase gate scheme is laid out on top of the graphic.   The firm’s tasks &amp; milestones have a blue-green (cool-color) scheme while contractors &amp; materials have a read-yellow-orange (warm color) scheme for contrast. </p>
+
+<p><a href="https://drive.google.com/file/d/1qg9KrtAckh5Ny2YoSbXlpb5pzjoz__UJ/view?usp=sharing" target="_blank">
+<img src="https://i.imgur.com/rmeH8AK.jpg" alt="a conceptual model of the DoD tactics problem" />
+</a></p>
+:ET
