@@ -5,13 +5,12 @@ header-img: "img/banners/executive.png"
 exclude: true
 ---
 
-## Data Visualization for Decision Making
-These graphics showcase examples of data & schematic visualization for strategic decision makers.&nbsp;  Although many tools currently exist  for organizing & displaying information, there are many situations where you may need to combine the functionality of two or more such tools in order to see the bigger picture.&nbsp;  These situations merit customized visualization so that everybody on your team can understand ***all*** of the relevant variables effecting key decisions, rather than some parochial subset of such variables.&nbsp;
+The images on this page are examples of work tailored for strategic decision makers.&nbsp;  Although many tools currently exist  for organizing & displaying information, there are many situations where you may need to combine the functionality of two or more such tools in order to see the bigger picture.&nbsp;  These situations merit customized visualization so that everybody on your team can understand ***all*** of the relevant variables effecting key decisions, rather than some parochial subset of such variables.&nbsp;
 
 ---
 
 # Timelines
-Gnatt charts are often one of the least favorite and yet most essential visual aids in project management.&nbsp;  The customized Gnatt chart below summarizes data that I would normally track in both Microsoft Project & Excel:
+Gantt charts are often one of the least favorite and yet most essential visual aids in project management.&nbsp;  The customized Gantt chart below summarizes data that could normally be pulled from Microsoft Project or similar tools:
 
 [
 ![a gnatt chart of an embedded system](https://i.imgur.com/rmeH8AK.jpg)
@@ -24,7 +23,7 @@ The firm's product phase gate scheme is laid out on top of the graphic.&nbsp;  T
 ---
 
 # Conceptual Modeling
-Below is an example of a conceptual model.&nbsp;  Conceptual models have been popular in academia for half a century and are now being used in the business world as well.&nbsp;  They illustrate the relationships between variables in a complex system without necessarily quantifying any of those variables, and often serve as a stepping stone to building [financial models](https://en.wikipedia.org/wiki/Financial_modeling){:target="_blank"} and other business intelligence tools.&nbsp;  Conceptual models clarify tradeoffs between competing priorities of engineers, sales representatives, and business developers so that stakeholders gain a 'satellite view' of the situation.
+Below is an example of a conceptual model.&nbsp;  Conceptual models have been popular in academia for half a century and are now being used in the business world as well.&nbsp;  They illustrate the relationships between variables in a complex system without necessarily quantifying any of those variables, and often serve as a stepping stone to building [financial models](https://en.wikipedia.org/wiki/Financial_modeling){:target="_blank"} and other business intelligence tools.&nbsp;  Conceptual models clarify trade-offs between competing priorities of engineers, sales representatives, and business developers so that stakeholders gain a 'satellite view' of the situation.
 
 [
 ![a conceptual model of the DoD tactics problem](https://i.imgur.com/nz6OLod.jpg)
