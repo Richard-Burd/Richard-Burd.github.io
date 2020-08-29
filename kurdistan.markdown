@@ -31,7 +31,7 @@ The PeshWing is named after the Kurdish [Peshmerga](https://en.wikipedia.org/wik
 ![peshwing brief](/img/previews/kurdistan/peshbrief.jpg)
 ](https://drive.google.com/file/d/11NvkIcxMQvhy-umrxWHQeY0-i2WYY552/view?usp=sharing){:target="_blank"}
 
-The big idea here is to build an *expendable* airframe as opposed to a ruggedized one.&nbsp;.  The wings are made out of 3/16 inch foamcore board and the fuselage is made from 1 inch extruded polystyrene (XPS) foam board.&nbsp.  All of the pieces are cut at home and waterproof-coated before they travel on airline planes.&nbsp; The pieces are then designed to fit in Tupperware containers that are in turn the right size for luggage bags.
+The big idea here is to build an *expendable* airframe as opposed to a ruggedized one.&nbsp;.  The wings are made out of 3/16 inch foamcore board and the fuselage is made from 1 inch extruded polystyrene (XPS) foam board.&nbsp; All of the pieces are cut at home and waterproof-coated before they travel on airline planes.&nbsp; The pieces are then designed to fit in tupperware containers that are in turn the right size for luggage bags.
 
 [
 ![Page 1 of 5 from the PeshWing 2D fab documents](/img/previews/kurdistan/2D_peshwing.jpg)
@@ -43,14 +43,14 @@ The PeshWing can carry one battery for shorter sorties and two for longer ones.&
 ![Fuselage made out of XPS board w/electronics](https://i.imgur.com/qbtPxID.jpg)
 ](https://drive.google.com/file/d/10ZuGIDeXtm0N71myGmhpH4qinqqLj3C2/view?usp=sharing){:target="_blank"}
 
-The First iteration was back-packable but the folding wings were never employed as we always had vehicle transportation.&nbsp. This let me use the second design iteration featuring my invention that I call ***splats***.&nbsp;
+The first iteration was back-packable but the folding wings were never employed as we always had vehicle transportation.&nbsp; This let me use the second design iteration featuring my invention that I call ***splats***.&nbsp;
 
 ![top perspective of splats](https://i.imgur.com/XIgErRE.jpg)
 Splats are a portmanteau that combine the functionality of [spoilers](https://en.wikipedia.org/wiki/Spoiler_%28aeronautics%29){:target="_blank"} and leading edge [slats](https://en.wikipedia.org/wiki/Leading-edge_slat){:target="_blank"} of an aircraft wing.
 
 ![side view of airfoil effect w/splats](https://i.imgur.com/4NJJ9EH.jpg)
 
-The splats are deployed for takeoff and landing *(as shown above)* to enable laminar flow on the upper surface of the wing as the wing meets the air at higher angles of attack.&nbsp;  The slats are then retracted once the PeshWing is in level cruising flight *(as shown below)* so as to reduce drag.&nbsp;  The reason this works is because of the small chord length between the leading & training edges of the aircraft.&nbsp;  For reasons beyond this photo essay, splats would not work on a larger, manned aircraft, but they *do* work on smaller wings.
+The splats are deployed for takeoff and landing *(as shown above)* to enable laminar flow on the upper surface of the wing as the wing meets the air at higher angles of attack.&nbsp;  The splats are then retracted once the PeshWing is in level cruising flight *(as shown below)* so as to reduce drag.&nbsp;  The reason this works is because of the small [chord](https://en.wikipedia.org/wiki/Chord_%28aeronautics%29){:target="_blank"} length between the leading & training edges of the aircraft.&nbsp;  For reasons beyond this photo essay, splats would not work on a larger, manned aircraft, but they *do* work on smaller wings.
 
 ![side view with splats retracted](https://i.imgur.com/hSWj34T.jpg)
 
