@@ -31,7 +31,11 @@
         <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
             <ul class="nav navbar-nav">
                 <li>
-                    <a href="{{ site.baseurl }}/">Home</a>
+                  <a href="{{ site.baseurl }}/">Home</a>
+                </li>
+                <li>
+                  <!-- I added this when I put pagination on the blog -->
+                  <a href="{{ site.baseurl }}/blog">blog</a>
                 </li>
                 {% for page in site.pages %}
                   {% unless page.exclude %}
