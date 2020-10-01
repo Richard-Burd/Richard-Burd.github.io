@@ -6,7 +6,7 @@
 <p>Gantt charts are often one of the least favorite and yet most essential visual aids in project management.   The customized Gantt chart below summarizes data that could normally be pulled from Microsoft Project or similar tools:</p>
 
 <p><a href="https://drive.google.com/file/d/1qg9KrtAckh5Ny2YoSbXlpb5pzjoz__UJ/view?usp=sharing" target="_blank">
-<img src="https://i.imgur.com/rmeH8AK.jpg" alt="a gnatt chart of an embedded system" />
+<img src="https://i.imgur.com/SiWSD1O.jpg" alt="a Gantt chart of an embedded system" />
 </a></p>
 
 <p>In the example above, we have a hypothetical project in which a firm is developing an embedded system with the printed circuit board assembly (PCBA) design in house, coupled with fabrication, software &amp; field testing all being contracted to third parties.   The firm’s leadership is most concerned with tracking monies spent on those contractors.  They are concerned about not only tracking what they are getting in terms of deliverables received, but also monitoring the monthly cash burn in terms of the monies allotted to this project as a whole.</p>

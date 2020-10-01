@@ -13,7 +13,7 @@ The images on this page are examples of work tailored for strategic decision mak
 Gantt charts are often one of the least favorite and yet most essential visual aids in project management.&nbsp;  The customized Gantt chart below summarizes data that could normally be pulled from Microsoft Project or similar tools:
 
 [
-![a gnatt chart of an embedded system](https://i.imgur.com/rmeH8AK.jpg)
+![a Gantt chart of an embedded system](https://i.imgur.com/SiWSD1O.jpg)
 ](https://drive.google.com/file/d/1qg9KrtAckh5Ny2YoSbXlpb5pzjoz__UJ/view?usp=sharing){:target="_blank"}
 
 In the example above, we have a hypothetical project in which a firm is developing an embedded system with the printed circuit board assembly (PCBA) design in house, coupled with fabrication, software & field testing all being contracted to third parties.&nbsp;  The firm's leadership is most concerned with tracking monies spent on those contractors.&nbsp; They are concerned about not only tracking what they are getting in terms of deliverables received, but also monitoring the monthly cash burn in terms of the monies allotted to this project as a whole.
