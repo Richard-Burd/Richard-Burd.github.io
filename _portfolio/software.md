@@ -124,8 +124,21 @@ The diagram below maps out the entire full stack down to the method (function) l
 ---
 
 ## Cheat Sheets for Languages & Frameworks
-This is a cheat sheet I published in a blog post [here](https://richard-burd.github.io/the_importance_of_cheat_sheets) that deals with TypeScript.&nbsp;  Cheat sheets like this one are part of a visual-spatial learning system that I developed in order to maintain knowledge of (and expand my knowledge on) software languages & frameworks.&nbsp;  Because other developers also find these products helpful, they act as a [force multiplier](https://en.wikipedia.org/wiki/Force_multiplication) for any team I have the pleasure of working with because they allow us access detailed information without having to painstakingly commit such information to memory.
+For me, the most frustrating part of software development is keeping track of how to do things in all of the different languages & frameworks we use; it is simply too easy to forget how systems work when you are not using them regularly.&nbsp;  To solve this problem I developed a *system* of cheat sheets that involves the following three steps:
+1. Watch a series of YouTube tutorials on a new language or framework and create a commensurate repository to write sample code and take notes.
+2. Utilize the notes and sample code to create a cheat sheet on how the language (or framework) works, forcing you to show yourself that you understand the material.
+3. Dedicate a monitor (in your workspace) for displaying the cheat sheet when using *that* language or framework in a project down the road, and iterate on the cheat-sheet to improve it as you make use of it.
 
+The process can be used on a team's specific technology stack as well; the objective is to create references that are quicker than Google or Stackoverflow so you can get things done faster.&nbsp;  I no longer worry about remembering details on ***how*** to do things because I know ***where*** those details are elucidated in my reference library.&nbsp;  Here are some cheat sheets from the library:
+
+### TypeScript
+The GitHub repository for this cheat sheet is [here](https://github.com/Richard-Burd/typescript-sandbox){:target="_blank"}
 [
-![snippet from TypeScript cheat sheet](https://i.imgur.com/UUCN0ER.jpg)
+![preview od a TypeScript cheat sheet](https://i.imgur.com/UUCN0ER.jpg)
 ](https://drive.google.com/file/d/1TsXNU8dgclsMJDegvNkv3W6qUnM8pUCt/view?usp=sharing){:target="_blank"}
+
+### Python
+The GitHub repository for this cheat sheet is [here](https://github.com/Richard-Burd/python-3-sandbox){:target="_blank"}
+[
+![preview od a Python cheat sheet](https://i.imgur.com/PgO61Uc.jpg)
+](https://drive.google.com/file/d/1l2QqzHdfAmrQxy3aPAzy6UsL8Ol36hHZ/view?usp=sharing){:target="_blank"}
