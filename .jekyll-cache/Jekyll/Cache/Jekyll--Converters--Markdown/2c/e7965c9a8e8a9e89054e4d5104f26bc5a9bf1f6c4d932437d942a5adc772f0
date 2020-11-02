@@ -1,4 +1,4 @@
-I"2$<style>
+I"#(<style>
   .media-icons-&-description{
   }
 
@@ -117,13 +117,24 @@
 <hr />
 
 <h2 id="cheat-sheets-for-languages--frameworks">Cheat Sheets for Languages &amp; Frameworks</h2>
-<p>This is a cheat sheet I published in a blog post <a href="https://richard-burd.github.io/the_importance_of_cheat_sheets">here</a> that deals with TypeScript.   Cheat sheets like this one are part of a visual-spatial learning system that I developed in order to maintain knowledge of (and expand my knowledge on) software languages &amp; frameworks.   Because other developers also find these products helpful, they act as a <a href="https://en.wikipedia.org/wiki/Force_multiplication">force multiplier</a> for any team I have the pleasure of working with because they allow us access detailed information without having to painstakingly commit such information to memory.</p>
+<p>For me, the most frustrating part of software development is keeping track of how to do things in all of the different languages &amp; frameworks we use; it is simply too easy to forget how systems work when you are not using them regularly.   To solve this problem I developed a <em>system</em> of cheat sheets that involves the following three steps:</p>
+<ol>
+  <li>Watch a series of YouTube tutorials on a new language or framework and create a commensurate repository to write sample code and take notes.</li>
+  <li>Utilize the notes and sample code to create a cheat sheet on how the language (or framework) works, forcing you to show yourself that you understand the material.</li>
+  <li>Dedicate a monitor (in your workspace) for displaying the cheat sheet when using <em>that</em> language or framework in a project down the road, and iterate on the cheat-sheet to improve it as you make use of it.</li>
+</ol>
 
-<p><a href="https://drive.google.com/file/d/1TsXNU8dgclsMJDegvNkv3W6qUnM8pUCt/view?usp=sharing" target="_blank">
+<p>The process can be used on a team’s specific technology stack as well; the objective is to create references that are quicker than Google or Stackoverflow so you can get things done faster.   I no longer worry about remembering details on <strong><em>how</em></strong> to do things because I know <strong><em>where</em></strong> those details are elucidated in my reference library.   Here are some cheat sheets from the library:</p>
+
+<h3 id="typescript">TypeScript</h3>
+<p>The GitHub repository for this cheat sheet is <a href="https://github.com/Richard-Burd/typescript-sandbox" target="_blank">here</a>
+<a href="https://drive.google.com/file/d/1TsXNU8dgclsMJDegvNkv3W6qUnM8pUCt/view?usp=sharing" target="_blank">
 <img src="https://i.imgur.com/UUCN0ER.jpg" alt="preview od a TypeScript cheat sheet" />
 </a></p>
 
-<p><a href="https://drive.google.com/file/d/1TsXNU8dgclsMJDegvNkv3W6qUnM8pUCt/view?usp=sharing" target="_blank">
+<h3 id="python">Python</h3>
+<p>The GitHub repository for this cheat sheet is <a href="https://github.com/Richard-Burd/python-3-sandbox" target="_blank">here</a>
+<a href="https://drive.google.com/file/d/1l2QqzHdfAmrQxy3aPAzy6UsL8Ol36hHZ/view?usp=sharing" target="_blank">
 <img src="https://i.imgur.com/PgO61Uc.jpg" alt="preview od a Python cheat sheet" />
 </a></p>
 :ET
