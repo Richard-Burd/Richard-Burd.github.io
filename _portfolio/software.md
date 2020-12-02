@@ -140,5 +140,5 @@ The GitHub repository for this cheat sheet is [here](https://github.com/Richard-
 ### Python
 The GitHub repository for this cheat sheet is [here](https://github.com/Richard-Burd/python-3-sandbox){:target="_blank"}
 [
-![preview od a Python cheat sheet](https://i.imgur.com/PgO61Uc.jpg)
+![preview od a Python cheat sheet](https://i.imgur.com/ESaVn6s.jpg)
 ](https://drive.google.com/file/d/1l2QqzHdfAmrQxy3aPAzy6UsL8Ol36hHZ/view?usp=sharing){:target="_blank"}
