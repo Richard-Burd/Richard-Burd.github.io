@@ -1,0 +1,33 @@
+I"�<p>Let’s have a look at something weird and fun I call a ‘Zig-Zag-O-Gram’
+<a href="https://camo.githubusercontent.com/bc041b44c2c12d1dc333df9451d2365bd7a6b6e9/68747470733a2f2f692e696d6775722e636f6d2f6a5852626179452e6a7067" target="_blank">
+<img src="https://i.imgur.com/jXRbayE.jpg" alt="zig-zag-o-gram" />
+</a></p>
+
+<p>Lately I’ve been working on exploring new ways to illustrate individual algorithms as opposed to stack architecture. 	Above we have what I am calling a ‘Zig-Zag-O-Gram’ illustration for the ‘chunked array problem discussed <a href="https://youtu.be/cL1HB_IC9Fc" target="_blank">here</a></p>
+
+<p>This function takes in two variables: an array and a number.   The function in turn must return a value of the array, with the original elements ‘chunked’ into nested arrays that are the length of the second variable.   Thus, given these two variables: <code class="language-plaintext highlighter-rouge">[1, 4, 12, 3, 2, 6, -9, 0], n=3</code> the function must return: <code class="language-plaintext highlighter-rouge">[[1, 4, 12], [3, 2, 6], [-9, 0]]</code>   Here is the solution illustrated above:</p>
+<div class="language-javascript highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kd">const</span> <span class="nx">chunks</span> <span class="o">=</span> <span class="p">((</span><span class="nx">arr</span><span class="p">,</span> <span class="nx">n</span><span class="p">)</span> <span class="o">=&gt;</span> <span class="p">{</span>
+  <span class="kd">const</span> <span class="nx">chunked</span> <span class="o">=</span> <span class="p">[];</span>
+   <span class="k">for</span><span class="p">(</span><span class="kd">let</span> <span class="nx">elem</span> <span class="k">of</span> <span class="nx">arr</span><span class="p">)</span> <span class="p">{</span>
+     <span class="kd">let</span> <span class="nx">last</span> <span class="o">=</span> <span class="nx">chunked</span><span class="p">[</span><span class="nx">chunked</span><span class="p">.</span><span class="nx">length</span><span class="o">-</span><span class="mi">1</span><span class="p">];</span>
+     <span class="k">if</span> <span class="p">(</span><span class="o">!</span><span class="nx">last</span> <span class="o">||</span> <span class="nx">last</span><span class="p">.</span><span class="nx">length</span> <span class="o">===</span> <span class="nx">n</span><span class="p">)</span>
+       <span class="nx">chunked</span><span class="p">.</span><span class="nx">push</span><span class="p">([</span><span class="nx">elem</span><span class="p">])</span>
+     <span class="k">else</span>
+       <span class="nx">last</span><span class="p">.</span><span class="nx">push</span><span class="p">(</span><span class="nx">elem</span><span class="p">)</span>
+    <span class="p">}</span>
+    <span class="k">return</span> <span class="nx">chunked</span><span class="p">;</span>
+<span class="p">})([</span><span class="mi">1</span><span class="p">,</span> <span class="mi">4</span><span class="p">,</span> <span class="mi">12</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">6</span><span class="p">,</span> <span class="o">-</span><span class="mi">9</span><span class="p">,</span> <span class="mi">0</span><span class="p">],</span> <span class="mi">3</span><span class="p">)</span>
+
+<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">({</span>
+  <span class="nx">chunks</span> <span class="c1">//=&gt; [[1, 4, 12], [3, 2, 6], [-9, 0]]</span>
+<span class="p">})</span>
+</code></pre></div></div>
+
+<p>While the Zig-Zag-O-Gram approach might be useful for educational purposes, it is time consuming to draw and difficult to alter.   Students that are new to coding might find this sort of thing useful for seeing how iterations handle conditional statements, but using something like this to develop an algorithm is difficult because of all the separate iterations that must be represented. </p>
+
+<p>Below I have an in progress working example of what I call the ‘Sequence-to-Gate’ approach.   Here I’ve got a sequence map that shows how I want to build my algorithm in each iteration, but all I’m doing is showing the iteration’s result, and highlighting the result’s different components.  Later on I can start defining the definitions and conditions I would need (shown on the left &amp; right respectively) and trhen finally, I can render what I’m calling the ‘gates’ - or the actual pathways of logic that make each iteration possible. </p>
+
+<p><img src="https://i.imgur.com/p0kR7yt.jpg" alt="sequence to gate diagram" /></p>
+
+<p>This approach begins to break down a bit when algorithms have nested iterations and/or multiple data builds.   In the chunked array problem, all we are doing is building out an array by pushing elements (and nested arrays with elements) onto it.   Yet in other problems like the <a href="https://richard-burd.github.io/longest_common_subsequence" target="_blank">longest common subsequence</a> algorithm I developed, I  build out objects and multiple arrays of objects with different sequences.   This means that a Sequence-to-Gate diagram would need multiple sequence maps and in turn would have gates that become too busy &amp; complex to read.  In sum, if this approach is to be salvaged at all, it needs a series of controls defined for when &amp; how to employ it so I don’t end up with a diagram that requires more effort than the algorithm itself. </p>
+:ET
