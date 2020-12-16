@@ -130,15 +130,24 @@ For me, the most frustrating part of software development is keeping track of ho
 3. Dedicate a monitor (in your workspace) for displaying the cheat sheet when using *that* language or framework in a project down the road, and iterate on the cheat-sheet to improve it as you make use of it.
 
 The process can be used on a team's specific technology stack as well; the objective is to create references that are quicker than Google or Stackoverflow so you can get things done faster.&nbsp;  I no longer worry about remembering details on ***how*** to do things because I know ***where*** those details are elucidated in my reference library.&nbsp;  Here are some cheat sheets from the library:
-
+<br/>
+<br/>
 ### TypeScript
 The GitHub repository for this cheat sheet is [here](https://github.com/Richard-Burd/typescript-sandbox){:target="_blank"}
 [
 ![preview od a TypeScript cheat sheet](https://i.imgur.com/UUCN0ER.jpg)
 ](https://drive.google.com/file/d/1TsXNU8dgclsMJDegvNkv3W6qUnM8pUCt/view?usp=sharing){:target="_blank"}
-
+<br/>
+<br/>
 ### Python
 The GitHub repository for this cheat sheet is [here](https://github.com/Richard-Burd/python-3-sandbox){:target="_blank"}
 [
-![preview od a Python cheat sheet](https://i.imgur.com/2FjckVW.jpg)
+![preview of a Python cheat sheet](https://i.imgur.com/2FjckVW.jpg)
 ](https://drive.google.com/file/d/1l2QqzHdfAmrQxy3aPAzy6UsL8Ol36hHZ/view?usp=sharing){:target="_blank"}
+<br/>
+<br/>
+### React Hooks
+The GitHub repository for this cheat sheet is [here](https://github.com/Richard-Burd/react-redux-sandbox){:target="_blank"}
+[
+![preview of a React Hooks cheat sheet](https://i.imgur.com/0EcqUq1.jpg)
+](https://camo.githubusercontent.com/0873849d4c76d9234c2af971f546dd96019c5c28597f1efe7a753aa70f055c73/68747470733a2f2f692e696d6775722e636f6d2f304563715571312e6a7067){:target="_blank"}
