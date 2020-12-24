@@ -135,7 +135,7 @@ The process can be used on a team's specific technology stack as well; the objec
 ### TypeScript
 The GitHub repository for this cheat sheet is [here](https://github.com/Richard-Burd/typescript-sandbox){:target="_blank"}
 [
-![preview od a TypeScript cheat sheet](https://i.imgur.com/UUCN0ER.jpg)
+![preview of a TypeScript cheat sheet](https://i.imgur.com/UUCN0ER.jpg)
 ](https://drive.google.com/file/d/1TsXNU8dgclsMJDegvNkv3W6qUnM8pUCt/view?usp=sharing){:target="_blank"}
 <br/>
 <br/>
