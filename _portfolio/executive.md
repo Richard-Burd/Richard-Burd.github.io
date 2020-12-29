@@ -57,10 +57,10 @@ In the above example, I am working on an idea for maritime sailing where I want 
 
 # Engineering Research Visualizations
 
-These illustrations are prepared for design teams looking to master a particular set of design variables & constraints.&nbsp;  As projects grow more and more complex, the need for a ***record-set*** of research documents can arise to keep track of the information a team must constantly remember and be in agreement on before proceeding with a design's development.&nbsp;
+These illustrations are prepared for design teams looking to master a particular set of design variables & constraints.&nbsp;  As projects grow more and more complex, the need for a ***record-set*** of research documents can arise to keep track of the information a team must constantly remember (and be in agreement on) before proceeding with a design's development.&nbsp;
 
 [
-![Flying wing with CG & NP relationships](https://i.imgur.com/zZhMGQi.jpg)
+![Flying wing with CG & NP relationships](https://i.imgur.com/1Uipt1j.jpg)
 ](https://drive.google.com/file/d/1cOy_WyES-JKWwWHaqkR8IBnC_pGlNGtW/view?usp=sharing){:target="_blank"}
 
 The example above was prepared for engineers interested in the specific effects that airfoil shape will have on the aerodynamic stability of a flying wing.&nbsp;  In this particular case, nothing being discussed is proprietary (or advantageous to competitors) so we can have a look with the client's permission.&nbsp;  The overlapping highlighted arrows allow the reader's eye to follow text that is discussing specific variables in the diagram.&nbsp;  The objective is to have a quick-reference that the team can scan over when they are making design changes that involve any of the variables shown in the diagram.&nbsp;  This saves time that would otherwise be spent flipping through college textbooks or internet websites to retrieve this kind of information that would normally be spread across several sources.&nbsp;  The information here can be reviewed, critiqued, and updated so that everybody on the design team is in agreement on how to understand the material being discussed ***before*** proceeding with design development.&nbsp;

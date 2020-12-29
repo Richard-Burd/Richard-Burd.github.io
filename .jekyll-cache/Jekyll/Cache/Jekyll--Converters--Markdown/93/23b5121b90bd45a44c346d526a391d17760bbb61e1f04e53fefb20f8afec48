@@ -1,4 +1,4 @@
-I"O<p>The images on this page are examples of work tailored for strategic decision makers.   Although many tools currently exist  for organizing &amp; displaying information, there are many situations where you may need to combine the functionality of two or more such tools in order to see the bigger picture.   These situations merit customized visualization so that everybody on your team can understand <strong><em>all</em></strong> of the relevant variables effecting key decisions, rather than some parochial subset of such variables. </p>
+I"2%<p>The images on this page are examples of work tailored for strategic decision makers.   Although many tools currently exist  for organizing &amp; displaying information, there are many situations where you may need to combine the functionality of two or more such tools in order to see the bigger picture.   These situations merit customized visualization so that everybody on your team can understand <strong><em>all</em></strong> of the relevant variables effecting key decisions, rather than some parochial subset of such variables. </p>
 
 <hr />
 
@@ -47,4 +47,16 @@
 <p><img src="https://i.imgur.com/1cVhZKs.jpg" alt="file formation" /></p>
 
 <p>In the above example, I am working on an idea for maritime sailing where I want to use weather forecasting to find an optimal sailing route from point <strong><em>a</em></strong> to point <strong><em>b</em></strong>.   Although this idea is not entirely new, I want to take a yet untried approach that leverages some AI algorithms for decision-making.  This illustration will show sensors imputing data to the hardware, the processing logic the hardware must execute, and the overall software architecture required to do that processing.   This will allow product managers, business developers, and engineers (from multiple disciplines) to gain a bird’s eye view of the overall concept and assess its feasibility in terms of both market demand and development cost.   The graphic is blurred out to protect my intellectual property but you can still get the main idea of how these graphics would work. </p>
+
+<hr />
+
+<h1 id="engineering-research-visualizations">Engineering Research Visualizations</h1>
+
+<p>These illustrations are prepared for design teams looking to master a particular set of design variables &amp; constraints.   As projects grow more and more complex, the need for a <strong><em>record-set</em></strong> of research documents can arise to keep track of the information a team must constantly remember (and be in agreement on) before proceeding with a design’s development. </p>
+
+<p><a href="https://drive.google.com/file/d/1cOy_WyES-JKWwWHaqkR8IBnC_pGlNGtW/view?usp=sharing" target="_blank">
+<img src="https://i.imgur.com/zZhMGQi.jpg" alt="Flying wing with CG &amp; NP relationships" />
+</a></p>
+
+<p>The example above was prepared for engineers interested in the specific effects that airfoil shape will have on the aerodynamic stability of a flying wing.   In this particular case, nothing being discussed is proprietary (or advantageous to competitors) so we can have a look with the client’s permission.   The overlapping highlighted arrows allow the reader’s eye to follow text that is discussing specific variables in the diagram.   The objective is to have a quick-reference that the team can scan over when they are making design changes that involve any of the variables shown in the diagram.   This saves time that would otherwise be spent flipping through college textbooks or internet websites to retrieve this kind of information that would normally be spread across several sources.   The information here can be reviewed, critiqued, and updated so that everybody on the design team is in agreement on how to understand the material being discussed <strong><em>before</em></strong> proceeding with design development. </p>
 :ET
