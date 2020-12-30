@@ -23,18 +23,18 @@ The firm's product phase gate scheme is laid out on top of the graphic.&nbsp;  T
 ---
 
 # Conceptual Modeling
-Below is an example of a conceptual model.&nbsp;  Conceptual models have been popular in academia for half a century and are now being used in the business world as well.&nbsp;  They illustrate the relationships between variables in a complex system without necessarily quantifying any of those variables, and often serve as a stepping stone to building [financial models](https://en.wikipedia.org/wiki/Financial_modeling){:target="_blank"} and other business intelligence tools.&nbsp;  Conceptual models clarify trade-offs between competing priorities of engineers, sales representatives, and business developers so that stakeholders gain a 'satellite view' of the situation.
+Below is an example of a conceptual model.&nbsp;  Conceptual models have been popular in academia for half a century and are now being used in the business world as well.&nbsp;  They illustrate the relationships between variables in a complex system without necessarily quantifying any of those variables, and often serve as a stepping stone to building [financial models](https://en.wikipedia.org/wiki/Financial_modeling){:target="_blank"} and other business intelligence tools.&nbsp;  Conceptual models clarify trade-offs between competing priorities for engineers, sales representatives, and business developers so that stakeholders gain a 'satellite view' of the situation.
 
 [
 ![a conceptual model of the DoD tactics problem](https://i.imgur.com/nz6OLod.jpg)
 ](https://drive.google.com/file/d/1rfocN4U9ryb-f-Bcz8MBOomwHPrF6QAI/view?usp=sharing){:target="_blank"}
 
-The conceptual model above explains the problem of adhering to Department of Defense (DoD) doctrine when training ground forces for a combat deployment.&nbsp;  In 2012, the DoD's Army Infantry doctrine called for several troop movements to be used in Afghanistan such as the [squad column](https://www.globalsecurity.org/military/library/policy/army/fm/3-21-9/chap3.htm#fig3-10){:target="_blank"} with [fireteam wedges](https://en.wikipedia.org/wiki/Flying_wedge){:target="_blank"}.&nbsp; While this formation theoretically provided the best chances for victory in a firefight, it led to confusion on foot patrols as Soldiers lost sight of one another among crop fields and other obstacles.&nbsp;  In several instances, Soldiers ended up lost and unaccounted for which in turned spawned rescue operations to go find them!&nbsp;
+The conceptual model above explains the problem of adhering to Department of Defense (DoD) doctrine when training ground forces for a combat deployment.&nbsp;  In 2012, the DoD's Army Infantry doctrine called for several troop movements to be used in Afghanistan such as the [squad column](https://www.globalsecurity.org/military/library/policy/army/fm/3-21-9/chap3.htm#fig3-10){:target="_blank"} with [fireteam wedges](https://en.wikipedia.org/wiki/Flying_wedge){:target="_blank"}, and while this formation theoretically provided the best chances for victory in a firefight, it led to confusion on foot patrols as Soldiers lost sight of one another among crop fields and other obstacles.&nbsp;  In several instances, Soldiers ended up lost and unaccounted for which in turned spawned rescue operations to go find them!&nbsp;
 
 This angered top brass who ordered their patrols to use a much simpler [file formation](https://www.globalsecurity.org/military/library/policy/army/fm/3-21-9/chap3.htm#fig3-9){:target="_blank"} instead, and while this enabled Soldiers to easily follow the person in front of them without becoming disoriented, it made returning fire to the enemy much more difficult and lead to confusion in firefights.&nbsp;
 
 In order to prevent these circumstances, Army leaders could use the diagram above as follows:
-1. Assess how far above or below the Army average their group of Soldiers are in terms of motivation to learn & discipline (***v***)
+1. Assess how far above or below the Army average their particular group of Soldiers are in terms of both motivation to learn, as well as overall discipline (***v***)
 2. Based on ***v***, estimate the time they need (***x***) to reach their end goal of ***p***.
 3. Knowing roughly how much time ***p*** will require, determine where they will *really* end up at the end of their allotted time in the training calendar (***t***)
 4. Given that ***t*** is probably not going to be a good place to be in terms of combat effectiveness, what modifications (to the DoD doctrine) could be made such that the group is combat effective to the level of ***u***, which is *some* level of effectiveness greater than ***t***
@@ -47,11 +47,19 @@ This method may have shown Army leaders in 2012 that they should spend ample tim
 
 # Schematic Visualization
 
-Schematic Visualizations are used to coordinate two or more disciplines and help business developers understand the product or service being considered.&nbsp;  They differ from ordinary schematics in that they display information specifically for strategic decision makers rather than engineers or manufacturers.&nbsp;  Detailed schematic visualization will clarify product requirements early on in the exploratory phase of initial design, and help prevent scope creep later in the product development.&nbsp;  At a minimum they must clearly illustrate ***all of the relevant variables, to all of the relevant stakeholders*** so that nobody is surprised to learn something they should have known about the product sooner.&nbsp;
+Schematic visualizations can be used to coordinate two or more design disciplines and help business developers understand the product or service being considered.&nbsp;  They differ from ordinary schematics in that they capture design details across multiple fields that are normally not paired together in a single program.&nbsp;  [Altium](https://www.altium.com/){:target="_blank"} may show you a PCBA, and your mechanical enclosure might be viewable in [SolidView](https://www.solidworks.com/partner-product/solidview){:target="_blank"}, but what if you want to see how those two interact and also display critical software & firmware information with the goal of cross-functional coordination across an entire embedded system design team?&nbsp;
+
+ Detailed schematic visualizations will clarify product requirements early on in the exploratory phase of initial design, and help prevent scope creep later in the product development.&nbsp;  At a minimum they must clearly illustrate ***all of the relevant variables, to all of the relevant stakeholders*** so that nobody is surprised to learn something they should have known about the product sooner.&nbsp;
 
 ![file formation](https://i.imgur.com/1cVhZKs.jpg)
 
 In the above example, I am working on an idea for maritime sailing where I want to use weather forecasting to find an optimal sailing route from point ***a*** to point ***b***.&nbsp;  Although this idea is not entirely new, I want to take a yet untried approach that leverages some AI algorithms for decision-making.&nbsp; This illustration will show sensors imputing data to the hardware, the processing logic the hardware must execute, and the overall software architecture required to do that processing.&nbsp;  This will allow product managers, business developers, and engineers (from multiple disciplines) to gain a bird's eye view of the overall concept and assess its feasibility in terms of both market demand and development cost.&nbsp;  The graphic is blurred out to protect my intellectual property but you can still get the main idea of how these graphics would work.&nbsp;
+
+---
+
+# Executive Dashboards
+
+Executive dashboards are used to give strategic decisionmakers an even more abstracted, bird's eye view of a project then what schematic visualizations can provide.&nbsp;  Their objective is to show managers what they can get away with when they pull on various levers of power to achieve desired effects, and what the subsequent outcomes are likely to be.   
 
 ---
 
