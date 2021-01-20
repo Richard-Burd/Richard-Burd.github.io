@@ -1,0 +1,6 @@
+RewriteEnginer on
+RewriteCond %{THE REQUEST} /([^.]+)\.html [NC]
+RewriteRule ^ /% [NC,L,R]
+
+RewriteCond %{REQUEST_FILENAME}.html -f
+RewriteRule ^ %{REQUEST_URI}.html {NC,L]}
