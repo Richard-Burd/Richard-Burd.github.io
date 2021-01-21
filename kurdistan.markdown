@@ -55,6 +55,10 @@ The splats are deployed for takeoff and landing *(as shown above)* to enable lam
 
 ![side view with splats retracted](https://i.imgur.com/hSWj34T.jpg)
 
+The camera gimbal was designed to be 3D printed has a one-axis pan.&nbsp;  It uses the same servo type as the wing elevons & wing splats, and although this arrangement is a bit heavy, the servo redundancy means any spare servo can be used to replace any servo that has gone bad on the PeshWing.&nbsp;
+
+![side view with splats retracted](https://i.imgur.com/EQrKTh3.jpg)
+
 When the PeshWing comes in for an aggressive combat landing, the splats are deployed as airbrakes that enable steep descent without over-speeding.
 
 ![three amigos w/ PeshWing drone](https://i.imgur.com/jyervAf.jpg)
