@@ -215,7 +215,7 @@ input, select, textarea {
 
 	h1 {
 		font-family: "Source Sans Pro", Helvetica, sans-serif;
-		font-size: 5rem;
+		font-size: 3rem; /* burd change from 5rem */
 		font-weight: 700;
 		letter-spacing: -0.05em;
 		line-height: 1.1;
@@ -274,7 +274,7 @@ input, select, textarea {
 	@media screen and (max-width: 360px) {
 
 		h1 {
-			font-size: 3.75rem;
+			font-size: 3rem; /* burd change from 3.75rem */
 		}
 
 		h2 {
