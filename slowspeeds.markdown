@@ -1,6 +1,8 @@
 ---
-layout: landing
+layout: page
+title: Software Illustration & Documentation
 header-img: "img/banners/home.png"
+exclude: true
 ---
 
 ## Software Illustration & Documentation
