@@ -1,4 +1,4 @@
-I"p$<h3 id="background">Background</h3>
+I"g%<h3 id="background">Background</h3>
 <p>In 2013, a group of bad guys with awesome haircuts took over some territory and committed a few <a href="https://en.wikipedia.org/wiki/Genocide_of_Yazidis_by_ISIL">war crimes</a>.   They called themselves the <a href="https://en.wikipedia.org/wiki/Islamic_State_of_Iraq_and_the_Levant">Islamic State of Iraq and Syria</a>, and later the Islamic State, but their original name stuck and they became forever known by their Acronym ‘ISIS.’   President Obama preferred to call them ISIL but let’s not get into that because it’s all same group, just one that has too many names.</p>
 
 <p>Anyway, at this time the U.S. Government was weary of getting itself involved in yet another confusing desert war so they sort-of stayed out of it but at the same time, they were also sort-of involved, albeit in a limited capacity.  This lack of full commitment led to a situation in which the indigenous Kurds were left to fend for themselves against ISIS, and that in turn spurred a volunteer movement of western adventurers who made their way to Kurdistan in order to help the Kurds in their fight against ISIS. </p>
@@ -21,14 +21,12 @@
 <h3 id="introducing-the-peshwing">Introducing the PeshWing</h3>
 <p>The PeshWing is named after the Kurdish <a href="https://en.wikipedia.org/wiki/Peshmerga">Peshmerga</a>,  the national army of the <a href="https://en.wikipedia.org/wiki/Kurdistan_Regional_Government">Kurdistan Regional Government</a>.   This was a low-cost hack to the problem of how to re-create something like the <a href="https://en.wikipedia.org/wiki/AeroVironment_RQ-11_Raven">RQ-11 Raven UAV system</a>.   The PeshWing could do about 75% of what the Kurds needed the Raven to do, but for a fraction of the price.  Below is a one-page bilingual brief for Kurdish commanders to understand the system:</p>
 
-<p><a href="https://drive.google.com/file/d/11NvkIcxMQvhy-umrxWHQeY0-i2WYY552/view?usp=sharing" target="_blank">
-<img src="/img/previews/kurdistan/peshbrief.jpg" alt="peshwing brief" />
-</a></p>
+<p><img src="https://i.imgur.com/fxzw5hW.jpg" alt="PeshWing Brief" /></p>
 
 <p>The main idea here was to build an expendable airframe as opposed to a ruggedized one. The wings are made out of 3/16 inch foamcore board and the fuselage is made from 1 inch extruded polystyrene (XPS) board. The entire airframe is composed of modular ‘cuts’ that are made from these materials and those cuts are in turn designed to fit into Tupperware bins that are themselves small enough to fit into airline luggage bags for safe travel to the warzone. In short, this jigsaw-puzzle approach to the airframe design was borne out of logistical considerations more than aerodynamic ones. This modular approach also made field repairs quite easy. The entire thing is put together with hot-glue and packing tape; no bolts, screws, or special tooling are required to build or repair the PeshWing’s airframe. </p>
 
 <p><a href="https://drive.google.com/file/d/1AkJgPMN3NgkpqPPmoYMYnH2lZecQDPwg/view?usp=sharing" target="_blank">
-<img src="/img/previews/kurdistan/2D_peshwing.jpg" alt="Page 1 of 5 from the PeshWing 2D fab documents" />
+<img src="https://i.imgur.com/No09kIi.jpg" alt="Page 1 of 5 from the PeshWing 2D fab documents" />
 </a></p>
 
 <p>The PeshWing can carry one battery for shorter range sorties of 0 to 8 kilometers and two for longer ones exceeding 8 kilometers.  With a 2-battery payload it can travel a maximum of 15 kilometers giving it a comfortable 7 kilometer combat radius depending on what the winds are doing. </p>
@@ -44,15 +42,17 @@ Splats are a portmanteau that combine the functionality of <a href="https://en.w
 
 <p><img src="https://i.imgur.com/4NJJ9EH.jpg" alt="side view of airfoil effect w/splats" /></p>
 
-<p>The splats are deployed for takeoff and landing <em>(as shown above)</em> to enable laminar flow on the upper surface of the wing as the wing meets the air at higher angles of attack.   The splats are then retracted once the PeshWing is in level cruising flight <em>(as shown below)</em> so as to reduce drag.   The reason this works is because of the small <a href="https://en.wikipedia.org/wiki/Chord_%28aeronautics%29" target="_blank">chord</a> length between the leading &amp; training edges of the aircraft.   For reasons beyond this photo essay, splats would not work on a larger, manned aircraft, but they <em>do</em> work on smaller, hand-held aircraft.</p>
+<p>The splats are deployed for takeoff and landing <em>(as shown above)</em> to enable laminar flow on the upper surface of the wing as the wing meets the air at higher angles of attack.   The splats are then retracted once the PeshWing is in level cruising flight <em>(as shown below)</em> so as to reduce drag.   The reason this works is because of the small <a href="https://en.wikipedia.org/wiki/Chord_%28aeronautics%29" target="_blank">chord</a> length between the leading &amp; training edges of the aircraft.   When the PeshWing comes in for an aggressive combat landing, the splats are deployed as airbrakes that enable steep descent without over-speeding.   For reasons beyond this photo essay, splats would not work on a larger, manned aircraft, but they <em>do</em> work on smaller, hand-held aircraft. </p>
 
 <p><img src="https://i.imgur.com/hSWj34T.jpg" alt="side view with splats retracted" /></p>
 
 <p>The camera gimbal was designed to be 3D printed and it has a one-axis pan.   It uses the same servo type as the wing elevons &amp; wing splats, and although this arrangement is a bit heavy, the servo redundancy means any spare servo can be used to replace any servo that has gone bad on the PeshWing. </p>
 
-<p><img src="https://i.imgur.com/EQrKTh3.jpg" alt="side view with splats retracted" /></p>
+<p><img src="https://i.imgur.com/EQrKTh3.jpg" alt="1-axis 3D printed GoPro camera gimbal" /></p>
 
-<p>When the PeshWing comes in for an aggressive combat landing, the splats are deployed as airbrakes that enable steep descent without over-speeding.</p>
+<p>Deploying with a fully rendered set of schematics allowed for easy maintenance &amp; repair.  Avionics systems and subsystems were chosen for reliability over capability and cost.   Multiple camera systems could capture photos and video and varying angles on the same sortie. </p>
+
+<p><img src="https://i.imgur.com/EDh9vEP.jpg" alt="schematic wiring diagram" /></p>
 
 <p><img src="https://i.imgur.com/jyervAf.jpg" alt="three amigos w/ PeshWing drone" /></p>
 

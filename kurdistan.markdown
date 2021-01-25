@@ -28,14 +28,12 @@ The solution was to refine my [flying crash-test dummy](https://drive.google.com
 ### Introducing the PeshWing
 The PeshWing is named after the Kurdish [Peshmerga](https://en.wikipedia.org/wiki/Peshmerga),  the national army of the [Kurdistan Regional Government](https://en.wikipedia.org/wiki/Kurdistan_Regional_Government).&nbsp;  This was a low-cost hack to the problem of how to re-create something like the [RQ-11 Raven UAV system](https://en.wikipedia.org/wiki/AeroVironment_RQ-11_Raven).&nbsp;  The PeshWing could do about 75% of what the Kurds needed the Raven to do, but for a fraction of the price.&nbsp; Below is a one-page bilingual brief for Kurdish commanders to understand the system:
 
-[
-![peshwing brief](/img/previews/kurdistan/peshbrief.jpg)
-](https://drive.google.com/file/d/11NvkIcxMQvhy-umrxWHQeY0-i2WYY552/view?usp=sharing){:target="_blank"}
+![PeshWing Brief](https://i.imgur.com/fxzw5hW.jpg)
 
 The main idea here was to build an expendable airframe as opposed to a ruggedized one. The wings are made out of 3/16 inch foamcore board and the fuselage is made from 1 inch extruded polystyrene (XPS) board. The entire airframe is composed of modular ‘cuts’ that are made from these materials and those cuts are in turn designed to fit into Tupperware bins that are themselves small enough to fit into airline luggage bags for safe travel to the warzone. In short, this jigsaw-puzzle approach to the airframe design was borne out of logistical considerations more than aerodynamic ones. This modular approach also made field repairs quite easy. The entire thing is put together with hot-glue and packing tape; no bolts, screws, or special tooling are required to build or repair the PeshWing's airframe.&nbsp;
 
 [
-![Page 1 of 5 from the PeshWing 2D fab documents](/img/previews/kurdistan/2D_peshwing.jpg)
+![Page 1 of 5 from the PeshWing 2D fab documents](https://i.imgur.com/No09kIi.jpg)
 ](https://drive.google.com/file/d/1AkJgPMN3NgkpqPPmoYMYnH2lZecQDPwg/view?usp=sharing){:target="_blank"}
 
 The PeshWing can carry one battery for shorter range sorties of 0 to 8 kilometers and two for longer ones exceeding 8 kilometers.&nbsp; With a 2-battery payload it can travel a maximum of 15 kilometers giving it a comfortable 7 kilometer combat radius depending on what the winds are doing.&nbsp;
@@ -51,15 +49,17 @@ Splats are a portmanteau that combine the functionality of [spoilers](https://en
 
 ![side view of airfoil effect w/splats](https://i.imgur.com/4NJJ9EH.jpg)
 
-The splats are deployed for takeoff and landing *(as shown above)* to enable laminar flow on the upper surface of the wing as the wing meets the air at higher angles of attack.&nbsp;  The splats are then retracted once the PeshWing is in level cruising flight *(as shown below)* so as to reduce drag.&nbsp;  The reason this works is because of the small [chord](https://en.wikipedia.org/wiki/Chord_%28aeronautics%29){:target="_blank"} length between the leading & training edges of the aircraft.&nbsp;  For reasons beyond this photo essay, splats would not work on a larger, manned aircraft, but they *do* work on smaller, hand-held aircraft.
+The splats are deployed for takeoff and landing *(as shown above)* to enable laminar flow on the upper surface of the wing as the wing meets the air at higher angles of attack.&nbsp;  The splats are then retracted once the PeshWing is in level cruising flight *(as shown below)* so as to reduce drag.&nbsp;  The reason this works is because of the small [chord](https://en.wikipedia.org/wiki/Chord_%28aeronautics%29){:target="_blank"} length between the leading & training edges of the aircraft.&nbsp;  When the PeshWing comes in for an aggressive combat landing, the splats are deployed as airbrakes that enable steep descent without over-speeding.&nbsp;  For reasons beyond this photo essay, splats would not work on a larger, manned aircraft, but they *do* work on smaller, hand-held aircraft.&nbsp;
 
 ![side view with splats retracted](https://i.imgur.com/hSWj34T.jpg)
 
 The camera gimbal was designed to be 3D printed and it has a one-axis pan.&nbsp;  It uses the same servo type as the wing elevons & wing splats, and although this arrangement is a bit heavy, the servo redundancy means any spare servo can be used to replace any servo that has gone bad on the PeshWing.&nbsp;
 
-![side view with splats retracted](https://i.imgur.com/EQrKTh3.jpg)
+![1-axis 3D printed GoPro camera gimbal](https://i.imgur.com/EQrKTh3.jpg)
 
-When the PeshWing comes in for an aggressive combat landing, the splats are deployed as airbrakes that enable steep descent without over-speeding.
+Deploying with a fully rendered set of schematics allowed for easy maintenance & repair.&nbsp; Avionics systems and subsystems were chosen for reliability over capability and cost.&nbsp;  Multiple camera systems could capture photos and video and varying angles on the same sortie.&nbsp;
+
+![schematic wiring diagram](https://i.imgur.com/EDh9vEP.jpg)
 
 ![three amigos w/ PeshWing drone](https://i.imgur.com/jyervAf.jpg)
 
