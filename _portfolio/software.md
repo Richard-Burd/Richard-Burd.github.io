@@ -91,7 +91,7 @@ The default ground station control applications for ArduPilot are [Mission Plann
 
 This application utilizes the [React Router](https://reactrouter.com/web/guides/quick-start) to create RESTful routs in lieu of a single page application.&nbsp;  It also makes use of both functional as well as container components, and Redux to manage state .&nbsp;  A Rails API completes the backend where users can store their parameter settings for later use.
 
-![high level software architecture diagram](https://i.imgur.com/uyd91GW.jpg)
+![high level software architecture diagram](https://i.imgur.com/0JXqX0y.jpg)
 
 ---
 ---
