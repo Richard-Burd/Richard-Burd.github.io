@@ -127,7 +127,7 @@ Once we get to the location 13 above (the one highlighted in green)  we see it g
 <p>In the end, the value this algorithm brings to the table is the fact that it is object oriented and can therefore be expanded upon to include extended functionality.   For example, we could add a <strong><em>z</em></strong> axis to this thing and find the LCS between three strings instead of just 2.   We could also extend the functionality to exclude certain characters from the LCS, so for example we could say we want the LCS that does <strong><em>not</em></strong> include a letter <strong><em>‘q’</em></strong> for example.   This could have all sorts of use cases for finding things like DNA sequences or searching for signal patterns while defining certain inputs as noise up front that should be excluded from the return value(s). </p>
 
 <p>Finally, to close up I have one last diagram that gives a comprehensive overview of everything discussed in this blog post.   The code being illustrated here is the exact same code as what is in the <a href="https://repl.it/@Richard_Burd/Longest-Common-Subsequence#index.js" target="_blank">REPL</a>. 
-<a href="https://drive.google.com/file/d/1VgipZbzKHnayMyBrFDpEqJ-kJwSb-tx1/view?usp=sharing" target="_blank">
-<img src="https://i.imgur.com/pOI0lvk.jpg" alt="Complete LCS diagram" />
+<a href="https://drive.google.com/file/d/1KHOPkyEvREjo2Bct3BNBS49Z78LA1IwS/view?usp=sharing" target="_blank">
+<img src="https://i.imgur.com/OYgPdUa.jpg" alt="Complete LCS diagram" />
 </a></p>
 :ET

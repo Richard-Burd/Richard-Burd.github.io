@@ -128,5 +128,5 @@ In the end, the value this algorithm brings to the table is the fact that it is 
 
 Finally, to close up I have one last diagram that gives a comprehensive overview of everything discussed in this blog post.&nbsp;  The code being illustrated here is the exact same code as what is in the [REPL](https://repl.it/@Richard_Burd/Longest-Common-Subsequence#index.js){:target="_blank"}.&nbsp;
 [
-![Complete LCS diagram](https://i.imgur.com/pOI0lvk.jpg)
-](https://drive.google.com/file/d/1VgipZbzKHnayMyBrFDpEqJ-kJwSb-tx1/view?usp=sharing){:target="_blank"}
+![Complete LCS diagram](https://i.imgur.com/OYgPdUa.jpg)
+](https://drive.google.com/file/d/1KHOPkyEvREjo2Bct3BNBS49Z78LA1IwS/view?usp=sharing){:target="_blank"}
