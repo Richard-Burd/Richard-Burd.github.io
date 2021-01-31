@@ -42,7 +42,7 @@ menu: main
     </div>
     <br>
     <div class="about-text">
-      My superpower involves what I call <i>data & schematic visualization.</i>  This involves the creation of images & video that explain complex things to many different kinds of people.  I prepare briefings for C-level decision makers, render schematics that synergize multiple engineering disciplines,  and do technical documentation for manufacturers, customers, and internal colleagues.  
+      My superpower involves what I call <a href="../consulting" target="blank" style="color: #2471a3 ;"><u><i>schematic visualization.</i></u></a>  This involves the creation of images & video that explain complex things to many different kinds of people.  I prepare briefings for C-level decision makers, render schematics that synergize multiple engineering disciplines,  and do technical documentation for manufacturers, customers, and internal colleagues.  
     </div>
     <br>
     <div class="about-text">

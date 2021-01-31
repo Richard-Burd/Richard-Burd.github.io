@@ -47,13 +47,12 @@ This method may have shown Army leaders in 2012 that they should spend ample tim
 
 # Schematic Visualization
 
-Schematic visualizations can be used to coordinate two or more design disciplines and help business developers understand the product or service being considered.&nbsp;  They differ from ordinary schematics in that they capture design details across multiple fields that are normally not paired together in a single program.&nbsp;  [Altium](https://www.altium.com/){:target="_blank"} may show you a PCBA, and your mechanical enclosure might be viewable in [SolidView](https://www.solidworks.com/partner-product/solidview){:target="_blank"}, but what if you want to see how those two interact and also display critical software & firmware information with the goal of cross-functional coordination across an entire embedded system design team?&nbsp;
+<a href="../../consulting" target="blank" style="color: #2471a3 ;"><u><i>Schematic visualizations</i></u></a> can be used to coordinate two or more design disciplines and help business developers understand the product or service being considered.&nbsp;  They differ from ordinary schematics in that they capture design details across multiple fields that are normally not paired together in a single program.&nbsp;  [Altium](https://www.altium.com/){:target="_blank"} may show you a PCBA, and your mechanical enclosure might be viewable in [SolidView](https://www.solidworks.com/partner-product/solidview){:target="_blank"}, but what if you want to see how those two interact and also display critical software & firmware information with the goal of cross-functional coordination across an entire embedded system design team?&nbsp;
 
  Detailed schematic visualizations will clarify product requirements early on in the exploratory phase of initial design, and help prevent scope creep later in the product development.&nbsp;  At a minimum they must clearly illustrate ***all of the relevant variables, to all of the relevant stakeholders*** so that nobody is surprised to learn something they should have known about the product sooner.&nbsp;
-
-![file formation](https://i.imgur.com/1cVhZKs.jpg)
-
-In the above example, I am working on an idea for maritime sailing where I want to use weather forecasting to find an optimal sailing route from point ***a*** to point ***b***.&nbsp;  Although this idea is not entirely new, I want to take a yet untried approach that leverages some AI algorithms for decision-making.&nbsp; This illustration will show sensors imputing data to the hardware, the processing logic the hardware must execute, and the overall software architecture required to do that processing.&nbsp;  This will allow product managers, business developers, and engineers (from multiple disciplines) to gain a bird's eye view of the overall concept and assess its feasibility in terms of both market demand and development cost.&nbsp;  The graphic is blurred out to protect my intellectual property but you can still get the main idea of how these graphics would work.&nbsp;
+ [
+![people standing around a treasure map](../../documentation/images/gallery/thumbs/treasure-map-thumb.jpg)
+](../../consulting){:target="_blank"}
 
 ---
 
