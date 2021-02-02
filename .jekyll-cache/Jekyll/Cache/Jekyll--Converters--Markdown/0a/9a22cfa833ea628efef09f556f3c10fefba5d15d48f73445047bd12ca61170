@@ -84,7 +84,7 @@
 
 <p>This application utilizes the <a href="https://reactrouter.com/web/guides/quick-start">React Router</a> to create RESTful routs in lieu of a single page application.   It also makes use of both functional as well as container components, and Redux to manage state .   A Rails API completes the backend where users can store their parameter settings for later use.</p>
 
-<p><img src="https://i.imgur.com/0JXqX0y.jpg" alt="high level software architecture diagram" /></p>
+<p><img src="https://i.imgur.com/Es4OO6C.jpg" alt="high level software architecture diagram" /></p>
 
 <hr />
 <hr />
