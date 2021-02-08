@@ -25,6 +25,12 @@ to create a memory palace, or more accurately, a memory terrain-map within which
  6. [Python Threading Tutorial by Corey Schafer](https://www.youtube.com/watch?v=IEEhzQoKtQU){:target="_blank"}
  7. [Python Tutorials : Threading Beginners by PyMoondra](https://www.youtube.com/watch?v=bnm5_GH04fM){:target="_blank"}
 
+Here is a detail from the section on class constructors:&nbsp;
+
+[
+![preview of a Python cheat sheet](https://i.imgur.com/SJAkoqg.jpg)
+](https://drive.google.com/file/d/1l2QqzHdfAmrQxy3aPAzy6UsL8Ol36hHZ/view?usp=sharing){:target="_blank"}
+
 Once the user becomes familiar with the different sections of this cheat sheet, their brain's neural pathways will begin to associate different programming functionalities with different regions (and sub-regions) of the cheat sheet itself.&nbsp;  Actual code is shown in `code font` inside of either green or blue boxes; the green and blue colors are used to show code blocks that are unrelated to each other (i.e. blue-box code is different than green-box code) and code is always on the left-hand side of a yellow section block.&nbsp;  The actual notes use a dark-red comic font and are larger than the `code font` because the user scans the notes first, then when ze finds notes describing what ze is looking for, ze can zoom into the code to see how it works.&nbsp;  Python keywords such as `for`, `break`, `continue`, or, `lambda` are shown in larger light-brown Calibri font, along with other categories and definitions.&nbsp;  This enables the user to quick-scan the page for these terms and find them instantly.&nbsp;  Eventually, the user's brain remembers where these keywords are located, and the user can instantly lookup information as needed, rather than memorize all of Python's syntax.&nbsp;  Overlapping highlights make it even easier to find the exact code that a given set of notes are describing.&nbsp;  Additionally, the blue and green code blocks are subdivided into smaller boxes to highlight different levels of [scope](https://en.wikipedia.org/wiki/Scope_%28computer_science%29){:target="_blank"}
 whenever relevant.&nbsp; Several elements have arrows pointing to other elements within the same, and sometimes within different - yellow section blocks.&nbsp;  This network of arrows form a [zettelkasten](https://en.wikipedia.org/wiki/Zettelkasten){:target="_blank"}
 of topics that reference each other in a distributed network of sorts.&nbsp;
