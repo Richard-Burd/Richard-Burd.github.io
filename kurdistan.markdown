@@ -14,7 +14,7 @@ Anyway, at this time the U.S. Government was weary of getting itself involved in
 
 Kurdish military commanders were looking for western military veterans with specialized skill sets that could be utilized in their low budget fight against ISIS.&nbsp;  Most such volunteers were former combat medics or who had served with NATO militaries in Iraq and Afghanistan.&nbsp;  A few had combat arms expertise as well.&nbsp;  I was brought on board because I could translate between English and Arabic.&nbsp;  Although Kurds are not Arabs and have their own language, Arabic is a sort-of lingua franca throughout the Middle East.
 
-Another reason I came on board was to fly reconnaissance missions with a home built UAV that could fly long distances and be maintained in an austere environment.&nbsp;   I had no such drone so I had to design, test, and build one quickly in a 2 month timeframe.&nbsp
+Another reason I came on board was to fly reconnaissance missions with a home built UAV that could fly long distances and be maintained in an austere environment.&nbsp;   I had no such drone so I had to design, test, and build one quickly in a 2 month timeframe.&nbsp;
 
 ---
 
