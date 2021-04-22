@@ -18,7 +18,7 @@ The takeaway here is that we can observe two mathematical functions with a big O
 
 Now let's consider the following python pseudocode in figure 2 below:
 
-![figure one](https://i.imgur.com/mBr9POG.png)
+![figure two](https://i.imgur.com/YaAurB4.png)
 
 Here we see what can happen when conditionals are introduced; the big O of our `python_function()` is basically useless and doesn't tell us anything about our overall performance.&nbsp; This is because the big O here is only relevant when the input variable (x) has a value greater than or equal to 10, and is also less than 20, and yet the `python_function()` accepts values above and below that range.&nbsp;   A rule of thumb here is that: *if and when a function contains conditionals that evaluate its own input variable, the big O notation of that function might not be useful for evaluating efficiency*.&nbsp;  Instead, we would want to valuate the subcomponents separately
 
