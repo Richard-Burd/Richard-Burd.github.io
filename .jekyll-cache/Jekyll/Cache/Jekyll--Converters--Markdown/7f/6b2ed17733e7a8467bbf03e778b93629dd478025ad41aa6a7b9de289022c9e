@@ -1,4 +1,4 @@
-I"d!<p>Let’s start out by looking at a screenshot from <a href="https://www.youtube.com/watch?v=5yJ_QLec0Lc" target="_blank">Jon Krohn’s excellent video</a> on big O notation which I would recommend watching if you are totally unfamiliar with this topic:</p>
+I"�%<p>Let’s start out by looking at a screenshot from <a href="https://www.youtube.com/watch?v=5yJ_QLec0Lc" target="_blank">Jon Krohn’s excellent video</a> on big O notation which I would recommend watching if you are totally unfamiliar with this topic:</p>
 
 <p><img src="https://i.imgur.com/pUzkOKi.png" alt="big o notations arranged on a grid" /></p>
 
@@ -6,7 +6,7 @@
 
 <p>In <em>Figure-1</em> below we have a series of functions you can view <a href="https://www.desmos.com/calculator/nuzg9tvbl9" target="_blank">here on desmos.com</a> in more detail.</p>
 
-<p><img src="https://i.imgur.com/TvTA0AH.png" alt="figure one" />
+<p><img src="https://i.imgur.com/Wn80aNK.png" alt="figure one" />
 The takeaway here is that we can observe two mathematical functions with a big O notation of <em>O(n<sup>2</sup>)</em> that scale worse than the function with a big O notation of <em>O(n!)</em>.   At the same time, we can also see three mathematical functions where the opposite is true.   Now to be sure, all of the <em>O(n<sup>2</sup>)</em> functions will scale better than the single <em>O(n!)</em> function <strong><em>if</em></strong> all of the the x and y values (on the grid) were to go to infinity.   Now imagine two computer programming functions that followed trajectories similar to what is shown above; in such a circumstance, the computer programming function with the optimal big O notation might not be the most efficient one within the space shown. </p>
 
 <p>Now let’s consider the following python pseudocode in figure 2 below:</p>
@@ -40,9 +40,9 @@ The takeaway here is that we can observe two mathematical functions with a big O
 
 <p>The truth is that when your trying to choose what function to use among a competing set of functions, the big O notation really doesn’t tell you much at all in terms of which function you should choose, <strong><em>this is because the input variables you’ll be passing to those functions will not necessarily result in the y-axis reaching infinity</em></strong>.   Shen Huang found something along these lines when he discovered a function with a big O of <em>O(n &amp; log(n))</em> that was slower than another function doing the same work, but having a big O of <em>O(n<sup>2</sup>)</em>.   The raw code for his two functions is available <a href="https://trinket.io/python/87a3166026" target="_blank">here</a> and you can read about it at the bottom of this blog post <a href="https://www.freecodecamp.org/news/big-o-notation-why-it-matters-and-why-it-doesnt-1674cfa8a23c/#Why-BigO-doesn%E2%80%99t-matter" target="_blank">here</a> under subsection 7: <strong><em>Why Big O doesn’t matter</em></strong> . </p>
 
-<p>In fact, in figure y below, we see that if we plot our three functions from figure 6 above, we would propably</p>
+<p>In the next figure, we see a more accurate depiction of what you would get if you were to do this sort-of experiment in a real world setting:</p>
 
 <p><img src="https://i.imgur.com/FSsmbdS.png" alt="figure seven" /></p>
 
-<p>You can use GeoGebra to plot function performance and do liner regression analysis and/or curve fitting on the results.</p>
+<p>You can use an online tool like <a href="https://www.geogebra.org/" target="_blank">GeoGebra</a> to plot your function performance and then do either <a href="https://www.youtube.com/watch?v=TmYl6k4e_AE" target="_blank">liner regression or curve fitting</a>, depending on what you need.   For example, the <code class="language-plaintext highlighter-rouge">third_function</code> above (green path) would need some curve fitting because it angles sharply (around the point where x=26.5) whereas the <code class="language-plaintext highlighter-rouge">second_function</code> (blue path) would call for some linear regression because it is more or less a straight line.   The latter has a linear trajectory whereas the former has polynomial one.   The <code class="language-plaintext highlighter-rouge">first_function</code> appears to follow an exponential path but within the bounded area we are operating on it, it is pretty close to straight as well so you could do linear regression on the red dots and then use the subsequent line to find the intersection with the <code class="language-plaintext highlighter-rouge">second_function</code>(blue path) line. </p>
 :ET

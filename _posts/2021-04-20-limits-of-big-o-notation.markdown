@@ -13,7 +13,7 @@ Many lessons on big O will show something similar to this with the idea of conve
 
 In *Figure-1* below we have a series of functions you can view [here on desmos.com](https://www.desmos.com/calculator/nuzg9tvbl9){:target="_blank"} in more detail.
 
-![figure one](https://i.imgur.com/TvTA0AH.png)
+![figure one](https://i.imgur.com/Wn80aNK.png)
 The takeaway here is that we can observe two mathematical functions with a big O notation of *O(n<sup>2</sup>)* that scale worse than the function with a big O notation of *O(n!)*.&nbsp;  At the same time, we can also see three mathematical functions where the opposite is true.&nbsp;  Now to be sure, all of the *O(n<sup>2</sup>)* functions will scale better than the single *O(n!)* function ***if*** all of the the x and y values (on the grid) were to go to infinity.&nbsp;  Now imagine two computer programming functions that followed trajectories similar to what is shown above; in such a circumstance, the computer programming function with the optimal big O notation might not be the most efficient one within the space shown.&nbsp;
 
 Now let's consider the following python pseudocode in figure 2 below:
