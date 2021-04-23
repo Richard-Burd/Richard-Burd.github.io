@@ -1,17 +1,17 @@
-I"�<p><strong>Abstract:</strong> <em>There are times when the big O notation of a programming algorithm will not predict performance the way many developers expect it to.   This article attempts to first explain why that is in abstract terms, and then offer a strategy for selecting an optimal algorithm (or multiple algorithms working together) to be implemented in a software build.</em></p>
+I"*<p><strong>Abstract:</strong> <em>There are times when the big O notation of a programming algorithm will not predict performance the way many developers expect it to.   This article attempts to first explain why that is in abstract terms, and then offer a strategy for selecting an optimal algorithm (or multiple algorithms working together) to be implemented in a software build.</em></p>
 
-<p><strong>Prerequisites:</strong> <a href="https://www.youtube.com/watch?v=5yJ_QLec0Lc" target="_blank">Jon Krohn’s excellent video</a> on big O notation.  Don Cowan has an excellent <a href="https://www.donkcowan.com/blog/2013/5/11/big-o-notation" target="_blank">summary table</a> and Şahin Arslan has some great <a href="https://dev.to/humblecoder00/comprehensive-big-o-notation-guide-in-plain-english-using-javascript-3n6m" target="_blank">JavaScript example code</a>.   Usman Malik has a <a href="https://stackabuse.com/big-o-notation-and-algorithm-analysis-with-python-examples/" target="_blank">similar article with Python code</a> as well.   We will not repeat this material</p>
+<p><strong>Prerequisites:</strong> <a href="https://www.youtube.com/watch?v=5yJ_QLec0Lc" target="_blank">Jon Krohn’s excellent video</a> on big O notation.  Don Cowan has an excellent <a href="https://www.donkcowan.com/blog/2013/5/11/big-o-notation" target="_blank">summary table</a> and Şahin Arslan has some great <a href="https://dev.to/humblecoder00/comprehensive-big-o-notation-guide-in-plain-english-using-javascript-3n6m" target="_blank">JavaScript example code</a>.   Usman Malik has a <a href="https://stackabuse.com/big-o-notation-and-algorithm-analysis-with-python-examples/" target="_blank">similar article with Python code</a> as well.   We will not repeat this material here, instead we’ll try and explore some stuff that doesn’t get as much attention. </p>
 
 <p>Here we have all of the common big O notations graphed according to their base equations</p>
 
 <p><a href="https://www.desmos.com/calculator/zuhpohsbtv" target="_blank">
-<img src="https://i.imgur.com/gzOyKw3.png" alt="figure one" />
+<img src="https://i.imgur.com/GsUTCYW.png" alt="figure one" />
 </a></p>
 
 <p>The big O is less relevant as the x values approach zero</p>
 
 <p><a href="https://www.desmos.com/calculator/lvfipf0q6p" target="_blank">
-<img src="https://i.imgur.com/H46GWvd.png" alt="figure two" />
+<img src="https://i.imgur.com/mSTP3pF.png" alt="figure two" />
 </a></p>
 
 <p>So far, our graphs have only used these base equations for displaying big O:</p>
@@ -70,13 +70,13 @@
 <p>Let’s look at what happens when our graph equations deviate from the base equations</p>
 
 <p><a href="https://www.desmos.com/calculator/pabstpvz26" target="_blank">
-<img src="https://i.imgur.com/k0Kh02P.png" alt="figure three" />
+<img src="https://i.imgur.com/x6kIF4m.png" alt="figure three" />
 </a></p>
 
 <p>Now let’s observe some more contrived examples.</p>
 
 <p><a href="https://www.desmos.com/calculator/ttbfaf0beb" target="_blank">
-<img src="https://i.imgur.com/MW7mMKT.png" alt="figure four" />
+<img src="https://i.imgur.com/rlATpv6.png" alt="figure four" />
 </a></p>
 
 <p>As your computer programming functions become more complex, they start to deviate from the base equation trajectories (shown in the table above), and they take on more unpredictable shapes when graphed.</p>
