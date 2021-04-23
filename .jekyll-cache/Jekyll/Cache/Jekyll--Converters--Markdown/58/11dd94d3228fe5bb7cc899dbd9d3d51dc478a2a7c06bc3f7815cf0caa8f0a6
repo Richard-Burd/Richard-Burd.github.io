@@ -1,4 +1,6 @@
-I".'<p>Let’s start out by looking at a screenshot from <a href="https://www.youtube.com/watch?v=5yJ_QLec0Lc" target="_blank">Jon Krohn’s excellent video</a> on big O notation which I would recommend watching if you are totally unfamiliar with this topic:</p>
+I"D.<p><strong>Abstract:</strong> <em>There are times when the big O notation of a programming algorithm will not predict performance the way many developers expect it to.   This article attempts to first explain why that is in abstract terms, and then offer a strategy for selecting an optimal algorithm (or multiple algorithms working together) to be implemented in a software build.</em></p>
+
+<p>Let’s start out by looking at a screenshot from <a href="https://www.youtube.com/watch?v=5yJ_QLec0Lc" target="_blank">Jon Krohn’s excellent video</a> on big O notation which I would recommend watching if you are totally unfamiliar with this topic:</p>
 
 <p><img src="https://i.imgur.com/pUzkOKi.png" alt="big o notations arranged on a grid by Jon Krohn" /></p>
 
@@ -6,7 +8,7 @@
 
 <p>In <em>Figure-1</em> below we have a series of functions you can view <a href="https://www.desmos.com/calculator/nuzg9tvbl9" target="_blank">here on desmos.com</a> in more detail.</p>
 
-<p><a href="https://www.desmos.com/calculator/ffzlbv8t4n" target="_blank">
+<p><a href="https://www.desmos.com/calculator/dw6per4vkt" target="_blank">
 <img src="https://i.imgur.com/qxVkPQr.png" alt="figure one" />
 </a></p>
 
@@ -16,29 +18,88 @@
 
 <p><img src="https://i.imgur.com/2eJX9KL.png" alt="figure two" /></p>
 
-<p>Here we see what can happen when conditionals are introduced; the big O of our <code class="language-plaintext highlighter-rouge">python_function()</code> is basically useless and doesn’t tell us anything about our overall performance.  This is because the big O here is only relevant when the input variable (x) has a value greater than or equal to 10, and is also less than 20, and yet the <code class="language-plaintext highlighter-rouge">python_function()</code> accepts values above and below that range.    A rule of thumb here is that: <em>if and when a function contains conditionals that evaluate its own input variable, the big O notation of that function might not be useful for evaluating efficiency</em>.   Instead, we would want to valuate the subcomponents separately</p>
+<p>Here we see what can happen when conditionals are introduced; the big O of our <code class="language-plaintext highlighter-rouge">python_function()</code> is basically useless and doesn’t tell us anything about our overall performance.  This is because the big O here is only relevant when the input variable (x) has a value greater than or equal to 10, and is also less than 20, and yet the <code class="language-plaintext highlighter-rouge">python_function()</code> accepts values above and below that range.    A rule of thumb here is that: <em>if and when a function contains conditionals that evaluate its own input variable, the big O notation of that function might not be useful for evaluating efficiency</em>.   Instead, we would want to valuate the subcomponents of that function separately. </p>
 
 <p>Now let’s take a look at a bird’s eye view of big O notation in figure 3 below:</p>
 
-<p><a href="https://www.desmos.com/calculator/odi6muvmzs" target="_blank">
+<p><a href="https://www.desmos.com/calculator/zuhpohsbtv" target="_blank">
 <img src="https://i.imgur.com/bXoHRT0.png" alt="figure three" />
 </a></p>
 
-<p>This is similar to Jon Krohn’s Microsoft-paint-sketch introduced at the beginning of this blog post, but it is a bit more comprehensive and contains more big O notations.   You can view these same math functions <a href="https://www.desmos.com/calculator/wanscrgyzq" target="_blank">here on desmos.com</a> where you can zoom in and out to see how they better relate to each other. </p>
+<p>This is similar to Jon Krohn’s Microsoft-paint-sketch introduced at the beginning of this blog post, but it is a bit more comprehensive and contains more big O notations.   You can view these same math functions <a href="https://www.desmos.com/calculator/wanscrgyzq" target="_blank">here on desmos.com</a> where you can zoom in and out to see how they better relate to each other.   In that workspace you’ll see these simplest equations that correspond to the big O notations on the right below :</p>
 
-<p>There are already several great articles describing the big O notations for various programming operations.   Don Cowan has an excellent <a href="https://www.donkcowan.com/blog/2013/5/11/big-o-notation" target="_blank">summary table</a> and Şahin Arslan has some great <a href="https://dev.to/humblecoder00/comprehensive-big-o-notation-guide-in-plain-english-using-javascript-3n6m" target="_blank">JavaScript example code</a>.   Usman Malik has a <a href="https://stackabuse.com/big-o-notation-and-algorithm-analysis-with-python-examples/" target="_blank">similar article with Python code</a> as well.   We will not repeat this material here but instead try and answer the question: <em>what if I have multiple computer programming functions that do the same thing, and I’m trying to find the one that is the most efficient, should I choose the one that has the best (i.e. most efficient) big O notation?</em>   Well no, not necessary, and in fact, the big O might not help you at all.  To se what I mean let’s look at figure 4:</p>
+<table>
+  <thead>
+    <tr>
+      <th>Simplest Equation</th>
+      <th>Big O Notation</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>y = n<sup>n</sup></td>
+      <td>O(n<sup>n</sup>)</td>
+    </tr>
+    <tr>
+      <td>y = (n!)</td>
+      <td>O(n!)</td>
+    </tr>
+    <tr>
+      <td>y = n<sup>3</sup></td>
+      <td>O(n<sup>3</sup>)</td>
+    </tr>
+    <tr>
+      <td>y = 2<sup>n</sup></td>
+      <td>O(2<sup>n</sup>)</td>
+    </tr>
+    <tr>
+      <td>y = n<sup>2</sup></td>
+      <td>O(n<sup>2</sup>)</td>
+    </tr>
+    <tr>
+      <td>y = n log n</td>
+      <td>O(n log n)</td>
+    </tr>
+    <tr>
+      <td>y = n</td>
+      <td>O(n)</td>
+    </tr>
+    <tr>
+      <td>y = <span>√</span>n</td>
+      <td>O(<span>√</span>n)</td>
+    </tr>
+    <tr>
+      <td>y = log n</td>
+      <td>O(log n)</td>
+    </tr>
+    <tr>
+      <td>y = 1</td>
+      <td>O(1)</td>
+    </tr>
+  </tbody>
+</table>
 
-<p><a href="https://www.desmos.com/calculator/43dmn99elk" target="_blank">
+<p>Figure 3 above uses these ‘simplest’ equations to graph the various big O notations displayed therein.   Note that it does not use more complex equations like Figure 1 above, or Figure 5 below. </p>
+
+<p>There are already several great articles describing the big O notations for various programming operations.   Don Cowan has an excellent <a href="https://www.donkcowan.com/blog/2013/5/11/big-o-notation" target="_blank">summary table</a> and Şahin Arslan has some great <a href="https://dev.to/humblecoder00/comprehensive-big-o-notation-guide-in-plain-english-using-javascript-3n6m" target="_blank">JavaScript example code</a>.   Usman Malik has a <a href="https://stackabuse.com/big-o-notation-and-algorithm-analysis-with-python-examples/" target="_blank">similar article with Python code</a> as well.   We will not repeat this material here but instead try and answer two questions:</p>
+
+<p><em>If I have multiple (computer programming functions I can implement into a software build, but I am not sure what the big O notations for all of them are, how would I go about selecting the most optimal function?</em></p>
+
+<p><em>If I do know the big O notations for my algorithms, should I just implement the one with the best big O notation, i.e. the big O that scales the most efficiently? </em></p>
+
+<p><strong><em>This section is under development</em></strong></p>
+
+<p><a href="https://www.desmos.com/calculator/lvfipf0q6p" target="_blank">
 <img src="https://i.imgur.com/R1KMZ4u.png" alt="figure four" />
-</a></p>
-
-<p><a href="https://www.desmos.com/calculator/1hqyvyveh6" target="_blank">
-<img src="https://i.imgur.com/1fePG6a.png" alt="figure five" />
+</a>
+<strong><em>This section is under development</em></strong>
+<a href="https://www.desmos.com/calculator/1hqyvyveh6" target="_blank">
+<img src="https://i.imgur.com/gb6yr7k.png" alt="figure five" />
 </a></p>
 
 <p>OK, so at this scale we start to see some problems.   In the space shown above, the (math) functions are intersecting each other all over the place, let’s see what the implications of that are in figure 5 below:</p>
 
-<p><img src="https://i.imgur.com/63wCMJh.png" alt="figure six" /></p>
+<p><img src="https://i.imgur.com/1sQ3XE3.png" alt="figure six" /></p>
 
 <p>So here we see that at this scale, different big O notations have efficiencies that are at variance with what they would be at, say, infinity.   Now how would we find out the different efficiencies for multiple functions, and would we use big O?   Let’s look at figure six below.  In figure 6 we have different (competing) functions plotted out to see which one is the best for our purposes:</p>
 

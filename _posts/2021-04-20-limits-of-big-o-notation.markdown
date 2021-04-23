@@ -67,7 +67,7 @@ There are already several great articles describing the big O notations for vari
 ](https://www.desmos.com/calculator/lvfipf0q6p){:target="_blank"}
 ***This section is under development***
 [
-![figure five](https://i.imgur.com/1fePG6a.png)
+![figure five](https://i.imgur.com/gb6yr7k.png)
 ](https://www.desmos.com/calculator/1hqyvyveh6){:target="_blank"}
 
 OK, so at this scale we start to see some problems.&nbsp;  In the space shown above, the (math) functions are intersecting each other all over the place, let's see what the implications of that are in figure 5 below:
