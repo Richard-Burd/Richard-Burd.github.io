@@ -50,11 +50,19 @@ Now let's observe some more contrived examples.
 
 As your computer programming functions become more complex, they start to deviate from the base equation trajectories (shown in the table above), and they take on more unpredictable shapes when graphed.
 
+[
+![link-one](https://i.imgur.com/zeQFHJB.png)
+](https://replit.com/@Richard_Burd/Big-0-Examples){:target="_blank"}
+
+[
+![figure four-point-one](https://i.imgur.com/8Eo7lnA.png)
+](https://www.desmos.com/calculator/nosydzyl3d){:target="_blank"}
+
 Shen Huang found something along these lines when he discovered a function with a big O of *O(n & log(n))* that was slower than another function doing the same work, but having a big O of *O(n<sup>2</sup>)*.&nbsp;  [Here is the raw code for his two functions](https://trinket.io/python/87a3166026){:target="_blank"} and you can read about it at the bottom of [this blog post](https://www.freecodecamp.org/news/big-o-notation-why-it-matters-and-why-it-doesnt-1674cfa8a23c/#Why-BigO-doesn%E2%80%99t-matter){:target="_blank"} under subsection 7: ***Why Big O doesn’t matter***.&nbsp;
 
 Your computer programming functions can even have several nested subsections that each have their own trajectories; this can be especially true if your conditional statement evaluates an input variable.
 
-![figure five](https://i.imgur.com/iCftfI0.png)
+![figure five](https://i.imgur.com/MxuE4QU.png)
 
 Here are some trajectories, forget about equations and big O for a minute:
 
