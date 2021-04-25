@@ -86,7 +86,7 @@
 </a></p>
 
 <p><a href="https://www.desmos.com/calculator/nosydzyl3d" target="_blank">
-<img src="https://i.imgur.com/8Eo7lnA.png" alt="figure four-point-one" />
+<img src="https://i.imgur.com/pRaqiya.png" alt="figure four-point-one" />
 </a></p>
 
 <p>Shen Huang found something along these lines when he discovered a function with a big O of <em>O(n &amp; log(n))</em> that was slower than another function doing the same work, but having a big O of <em>O(n<sup>2</sup>)</em>.   <a href="https://trinket.io/python/87a3166026" target="_blank">Here is the raw code for his two functions</a> and you can read about it at the bottom of <a href="https://www.freecodecamp.org/news/big-o-notation-why-it-matters-and-why-it-doesnt-1674cfa8a23c/#Why-BigO-doesn%E2%80%99t-matter" target="_blank">this blog post</a> under subsection 7: <strong><em>Why Big O doesn’t matter</em></strong>. </p>

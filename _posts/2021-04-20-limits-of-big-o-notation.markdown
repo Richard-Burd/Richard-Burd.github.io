@@ -55,7 +55,7 @@ As your computer programming functions become more complex, they start to deviat
 ](https://replit.com/@Richard_Burd/Big-0-Examples){:target="_blank"}
 
 [
-![figure four-point-one](https://i.imgur.com/8Eo7lnA.png)
+![figure four-point-one](https://i.imgur.com/pRaqiya.png)
 ](https://www.desmos.com/calculator/nosydzyl3d){:target="_blank"}
 
 Shen Huang found something along these lines when he discovered a function with a big O of *O(n & log(n))* that was slower than another function doing the same work, but having a big O of *O(n<sup>2</sup>)*.&nbsp;  [Here is the raw code for his two functions](https://trinket.io/python/87a3166026){:target="_blank"} and you can read about it at the bottom of [this blog post](https://www.freecodecamp.org/news/big-o-notation-why-it-matters-and-why-it-doesnt-1674cfa8a23c/#Why-BigO-doesn%E2%80%99t-matter){:target="_blank"} under subsection 7: ***Why Big O doesn’t matter***.&nbsp;
