@@ -1,4 +1,5 @@
-I"j <p><strong>Abstract:</strong> <em>There are times when the big O notation of a programming algorithm will not predict performance in a meaningful manner, and then there are times when the opposite is true.   This article attempts to first illustrate why this is the case in abstract terms, and then show a strategy for selecting an optimal algorithm, or in some cases multiple algorithms, to be implemented in a software build.</em></p>
+I"�!<p><img src="https://i.imgur.com/cUNNt64.jpg" alt="header image for big O blog post" />
+<strong>Abstract:</strong> <em>There are times when the big O notation of a programming algorithm will not predict performance in a meaningful manner, and then there are times when the opposite is true.   This article attempts to first illustrate why this is the case in abstract terms, and then show a strategy for selecting an optimal algorithm, or in some cases multiple algorithms, to be implemented in a software build.</em></p>
 
 <p><strong>Prerequisites:</strong> <a href="https://www.youtube.com/watch?v=5yJ_QLec0Lc" target="_blank">Jon Krohn’s excellent video</a> on big O notation.  Don Cowan has an excellent <a href="https://www.donkcowan.com/blog/2013/5/11/big-o-notation" target="_blank">summary table</a> and Şahin Arslan has some great <a href="https://dev.to/humblecoder00/comprehensive-big-o-notation-guide-in-plain-english-using-javascript-3n6m" target="_blank">JavaScript example code</a>.   Usman Malik has a <a href="https://stackabuse.com/big-o-notation-and-algorithm-analysis-with-python-examples/" target="_blank">similar article with Python code</a> as well.   We will not repeat this material here, instead we’ll try and explore some stuff that doesn’t get as much attention. </p>
 
@@ -69,7 +70,7 @@
 
 <p>Let’s look at what happens when our graph equations deviate from the base equations</p>
 
-<p><a href="https://www.desmos.com/calculator/pabstpvz26" target="_blank">
+<p><a href="https://www.desmos.com/calculator/l3448fpf3v" target="_blank">
 <img src="https://i.imgur.com/BrSBwi9.png" alt="figure three" />
 </a></p>
 
@@ -137,4 +138,6 @@
 <p>Here is a more realistic version of what plotting test results would look like, you’ll have to plot your function performance and then do some <a href="https://www.youtube.com/watch?v=TmYl6k4e_AE" target="_blank">liner regression and/or curve fitting</a></p>
 
 <p><img src="https://i.imgur.com/CGcbRtu.png" alt="figure nine" /></p>
+
+<p><strong>Conclusion:</strong> <em>Although some algorithms scale less efficiently, they may nonetheless be more appropriate for particular circumstances.   Every now and then, the optimal solution will even involve seemingly redundant algorithms working together. </em></p>
 :ET

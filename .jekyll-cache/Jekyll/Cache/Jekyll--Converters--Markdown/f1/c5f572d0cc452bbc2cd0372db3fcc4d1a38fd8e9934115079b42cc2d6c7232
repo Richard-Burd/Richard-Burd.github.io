@@ -1,2 +1,0 @@
-I"¶<p><strong>Abstract:</strong> <em>There are times when the big O notation of a programming algorithm will not predict performance in a meaningful manner, and then there are times when the opposite is true.Â   This article attempts to first illustrate why this is the case in abstract terms, and then show a strategy for selecting an optimal algorithm, or in some cases multiple algorithms, to be implemented in a software build.</em></p>
-:ET
