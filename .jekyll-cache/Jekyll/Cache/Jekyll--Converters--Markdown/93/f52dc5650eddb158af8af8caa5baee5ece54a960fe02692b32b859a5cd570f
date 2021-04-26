@@ -1,0 +1,140 @@
+I"j <p><strong>Abstract:</strong> <em>There are times when the big O notation of a programming algorithm will not predict performance in a meaningful manner, and then there are times when the opposite is true.   This article attempts to first illustrate why this is the case in abstract terms, and then show a strategy for selecting an optimal algorithm, or in some cases multiple algorithms, to be implemented in a software build.</em></p>
+
+<p><strong>Prerequisites:</strong> <a href="https://www.youtube.com/watch?v=5yJ_QLec0Lc" target="_blank">Jon Krohn’s excellent video</a> on big O notation.  Don Cowan has an excellent <a href="https://www.donkcowan.com/blog/2013/5/11/big-o-notation" target="_blank">summary table</a> and Şahin Arslan has some great <a href="https://dev.to/humblecoder00/comprehensive-big-o-notation-guide-in-plain-english-using-javascript-3n6m" target="_blank">JavaScript example code</a>.   Usman Malik has a <a href="https://stackabuse.com/big-o-notation-and-algorithm-analysis-with-python-examples/" target="_blank">similar article with Python code</a> as well.   We will not repeat this material here, instead we’ll try and explore some stuff that doesn’t get as much attention. </p>
+
+<p>Here we have all of the common big O notations graphed according to their base equations</p>
+
+<p><a href="https://www.desmos.com/calculator/zuhpohsbtv" target="_blank">
+<img src="https://i.imgur.com/s8ym6sh.png" alt="figure one" />
+</a></p>
+
+<p>The big O is less relevant as the x values approach zero</p>
+
+<p><a href="https://www.desmos.com/calculator/lvfipf0q6p" target="_blank">
+<img src="https://i.imgur.com/vntUmT6.png" alt="figure two" />
+</a></p>
+
+<p>So far, our graphs have only used these base equations for displaying big O:</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>Base Equation</th>
+      <th>Big O Notation</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>y = n<sup>n</sup></td>
+      <td>O(n<sup>n</sup>)</td>
+    </tr>
+    <tr>
+      <td>y = (n!)</td>
+      <td>O(n!)</td>
+    </tr>
+    <tr>
+      <td>y = n<sup>3</sup></td>
+      <td>O(n<sup>3</sup>)</td>
+    </tr>
+    <tr>
+      <td>y = 2<sup>n</sup></td>
+      <td>O(2<sup>n</sup>)</td>
+    </tr>
+    <tr>
+      <td>y = n<sup>2</sup></td>
+      <td>O(n<sup>2</sup>)</td>
+    </tr>
+    <tr>
+      <td>y = n log n</td>
+      <td>O(n log n)</td>
+    </tr>
+    <tr>
+      <td>y = n</td>
+      <td>O(n)</td>
+    </tr>
+    <tr>
+      <td>y = <span>√</span>n</td>
+      <td>O(<span>√</span>n)</td>
+    </tr>
+    <tr>
+      <td>y = log n</td>
+      <td>O(log n)</td>
+    </tr>
+    <tr>
+      <td>y = 1</td>
+      <td>O(1)</td>
+    </tr>
+  </tbody>
+</table>
+
+<p>Let’s look at what happens when our graph equations deviate from the base equations</p>
+
+<p><a href="https://www.desmos.com/calculator/pabstpvz26" target="_blank">
+<img src="https://i.imgur.com/BrSBwi9.png" alt="figure three" />
+</a></p>
+
+<p>Now let’s observe some more contrived examples.</p>
+
+<p><a href="https://www.desmos.com/calculator/ttbfaf0beb" target="_blank">
+<img src="https://i.imgur.com/fhYXa4L.png" alt="figure four" />
+</a></p>
+
+<p>As your computer programming functions become more complex, they start to deviate from the base equation trajectories (shown in the table above), and they take on more unpredictable shapes when graphed.</p>
+
+<p>Now let’s look at a hypothetical example where you have an app, like LinkedIn, and you want to do a search on all of the app users to find which users are (or ever have been) architects.   We can either search the user bios or user job titles to find occurrences of ‘architect,’ and keep in mind, (before we progress) that this is all a somewhat contrived example, because you’d be using a database for all of this and what follows isn’t at all a “best practices” archetype, but rather, it’s an abstraction to illustrate fundamentals.  So we have a Python dictionary with a couple of functions that search through it. </p>
+
+<p><a href="https://replit.com/@Richard_Burd/Big-0-Examples" target="_blank">
+<img src="https://i.imgur.com/MJ4NiLK.png" alt="link-one" />
+</a></p>
+
+<p><a href="https://www.desmos.com/calculator/nosydzyl3d" target="_blank">
+<img src="https://i.imgur.com/EONrxOX.png" alt="figure five-point-one" />
+</a></p>
+
+<p>Now let’s look at the same example, but pull things apart a little differently</p>
+
+<p><a href="https://replit.com/@Richard_Burd/Big-0-Examples" target="_blank">
+<img src="https://i.imgur.com/MJ4NiLK.png" alt="link-one" />
+</a></p>
+
+<p><a href="https://www.desmos.com/calculator/nosydzyl3d" target="_blank">
+<img src="https://i.imgur.com/FCwYulo.png" alt="figure five-point-two" />
+</a></p>
+
+<p>The takeaway here is that big O really matters where scaling matters such as where you are doing an operation on all of your users, and you hope someday to have everybody in the world signed up as a user for your app.   Just imagine the following code:</p>
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">def</span> <span class="nf">prosess_payment_for_all_users</span><span class="p">(</span><span class="n">all_users_in_database</span><span class="p">):</span>
+</code></pre></div></div>
+<p>You’d want to consider the big O for that function before implementing it.   But sometimes the big O doesn’t matter because it isn’t so relevant.   Shen Huang found something along these lines when he discovered a function with a big O of <em>O(n &amp; log(n))</em> that was slower than another function doing the same work, but having a big O of <em>O(n<sup>2</sup>)</em>.   <a href="https://trinket.io/python/87a3166026" target="_blank">Here is the raw code for his two functions</a> and you can read about it at the bottom of <a href="https://www.freecodecamp.org/news/big-o-notation-why-it-matters-and-why-it-doesnt-1674cfa8a23c/#Why-BigO-doesn%E2%80%99t-matter" target="_blank">this blog post</a> under subsection 7: <strong><em>Why Big O doesn’t matter</em></strong>. </p>
+
+<p>Your computer programming functions can even have several nested subsections that each have their own trajectories; this can be especially true if your conditional statement evaluates an input variable.</p>
+
+<p><img src="https://i.imgur.com/pi4rWuR.png" alt="figure six" /></p>
+
+<p>Here are some trajectories, forget about equations and big O for a minute:</p>
+
+<p><img src="https://i.imgur.com/3N1q2Hv.png" alt="figure seven" /></p>
+
+<p>Say you wrote some code and then refactored it to make it read better; you want to know which code runs faster, the old version or the new one.   In the process you run into one of these problems:</p>
+
+<ul>
+  <li>
+    <p><em>You know the big O for both code versions but suspect the one with the least efficient big O is actually the faster version.</em></p>
+  </li>
+  <li>
+    <p><em>You can’t figure out the big O for one or both versions…maybe you have three versions or more</em></p>
+  </li>
+</ul>
+
+<p>If you run into this situation, here’s what you do: you go onto <a href="https://www.geogebra.org/?lang=en">GeoGebra.org</a>  and plot some test results you gathered from running your different code versions:</p>
+
+<p><img src="https://i.imgur.com/PPyfedA.png" alt="figure eight" /></p>
+
+<p>So imagine if we had some python code that looked like this:</p>
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">def</span> <span class="nf">python_human_height_function_one</span><span class="p">(</span><span class="n">height</span><span class="p">):</span>
+</code></pre></div></div>
+<p>We already know that <a href="https://ourworldindata.org/human-height#height-is-normally-distributed" target="_blank">human height is normally distributed</a>, so we don’t care about this being able to scale (towards infinity) and instead we want the most efficient function that operates within accepting plausible human heights. </p>
+
+<p>Here is a more realistic version of what plotting test results would look like, you’ll have to plot your function performance and then do some <a href="https://www.youtube.com/watch?v=TmYl6k4e_AE" target="_blank">liner regression and/or curve fitting</a></p>
+
+<p><img src="https://i.imgur.com/CGcbRtu.png" alt="figure nine" /></p>
+:ET

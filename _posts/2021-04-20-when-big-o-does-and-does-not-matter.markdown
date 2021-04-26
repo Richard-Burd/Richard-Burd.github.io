@@ -39,7 +39,7 @@ So far, our graphs have only used these base equations for displaying big O:
 Let's look at what happens when our graph equations deviate from the base equations
 
 [
-![figure three](https://i.imgur.com/WqL3ZeZ.png)
+![figure three](https://i.imgur.com/BrSBwi9.png)
 ](https://www.desmos.com/calculator/pabstpvz26){:target="_blank"}
 
 Now let's observe some more contrived examples.
