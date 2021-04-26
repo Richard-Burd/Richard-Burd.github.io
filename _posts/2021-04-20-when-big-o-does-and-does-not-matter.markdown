@@ -1,24 +1,24 @@
 ---
 layout: post
-title:      "Limits of Big O Notation"
+title:      "When Big O Notation Does and Does Not Matter"
 date:       2021-04-20 12:30:26 -0400
-permalink:  limits_of_big_o_notation
+permalink:  when_big_o_notation_does_and_does_not_matter
 ---
 
-**Abstract:** *There are times when the big O notation of a programming algorithm will not predict performance the way many developers expect it to.&nbsp;  This article attempts to first explain why that is in abstract terms, and then offer a strategy for selecting an optimal algorithm (or multiple algorithms working together) to be implemented in a software build.*
+**Abstract:** *There are times when the big O notation of a programming algorithm will not predict performance in a meaningful manner, and then there are times when the opposite is true.&nbsp;  This article attempts to first illustrate why this is the case in abstract terms, and then show a strategy for selecting an optimal algorithm, or in some cases multiple algorithms, to be implemented in a software build.*
 
 **Prerequisites:** [Jon Krohn's excellent video](https://www.youtube.com/watch?v=5yJ_QLec0Lc){:target="_blank"} on big O notation.&nbsp; Don Cowan has an excellent [summary table](https://www.donkcowan.com/blog/2013/5/11/big-o-notation){:target="_blank"} and Şahin Arslan has some great [JavaScript example code](https://dev.to/humblecoder00/comprehensive-big-o-notation-guide-in-plain-english-using-javascript-3n6m){:target="_blank"}.&nbsp;  Usman Malik has a [similar article with Python code](https://stackabuse.com/big-o-notation-and-algorithm-analysis-with-python-examples/){:target="_blank"} as well.&nbsp;  We will not repeat this material here, instead we'll try and explore some stuff that doesn't get as much attention.&nbsp;
 
 Here we have all of the common big O notations graphed according to their base equations
 
 [
-![figure one](https://i.imgur.com/GsUTCYW.png)
+![figure one](https://i.imgur.com/s8ym6sh.png)
 ](https://www.desmos.com/calculator/zuhpohsbtv){:target="_blank"}
 
 The big O is less relevant as the x values approach zero
 
 [
-![figure two](https://i.imgur.com/NxY65w1.png)
+![figure two](https://i.imgur.com/vntUmT6.png)
 ](https://www.desmos.com/calculator/lvfipf0q6p){:target="_blank"}
 
 So far, our graphs have only used these base equations for displaying big O:
@@ -39,13 +39,13 @@ So far, our graphs have only used these base equations for displaying big O:
 Let's look at what happens when our graph equations deviate from the base equations
 
 [
-![figure three](https://i.imgur.com/x6kIF4m.png)
+![figure three](https://i.imgur.com/WqL3ZeZ.png)
 ](https://www.desmos.com/calculator/pabstpvz26){:target="_blank"}
 
 Now let's observe some more contrived examples.
 
 [
-![figure four](https://i.imgur.com/IZIvW5Y.png)
+![figure four](https://i.imgur.com/fhYXa4L.png)
 ](https://www.desmos.com/calculator/ttbfaf0beb){:target="_blank"}
 
 As your computer programming functions become more complex, they start to deviate from the base equation trajectories (shown in the table above), and they take on more unpredictable shapes when graphed.
@@ -53,21 +53,21 @@ As your computer programming functions become more complex, they start to deviat
 Now let's look at a hypothetical example where you have an app, like LinkedIn, and you want to do a search on all of the app users to find which users are (or ever have been) architects.&nbsp;  We can either search the user bios or user job titles to find occurrences of 'architect,' and keep in mind, (before we progress) that this is all a somewhat contrived example, because you'd be using a database for all of this and what follows isn't at all a "best practices" archetype, but rather, it's an abstraction to illustrate fundamentals.  So we have a Python dictionary with a couple of functions that search through it.&nbsp;
 
 [
-![link-one](https://i.imgur.com/zeQFHJB.png)
+![link-one](https://i.imgur.com/MJ4NiLK.png)
 ](https://replit.com/@Richard_Burd/Big-0-Examples){:target="_blank"}
 
 [
-![figure four-point-one](https://i.imgur.com/tqUJ4Tq.png)
+![figure five-point-one](https://i.imgur.com/EONrxOX.png)
 ](https://www.desmos.com/calculator/nosydzyl3d){:target="_blank"}
 
 Now let's look at the same example, but pull things apart a little differently
 
 [
-![link-one](https://i.imgur.com/zeQFHJB.png)
+![link-one](https://i.imgur.com/MJ4NiLK.png)
 ](https://replit.com/@Richard_Burd/Big-0-Examples){:target="_blank"}
 
 [
-![figure four-point-two](https://i.imgur.com/aFnyPau.png)
+![figure five-point-two](https://i.imgur.com/FCwYulo.png)
 ](https://www.desmos.com/calculator/nosydzyl3d){:target="_blank"}
 
 The takeaway here is that big O really matters where scaling matters such as where you are doing an operation on all of your users, and you hope someday to have everybody in the world signed up as a user for your app.&nbsp;  Just imagine the following code:
@@ -78,11 +78,11 @@ You'd want to consider the big O for that function before implementing it.&nbsp;
 
 Your computer programming functions can even have several nested subsections that each have their own trajectories; this can be especially true if your conditional statement evaluates an input variable.
 
-![figure five](https://i.imgur.com/MxuE4QU.png)
+![figure six](https://i.imgur.com/pi4rWuR.png)
 
 Here are some trajectories, forget about equations and big O for a minute:
 
-![figure six](https://i.imgur.com/DKIRNzc.png)
+![figure seven](https://i.imgur.com/3N1q2Hv.png)
 
 Say you wrote some code and then refactored it to make it read better; you want to know which code runs faster, the old version or the new one.&nbsp;  In the process you run into one of these problems:
 
@@ -92,7 +92,7 @@ Say you wrote some code and then refactored it to make it read better; you want 
 
 If you run into this situation, here's what you do: you go onto [GeoGebra.org](https://www.geogebra.org/?lang=en)  and plot some test results you gathered from running your different code versions:
 
-![figure seven](https://i.imgur.com/3sE1nJT.png)
+![figure eight](https://i.imgur.com/PPyfedA.png)
 
 So imagine if we had some python code that looked like this:
 ```python
@@ -102,4 +102,4 @@ We already know that [human height is normally distributed](https://ourworldinda
 
 Here is a more realistic version of what plotting test results would look like, you'll have to plot your function performance and then do some [liner regression and/or curve fitting](https://www.youtube.com/watch?v=TmYl6k4e_AE){:target="_blank"}
 
-![figure eight](https://i.imgur.com/2JJXUSt.png)
+![figure nine](https://i.imgur.com/CGcbRtu.png)
