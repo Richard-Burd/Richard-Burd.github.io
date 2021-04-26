@@ -19,7 +19,7 @@ The big O is less relevant as the x values approach zero
 
 [
 ![figure two](https://i.imgur.com/vntUmT6.png)
-](https://www.desmos.com/calculator/lvfipf0q6p){:target="_blank"}
+](https://www.desmos.com/calculator/pdyismhsil){:target="_blank"}
 
 So far, our graphs have only used these base equations for displaying big O:
 
