@@ -40,7 +40,7 @@ Let's look at what happens when our graph equations deviate from the base equati
 
 [
 ![figure three](https://i.imgur.com/BrSBwi9.png)
-](https://www.desmos.com/calculator/pabstpvz26){:target="_blank"}
+](https://www.desmos.com/calculator/l3448fpf3v){:target="_blank"}
 
 Now let's observe some more contrived examples.
 
