@@ -50,15 +50,31 @@ Now let's observe some more contrived examples.
 
 As your computer programming functions become more complex, they start to deviate from the base equation trajectories (shown in the table above), and they take on more unpredictable shapes when graphed.
 
+Now let's look at a hypothetical example where you have an app, like LinkedIn, and you want to do a search on all of the app users to find which users are (or ever have been) architects.&nbsp;  We can either search the user bios or user job titles to find occurrences of 'architect,' and keep in mind, (before we progress) that this is all a somewhat contrived example, because you'd be using a database for all of this and what follows isn't at all a "best practices" archetype, but rather, it's an abstraction to illustrate fundamentals.  So we have a Python dictionary with a couple of functions that search through it.&nbsp;
+
 [
 ![link-one](https://i.imgur.com/zeQFHJB.png)
 ](https://replit.com/@Richard_Burd/Big-0-Examples){:target="_blank"}
 
 [
-![figure four-point-one](https://i.imgur.com/pRaqiya.png)
+![figure four-point-one](https://i.imgur.com/8nbrP9I.png)
 ](https://www.desmos.com/calculator/nosydzyl3d){:target="_blank"}
 
-Shen Huang found something along these lines when he discovered a function with a big O of *O(n & log(n))* that was slower than another function doing the same work, but having a big O of *O(n<sup>2</sup>)*.&nbsp;  [Here is the raw code for his two functions](https://trinket.io/python/87a3166026){:target="_blank"} and you can read about it at the bottom of [this blog post](https://www.freecodecamp.org/news/big-o-notation-why-it-matters-and-why-it-doesnt-1674cfa8a23c/#Why-BigO-doesn%E2%80%99t-matter){:target="_blank"} under subsection 7: ***Why Big O doesn’t matter***.&nbsp;
+Now let's look at the same example, but pull things apart a little differently
+
+[
+![link-one](https://i.imgur.com/zeQFHJB.png)
+](https://replit.com/@Richard_Burd/Big-0-Examples){:target="_blank"}
+
+[
+![figure four-point-two](https://i.imgur.com/aFnyPau.png)
+](https://www.desmos.com/calculator/nosydzyl3d){:target="_blank"}
+
+The takeaway here is that big O really matters where scaling matters such as where you are doing an operation on all of your users, and you hope someday to have everybody in the world signed up as a user for your app.&nbsp;  Just imagine the following code:
+```python
+def prosess_payment_for_all_users(all_users_in_database):
+```
+You'd want to consider the big O for that function before implementing it.&nbsp;  But sometimes the big O doesn't matter because it isn't so relevant.&nbsp;  Shen Huang found something along these lines when he discovered a function with a big O of *O(n & log(n))* that was slower than another function doing the same work, but having a big O of *O(n<sup>2</sup>)*.&nbsp;  [Here is the raw code for his two functions](https://trinket.io/python/87a3166026){:target="_blank"} and you can read about it at the bottom of [this blog post](https://www.freecodecamp.org/news/big-o-notation-why-it-matters-and-why-it-doesnt-1674cfa8a23c/#Why-BigO-doesn%E2%80%99t-matter){:target="_blank"} under subsection 7: ***Why Big O doesn’t matter***.&nbsp;
 
 Your computer programming functions can even have several nested subsections that each have their own trajectories; this can be especially true if your conditional statement evaluates an input variable.
 
