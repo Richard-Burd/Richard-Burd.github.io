@@ -57,7 +57,7 @@ Now let's look at a hypothetical example where you have an app, like LinkedIn, a
 ](https://replit.com/@Richard_Burd/Big-0-Examples){:target="_blank"}
 
 [
-![figure four-point-one](https://i.imgur.com/8nbrP9I.png)
+![figure four-point-one](https://i.imgur.com/tqUJ4Tq.png)
 ](https://www.desmos.com/calculator/nosydzyl3d){:target="_blank"}
 
 Now let's look at the same example, but pull things apart a little differently
