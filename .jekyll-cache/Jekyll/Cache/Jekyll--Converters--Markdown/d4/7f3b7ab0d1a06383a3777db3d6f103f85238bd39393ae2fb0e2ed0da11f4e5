@@ -201,7 +201,7 @@
 
 <p>It should be obvious by now that big O <em>does</em> matter, but not all of the time, and not for every function in your software build.   The key concept is scaling and what happens before infinity:</p>
 
-<p><a href="https://www.desmos.com/calculator/czmvwurebq" target="_blank">
+<p><a href="https://www.desmos.com/calculator/ejozxwxij8" target="_blank">
 <img src="https://i.imgur.com/Rf3gPsr.png" alt="figure five" />
 </a></p>
 

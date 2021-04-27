@@ -115,7 +115,7 @@ It should be obvious by now that big O *does* matter, but not all of the time, a
 
 [
 ![figure five](https://i.imgur.com/Rf3gPsr.png)
-](https://www.desmos.com/calculator/czmvwurebq){:target="_blank"}
+](https://www.desmos.com/calculator/ejozxwxij8){:target="_blank"}
 
 
 
