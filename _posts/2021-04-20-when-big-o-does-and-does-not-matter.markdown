@@ -114,7 +114,7 @@ Sometimes the big O doesn't matter because it isn't so relevant.&nbsp;  Shen Hua
 It should be obvious by now that big O *does* matter, but not all of the time, and not for every function in your software build.&nbsp;  The key concept is scaling and what happens before infinity:
 
 [
-![figure five](https://i.imgur.com/Rf3gPsr.png)
+![figure five](https://i.imgur.com/NBFLfzs.png)
 ](https://www.desmos.com/calculator/ejozxwxij8){:target="_blank"}
 
 

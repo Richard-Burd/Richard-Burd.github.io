@@ -202,7 +202,7 @@
 <p>It should be obvious by now that big O <em>does</em> matter, but not all of the time, and not for every function in your software build.   The key concept is scaling and what happens before infinity:</p>
 
 <p><a href="https://www.desmos.com/calculator/ejozxwxij8" target="_blank">
-<img src="https://i.imgur.com/Rf3gPsr.png" alt="figure five" />
+<img src="https://i.imgur.com/NBFLfzs.png" alt="figure five" />
 </a></p>
 
 <p>Now let’s look at some cases where big O doesn’t matter as much.  You could have a programming function with several nested subsections that each have their own trajectories; this can be especially true if your conditional statement evaluates an input variable:</p>
