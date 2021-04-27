@@ -1,4 +1,4 @@
-I"f<<p><img src="https://i.imgur.com/cUNNt64.jpg" alt="header image for big O blog post" />
+I"�<<p><img src="https://i.imgur.com/cUNNt64.jpg" alt="header image for big O blog post" />
 <strong>Abstract:</strong> <em>There are times when the big O notation of a programming algorithm will not predict performance in a meaningful manner, and then there are times when the opposite is true.   This article attempts to first illustrate why this is the case in abstract terms, and then show a strategy for selecting an optimal algorithm, or in some cases multiple algorithms, to be implemented in a software build.</em></p>
 
 <p><strong>Prerequisites:</strong> <a href="https://www.youtube.com/watch?v=5yJ_QLec0Lc" target="_blank">Jon Krohn’s excellent video</a> on big O notation.  Don Cowan has an excellent <a href="https://www.donkcowan.com/blog/2013/5/11/big-o-notation" target="_blank">summary table</a> and Şahin Arslan has some great <a href="https://dev.to/humblecoder00/comprehensive-big-o-notation-guide-in-plain-english-using-javascript-3n6m" target="_blank">JavaScript example code</a>.   Usman Malik has a <a href="https://stackabuse.com/big-o-notation-and-algorithm-analysis-with-python-examples/" target="_blank">similar article with Python code</a> as well.   We will not repeat this material here, instead we’ll try and explore some stuff that doesn’t get as much attention. </p>
@@ -89,7 +89,7 @@
     <span class="k">for</span> <span class="n">loop_2</span> <span class="ow">in</span> <span class="n">sheep</span><span class="p">:</span>
     <span class="n">counter</span> <span class="o">=</span> <span class="n">counter</span> <span class="o">+</span> <span class="mi">1</span>
     <span class="n">time</span><span class="p">.</span><span class="n">sleep</span><span class="p">(</span><span class="mf">0.02</span><span class="p">)</span>
-    <span class="k">print</span><span class="p">(</span><span class="s">f'</span><span class="si">{</span><span class="n">counter</span><span class="si">}</span><span class="s"> .) little quadratic sheep...'</span><span class="p">)</span>
+    <span class="k">print</span><span class="p">(</span><span class="sa">f</span><span class="s">'</span><span class="si">{</span><span class="n">counter</span><span class="si">}</span><span class="s"> .) little quadratic sheep...'</span><span class="p">)</span>
 </code></pre></div></div>
 <p>And here’s one with a big O notation of O(n<sup>3</sup>):</p>
 <div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">def</span> <span class="nf">cubic_function</span><span class="p">(</span><span class="n">sheep</span><span class="p">):</span>
@@ -99,7 +99,7 @@
       <span class="k">for</span> <span class="n">loop_3</span> <span class="ow">in</span> <span class="n">sheep</span><span class="p">:</span>
       <span class="n">counter</span> <span class="o">=</span> <span class="n">counter</span> <span class="o">+</span> <span class="mi">1</span>
       <span class="n">time</span><span class="p">.</span><span class="n">sleep</span><span class="p">(</span><span class="mf">0.001</span><span class="p">)</span>
-      <span class="k">print</span><span class="p">(</span><span class="s">f'</span><span class="si">{</span><span class="n">counter</span><span class="si">}</span><span class="s"> .) little cubic sheep...'</span><span class="p">)</span>
+      <span class="k">print</span><span class="p">(</span><span class="sa">f</span><span class="s">'</span><span class="si">{</span><span class="n">counter</span><span class="si">}</span><span class="s"> .) little cubic sheep...'</span><span class="p">)</span>
 </code></pre></div></div>
 <p>By now we know quadratic functions scale better than cubic ones, but this use case throws in a monkey wrench: the <code class="language-plaintext highlighter-rouge">time.sleep()</code> in the quadratic function specifies more time than in the cubic one; this slows the quadratic one down a bit on each function call.   The intent is to show a simplified example of what you can encounter in more complex real-world examples: <em>it is possible to have a function with a better-scaling big O notation perform worse within a given range of input variables.</em>   Let’s have a look at the code:</p>
 
