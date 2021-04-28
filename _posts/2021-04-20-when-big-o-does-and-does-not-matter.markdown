@@ -74,8 +74,13 @@ def cubic_function(sheep):
 By now we know quadratic functions scale better than cubic ones, but this use case throws in a monkey wrench: the `time.sleep()` in the quadratic function specifies more time than in the cubic one; this slows the quadratic one down a bit on each function call.&nbsp;  The intent is to show a simplified example of what you can encounter in more complex real-world examples: *it is possible to have a function with a better-scaling big O notation perform worse within a given range of input variables.*&nbsp;  Let's have a look at the code:
 
 [
-![link to the repl.it workspace](https://i.imgur.com/NKrILPO.png)
+![link to the repl.it workspace](https://i.imgur.com/EFh2HB9.png)
 ](https://replit.com/@Richard_Burd/Big-0-Examples){:target="_blank"}
+
+...and here's a trinket for all of you who hate repl.it:
+[
+![link to the trinket.io workspace](https://i.imgur.com/aJuYbrk.png)
+](https://trinket.io/python3/3fa1fd86f5){:target="_blank"}
 
 By changing the `my_sheep` value, you can send that integer count to both functions simultaneously; here are the results of a time test below, showing how long the two functions take to execute given a range of different variable input values:
 
