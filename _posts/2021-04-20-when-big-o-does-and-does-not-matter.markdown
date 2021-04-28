@@ -121,7 +121,7 @@ It should be obvious by now that big O *does* matter, but not all of the time, a
 
 Now let's look at some cases where big O doesn't matter as much.&nbsp; You could have a programming function with several nested subsections that each have their own trajectories; this can be especially true if your conditional statement evaluates an input variable:
 
-![figure six](https://i.imgur.com/pi4rWuR.png)
+![figure six](https://i.imgur.com/WJtonIF.png)
 
 The big O of this function wouldn't be very useful.&nbsp;
 
