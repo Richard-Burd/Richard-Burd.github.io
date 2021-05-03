@@ -7,8 +7,16 @@ exclude: true
 
 ## A Whole New Way of Seeing Python
 
-The GitHub repository for this cheat sheet is [here](https://github.com/Richard-Burd/python-3-sandbox){:target="_blank"} and the full-res downloadable version is [here](https://drive.google.com/file/d/1l2QqzHdfAmrQxy3aPAzy6UsL8Ol36hHZ/view?usp=sharing){:target="_blank"}
+The GitHub repository for this cheat sheet is [here](https://github.com/Richard-Burd/python-3-sandbox){:target="_blank"} and the full-res (rastered) downloadable version is [here](https://drive.google.com/file/d/1l2QqzHdfAmrQxy3aPAzy6UsL8Ol36hHZ/view?usp=sharing){:target="_blank"}
 on Google Drive.
+
+While the PDF version displays properly on the Google Chrome and Microsoft Edge browsers, it will not display properly on Firefox for some reason.
+
+[
+![an image that takes you to the PDF version](https://i.imgur.com/PhqLglF.jpg)
+](https://drive.google.com/file/d/1bwm0tF4sCxBEyA746Ez4wldzpiSzjINl/view?usp=sharing){:target="_blank"}
+
+Click on the image below for access to the rastered version:
 
 [
 ![preview of a Python cheat sheet](https://i.imgur.com/2FjckVW.jpg)

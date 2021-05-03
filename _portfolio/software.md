@@ -140,10 +140,10 @@ The GitHub repository for this cheat sheet is [here](https://github.com/Richard-
 <br/>
 <br/>
 ### Python
-The GitHub repository for this cheat sheet is [here](https://github.com/Richard-Burd/python-3-sandbox){:target="_blank"}
+Click on the image below for more details:
 [
 ![preview of a Python cheat sheet](https://i.imgur.com/2FjckVW.jpg)
-](https://drive.google.com/file/d/1l2QqzHdfAmrQxy3aPAzy6UsL8Ol36hHZ/view?usp=sharing){:target="_blank"}
+](/python-illustrated)
 <br/>
 <br/>
 ### React Hooks
