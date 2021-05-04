@@ -13,7 +13,7 @@ on Google Drive.
 While the PDF version displays properly on the Google Chrome and Microsoft Edge browsers, it will not display properly on Firefox for some reason.
 
 [
-![an image that takes you to the PDF version](https://i.imgur.com/PhqLglF.jpg)
+![an image that takes you to the PDF version](https://i.imgur.com/LV9YPvk.jpg)
 ](https://drive.google.com/file/d/1bwm0tF4sCxBEyA746Ez4wldzpiSzjINl/view?usp=sharing){:target="_blank"}
 
 Click on the image below for access to the rastered version:
