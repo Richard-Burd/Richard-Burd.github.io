@@ -1,18 +1,15 @@
-I"o<h2 id="a-whole-new-way-of-seeing-python">A Whole New Way of Seeing Python</h2>
+I"�<h2 id="a-whole-new-way-of-seeing-python">A Whole New Way of Seeing Python</h2>
 
-<p>The GitHub repository for this cheat sheet is <a href="https://github.com/Richard-Burd/python-3-sandbox" target="_blank">here</a> and the full-res (rastered) downloadable version is <a href="https://drive.google.com/file/d/1l2QqzHdfAmrQxy3aPAzy6UsL8Ol36hHZ/view?usp=sharing" target="_blank">here</a>
-on Google Drive.</p>
+<p>The GitHub repository for this cheat sheet is <a href="https://github.com/Richard-Burd/python-3-sandbox" target="_blank">here</a></p>
 
-<p>While the PDF version displays properly on the Google Chrome and Microsoft Edge browsers, it will not display properly on Firefox for some reason.</p>
-
-<p><a href="https://drive.google.com/file/d/1bwm0tF4sCxBEyA746Ez4wldzpiSzjINl/view?usp=sharing" target="_blank">
-<img src="https://i.imgur.com/LV9YPvk.jpg" alt="an image that takes you to the PDF version" />
-</a></p>
-
-<p>Click on the image below for access to the rastered version:</p>
+<p><img src="https://i.imgur.com/4pcJhhO.jpg" alt="preview of a Python cheat sheet" /></p>
 
 <p><a href="https://drive.google.com/file/d/1l2QqzHdfAmrQxy3aPAzy6UsL8Ol36hHZ/view?usp=sharing" target="_blank">
-<img src="https://i.imgur.com/2FjckVW.jpg" alt="preview of a Python cheat sheet" />
+<img src="https://i.imgur.com/rbdhrdU.jpg" alt="an image that takes you to the JPG version" />
+</a></p>
+
+<p><a href="https://raw.githubusercontent.com/Richard-Burd/python-3-sandbox/master/Python%20Illustrated.pdf" target="_blank">
+<img src="https://i.imgur.com/oikwVJX.jpg" alt="an image that takes you to the PDF version" />
 </a></p>
 
 <p>This cheat sheet uses the <a href="https://en.wikipedia.org/wiki/Method_of_loci" target="_blank">Method of loci</a>
@@ -30,9 +27,7 @@ to create a memory palace, or more accurately, a memory terrain-map within which
 
 <p>Here is a detail from the section on class constructors: </p>
 
-<p><a href="https://drive.google.com/file/d/1l2QqzHdfAmrQxy3aPAzy6UsL8Ol36hHZ/view?usp=sharing" target="_blank">
-<img src="https://i.imgur.com/SJAkoqg.jpg" alt="preview of a Python cheat sheet" />
-</a></p>
+<p><img src="https://i.imgur.com/XpX5IJ0.jpg" alt="detail from the cheatsheet showing the class constructor" /></p>
 
 <p>Once the user becomes familiar with the different sections of this cheat sheet, their brain’s neural pathways will begin to associate different programming functionalities with different regions (and sub-regions) of the cheat sheet itself.   Actual code is shown in <code class="language-plaintext highlighter-rouge">code font</code> inside of either green or blue boxes; the green and blue colors are used to show code blocks that are unrelated to each other (i.e. blue-box code is different than green-box code) and code is always on the left-hand side of a yellow section block.   The actual notes use a dark-red comic font and are larger than the <code class="language-plaintext highlighter-rouge">code font</code> because the user scans the notes first, then when ze finds notes describing what ze is looking for, ze can zoom into the code to see how it works.   Python keywords such as <code class="language-plaintext highlighter-rouge">for</code>, <code class="language-plaintext highlighter-rouge">break</code>, <code class="language-plaintext highlighter-rouge">continue</code>, or, <code class="language-plaintext highlighter-rouge">lambda</code> are shown in larger light-brown Calibri font, along with other categories and definitions.   This enables the user to quick-scan the page for these terms and find them instantly.   Eventually, the user’s brain remembers where these keywords are located, and the user can instantly lookup information as needed, rather than memorize all of Python’s syntax.   Overlapping highlights make it even easier to find the exact code that a given set of notes are describing.   Additionally, the blue and green code blocks are subdivided into smaller boxes to highlight different levels of <a href="https://en.wikipedia.org/wiki/Scope_%28computer_science%29" target="_blank">scope</a>
 whenever relevant.  Several elements have arrows pointing to other elements within the same, and sometimes within different - yellow section blocks.   This network of arrows form a <a href="https://en.wikipedia.org/wiki/Zettelkasten" target="_blank">zettelkasten</a>

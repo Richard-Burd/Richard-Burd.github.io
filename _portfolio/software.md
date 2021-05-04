@@ -142,7 +142,7 @@ The GitHub repository for this cheat sheet is [here](https://github.com/Richard-
 ### Python
 Click on the image below for more details:
 [
-![preview of a Python cheat sheet](https://i.imgur.com/2FjckVW.jpg)
+![preview of a Python cheat sheet](https://i.imgur.com/4pcJhhO.jpg)
 ](/python-illustrated)
 <br/>
 <br/>
