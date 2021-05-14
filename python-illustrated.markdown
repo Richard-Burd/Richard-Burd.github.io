@@ -27,7 +27,7 @@ to create a memory palace, or more accurately, a memory terrain-map within which
 ](https://drive.google.com/file/d/1l2QqzHdfAmrQxy3aPAzy6UsL8Ol36hHZ/view?usp=sharing){:target="_blank"}
 
 [
-![an image that takes you to the PDF version](https://i.imgur.com/oikwVJX.jpg)
+![an image that takes you to the PDF version](https://i.imgur.com/P46unTd.jpg)
 ](https://raw.githubusercontent.com/Richard-Burd/python-3-sandbox/master/Python%20Illustrated.pdf){:target="_blank"}
 
 Here is a detail from the section on class constructors:&nbsp;
