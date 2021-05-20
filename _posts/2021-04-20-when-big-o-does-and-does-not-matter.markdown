@@ -5,7 +5,7 @@ date:       2021-04-20 12:30:26 -0400
 permalink:  when_big_o_does_and_does_not_matter
 ---
 ![header image for big O blog post](https://i.imgur.com/cUNNt64.jpg)
-**Abstract:** *There are times when the big O notation of a programming algorithm will not predict performance in a meaningful manner, and then there are times when the opposite is true.&nbsp;  This article attempts to first illustrate why this is the case in abstract terms, and then show a strategy for selecting an optimal algorithm, or in some cases multiple algorithms, to be implemented in a software build.*
+**Abstract:** *There are times when the big O notation of a programming algorithm will not predict performance in a meaningful manner, and then there are times when the opposite is true.&nbsp;  This article first illustrates why this is the case in abstract terms, and then proceeds to show a strategy for selecting an optimal algorithm, or in some cases multiple algorithms, to be implemented in a software build.*
 
 **Prerequisites:** [Jon Krohn's excellent video](https://www.youtube.com/watch?v=5yJ_QLec0Lc){:target="_blank"} on big O notation.&nbsp; Don Cowan has an excellent [summary table](https://www.donkcowan.com/blog/2013/5/11/big-o-notation){:target="_blank"} and Şahin Arslan has some great [JavaScript example code](https://dev.to/humblecoder00/comprehensive-big-o-notation-guide-in-plain-english-using-javascript-3n6m){:target="_blank"}.&nbsp;  Usman Malik has a [similar article with Python code](https://stackabuse.com/big-o-notation-and-algorithm-analysis-with-python-examples/){:target="_blank"} as well.&nbsp;  We will not repeat this material here, instead we'll try and explore some stuff that doesn't get as much attention.&nbsp;
 
