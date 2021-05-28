@@ -4,6 +4,18 @@ title: Python Illustrated Cheat Sheet
 header-img: "img/banners/software.png"
 exclude: true
 ---
+<style>
+  @media only screen and (max-width: 500px) {
+    .desktop-buttons {
+      display: none;
+    }
+  }
+  @media only screen and (min-width: 500px) {
+    .mobile-buttons {
+      display: none;
+    }
+  }
+</style>
 
 ## A Whole New Way of Seeing Python
 
@@ -22,13 +34,27 @@ to create a memory palace, or more accurately, a memory terrain-map within which
  6. [Python Threading Tutorial by Corey Schafer](https://www.youtube.com/watch?v=IEEhzQoKtQU){:target="_blank"}
  7. [Python Tutorials : Threading Beginners by PyMoondra](https://www.youtube.com/watch?v=bnm5_GH04fM){:target="_blank"}
 
-[
-![an image that takes you to the JPG version](https://i.imgur.com/rbdhrdU.jpg)
-](https://drive.google.com/file/d/1l2QqzHdfAmrQxy3aPAzy6UsL8Ol36hHZ/view?usp=sharing){:target="_blank"}
-
-[
-![an image that takes you to the PDF version](https://i.imgur.com/P46unTd.jpg)
-](https://raw.githubusercontent.com/Richard-Burd/python-3-sandbox/master/Python%20Illustrated.pdf){:target="_blank"}
+ <div class="download-link-buttons">
+   <div class="desktop-buttons">
+     <a href="https://drive.google.com/file/d/1l2QqzHdfAmrQxy3aPAzy6UsL8Ol36hHZ/view?usp=sharing" target="_blank">
+       <img class="github-icon" src="https://i.imgur.com/rbdhrdU.jpg" alt="download jpg version">
+     </a>
+     <br>
+     <a href="https://raw.githubusercontent.com/Richard-Burd/python-3-sandbox/master/Python%20Illustrated.pdf" target="_blank">
+       <img class="youtube-icon" src="https://i.imgur.com/P46unTd.jpg" alt="download pdf version">
+     </a>
+   </div>
+   <br>
+   <div class="mobile-buttons">
+     <a href="https://drive.google.com/file/d/1l2QqzHdfAmrQxy3aPAzy6UsL8Ol36hHZ/view?usp=sharing" target="_blank">
+       <img class="github-icon" src="https://i.imgur.com/5HVhksJ.jpg" alt="download jpg version">
+     </a>
+     <br>
+     <a href="https://raw.githubusercontent.com/Richard-Burd/python-3-sandbox/master/Python%20Illustrated.pdf" target="_blank">
+       <img class="youtube-icon" src="https://i.imgur.com/XtqIdLU.jpg" alt="download pdf version">
+     </a>
+   </div>
+ </div>
 
 Here is a detail from the section on class constructors:&nbsp;
 

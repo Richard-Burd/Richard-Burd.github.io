@@ -1,4 +1,10 @@
-I"ø<h2 id="a-whole-new-way-of-seeing-python">A Whole New Way of Seeing Python</h2>
+I"Ó<style>
+  @media only screen and (min-width: 500px) {
+    .mobile-buttons
+  }
+</style>
+
+<h2 id="a-whole-new-way-of-seeing-python">A Whole New Way of Seeing Python</h2>
 
 <p>The GitHub repository for this cheat sheet is <a href="https://github.com/Richard-Burd/python-3-sandbox" target="_blank">here</a></p>
 
@@ -17,13 +23,27 @@ to create a memory palace, or more accurately, a memory terrain-map within which
   <li><a href="https://www.youtube.com/watch?v=bnm5_GH04fM" target="_blank">Python Tutorials : Threading Beginners by PyMoondra</a></li>
 </ol>
 
-<p><a href="https://drive.google.com/file/d/1l2QqzHdfAmrQxy3aPAzy6UsL8Ol36hHZ/view?usp=sharing" target="_blank">
-<img src="https://i.imgur.com/rbdhrdU.jpg" alt="an image that takes you to the JPG version" />
-</a></p>
-
-<p><a href="https://raw.githubusercontent.com/Richard-Burd/python-3-sandbox/master/Python%20Illustrated.pdf" target="_blank">
-<img src="https://i.imgur.com/P46unTd.jpg" alt="an image that takes you to the PDF version" />
-</a></p>
+<div class="download-link-buttons">
+   <div class="desktop-buttons">
+     <a href="https://drive.google.com/file/d/1l2QqzHdfAmrQxy3aPAzy6UsL8Ol36hHZ/view?usp=sharing" target="_blank">
+       <img class="github-icon" src="https://i.imgur.com/rbdhrdU.jpg" alt="download jpg version" />
+     </a>
+     <br />
+     <a href="https://raw.githubusercontent.com/Richard-Burd/python-3-sandbox/master/Python%20Illustrated.pdf" target="_blank">
+       <img class="youtube-icon" src="https://i.imgur.com/P46unTd.jpg" alt="download pdf version" />
+     </a>
+   </div>
+   <br />
+   <div class="mobile-buttons">
+     <a href="https://drive.google.com/file/d/1l2QqzHdfAmrQxy3aPAzy6UsL8Ol36hHZ/view?usp=sharing" target="_blank">
+       <img class="github-icon" src="https://i.imgur.com/Gk2GqAl.jpg" alt="download jpg version" />
+     </a>
+     <br />
+     <a href="https://raw.githubusercontent.com/Richard-Burd/python-3-sandbox/master/Python%20Illustrated.pdf" target="_blank">
+       <img class="youtube-icon" src="https://i.imgur.com/TLD02n5.jpg" alt="download pdf version" />
+     </a>
+   </div>
+ </div>
 
 <p>Here is a detail from the section on class constructors:Â </p>
 
