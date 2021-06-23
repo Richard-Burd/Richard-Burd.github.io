@@ -45,7 +45,7 @@ Let's look at what happens when our graph equations deviate from the base equati
 Now let's observe some more contrived examples.
 
 [
-![figure four](https://i.imgur.com/fhYXa4L.png)
+![figure four](https://i.imgur.com/s4B5GGo.png)
 ](https://www.desmos.com/calculator/ttbfaf0beb){:target="_blank"}
 
 As your computer programming functions become more complex, they start to deviate from the base equation trajectories (shown in the table above), and they take on more unpredictable shapes when graphed.
