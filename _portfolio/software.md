@@ -36,7 +36,7 @@ exclude: true
 </style>
 
 ## Software Design / Development Portfolio
-Welcome to the software section of my design portfolio.&nbsp; I recently graduated from the [Flatiron School's](https://flatironschool.com/){:target="_blank"} full stack web development program and below are three of my portfolio projects from the coursework, as well as some other things I am working on.&nbsp;  If your would like more information, please click on the GitHub icons below to go to the respective repo where the `README.md` file will contain greater detail.&nbsp; Each project also has a YouTube link to a recorded walk-through.
+Welcome to the software section of my design portfolio.&nbsp; I graduated from the [Flatiron School's](https://flatironschool.com/){:target="_blank"} full stack web development program in 2020 and below are three of my portfolio projects from the coursework, as well as some other things I have worked on in the past.&nbsp;  If your would like more information, please click on the GitHub icons below to go to the respective repo where the `README.md` file will contain greater detail.&nbsp; Each project also has a YouTube link to a recorded walk-through.
 
 ---
 ---

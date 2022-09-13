@@ -5,23 +5,55 @@ header-img: "img/banners/bashur-flag.png"
 exclude: true
 ---
 
-### Background
-In 2013, a group of bad guys with awesome haircuts took over some territory and committed a few [war crimes](https://en.wikipedia.org/wiki/Genocide_of_Yazidis_by_ISIL).&nbsp;  They called themselves the [Islamic State of Iraq and Syria](https://en.wikipedia.org/wiki/Islamic_State_of_Iraq_and_the_Levant), and later the Islamic State, but their original name stuck and they became forever known by their Acronym 'ISIS.'&nbsp;  President Obama preferred to call them ISIL but let's not get into that because it's all same group, just one that has too many names.  
+<style>
+  .media-icons-&-description{
+  }
 
-Anyway, at this time the U.S. Government was weary of getting itself involved in yet another confusing desert war so they sort-of stayed out of it but at the same time, they were also sort-of involved, albeit in a limited capacity.&nbsp; This lack of full commitment led to a situation in which the indigenous Kurds were left to fend for themselves against ISIS, and that in turn spurred a volunteer movement of western adventurers who made their way to Kurdistan in order to help the Kurds in their fight against ISIS.&nbsp;
+  .icon-container {
+  }
 
-![daesheoun on a soviet APC](https://i.imgur.com/gdJ5YdQ.jpg){:target="_blank"}
+  .description {
+    font-style: italic;
+  }
 
-Kurdish military commanders were looking for western military veterans with specialized skill sets that could be utilized in their low budget fight against ISIS.&nbsp;  Most such volunteers were former combat medics or who had served with NATO militaries in Iraq and Afghanistan.&nbsp;  A few had combat arms expertise as well.&nbsp;  I was brought on board because I could translate between English and Arabic.&nbsp;  Although Kurds are not Arabs and have their own language, Arabic is a sort-of lingua franca throughout the Middle East.
+  .youtube-icon {
+    height: 50px;
+    padding-left: 10px;
+    margin: auto;
+  }
+
+</style>
+
+### Abstract
+
+
+<i>
+This article details a home-built drone that I took to Iraq during the Spring of 2016.&nbsp;  While there, I served as a volunteer in the <a href="https://en.wikipedia.org/wiki/Peshmerga" target="_blank">Kurdish Peshmerga</a> during their war with <a href="https://en.wikipedia.org/wiki/Islamic_State" target="_blank">ISIS</a> during the <a href="https://youtu.be/KbsesrAMjTw" target="_blank">Mosul campaign</a>.&nbsp; My primary mission was to fly recon missions to identify enemy positions within the area of conflict.&nbsp;
+</i>
+
+<a href="https://youtu.be/Dy6FYWNopsE" target="_blank">
+  <img class="youtube-icon" src="/img/misc/youtube.svg" alt="">
+</a>
+
+---
+---
+
+In 2013, a group of bad guys with awesome haircuts took over some territory and committed a few [war crimes](https://en.wikipedia.org/wiki/Genocide_of_Yazidis_by_ISIL).&nbsp;  They called themselves the [Islamic State of Iraq and Syria](https://en.wikipedia.org/wiki/Islamic_State_of_Iraq_and_the_Levant), and later the Islamic State.'&nbsp;
+
+At the time, U.S. Government officials were weary of getting into another desert war so they sort-of stayed out of it but at the same time, they were also sort-of involved, albeit in a limited capacity.&nbsp; This lack of full commitment led to a situation in which the local Kurds were left to fend for themselves with limited outside help, and that in turn spurred a volunteer movement of western adventurers who made their way to the Kurdistan region of northern Iraq & Syria.&nbsp;
+
+![snackbars on a soviet APC](https://i.imgur.com/gdJ5YdQ.jpg){:target="_blank"}
+
+Kurdish military commanders were looking for military veterans from NATO member states who possessd specialized skill sets needed in the war effort.&nbsp;  Most such volunteers were former combat medics, while others had combat arms experience.&nbsp;  I was brought on board because I could translate between English and Arabic since Arabic is the defacto lingua franca throughout the conflict zone.
 
 Another reason I came on board was to fly reconnaissance missions with a home built UAV that could fly long distances and be maintained in an austere environment.&nbsp;   I had no such drone so I had to design, test, and build one quickly in a 2 month timeframe.&nbsp;
 
 ---
 
 ### Design Requirements
-The drone itself, along with all tools used to repair it, had to be allowed on international flights (by the TSA) and had to survive warzone conditions.&nbsp;  There would be no clean workspace to make repairs and troubleshoot things.&nbsp;  We had to assume we would loose at least one drone to enemy fire and be able to build a second one fast, and it had to survive heavy winds and abuse while being transported to different launch sites.&nbsp;
+The drone itself, along with all tools used to repair it, had to be allowed on international flights (by the TSA) and had to survive warzone conditions.&nbsp;  There would be no clean workspace to make repairs and troubleshoot malfunctions.&nbsp;  We had to assume we would loose at least one drone to enemy fire and be able to build a second one fast, and it had to survive heavy winds and abuse while being transported to different launch sites.&nbsp;
 
-The solution was to refine my [flying crash-test dummy](https://drive.google.com/file/d/1T9fKWgwbUhu5n_UIkCMJMuk2MFkiGEwN/view){:target="_blank"} into something more aerodynamically efficient that could get some distance.
+The solution was to refine my [flying crash-test dummy](https://drive.google.com/file/d/1T9fKWgwbUhu5n_UIkCMJMuk2MFkiGEwN/view){:target="_blank"} into something more aerodynamically efficient that could fly long distances.
 
 ---
 
