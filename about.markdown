@@ -46,7 +46,7 @@ menu: main
     </div>
     <br>
     <div class="about-text">
-      My current interests include AI, aviation, web3, energy policy, and future military conflicts  The best way to get ahold of me is with the email below. Thank you for visiting my site!
+      My current interests include AI, aviation, web3, energy policy, and future military conflicts.  The best way to get ahold of me is with the email below. Thank you for visiting my site!
     </div>
     <img class="email" src="/img/misc/email.jpg" alt="">
   </div>
