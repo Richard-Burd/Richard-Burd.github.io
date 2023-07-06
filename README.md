@@ -29,7 +29,7 @@ In order to reach custom resources like the *documentation* resource (i.e. https
 
 ## Commands to Get This Going
 
-`$ rvm install 2.7.0`                Install older Ruby version original to build
-`$ rvm use 2.7.0`                    Use that version
-`$ gem install bundler`              Then reinstall gems:
-`$ bundle exec jekyll serve --watch` Run Dev Server & Build
+- `$ rvm install 2.7.0`                Install older Ruby version original to build
+- `$ rvm use 2.7.0`                    Use that version
+- `$ gem install bundler`              Then reinstall gems:
+- `$ bundle exec jekyll serve --watch` Run Dev Server & Build
