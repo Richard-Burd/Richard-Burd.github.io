@@ -26,3 +26,10 @@ Visit Clean Blog's template overview page on Start Bootstrap at http://startboot
 ## Unique to Richard Burd's Homepage
 
 In order to reach custom resources like the *documentation* resource (i.e. https://richard-burd.github.io/documentation) a file called `.htaccess` needed to get added to the main directory.&nbsp; This is because the `documentation.html` file bypasses all of Jekyll's compiling and is transported directly to the `_site` folder as is, without being altered.&nbsp;  This means the usual abstractions related to navigation and styling are not applied to the *documentation* resource.&nbsp;  Additionally, when the documentation resource is being **modified and reviewed *locally***, you must navigate to http://localhost:4000/documentation.html (**that is, include the *.html***) in order to see the documentation resource as it properly references the styling and font resources in the `.documentation` directory.&nbsp; .
+
+## Commands to Get This Going
+
+`$ rvm install 2.7.0`                Install older Ruby version original to build
+`$ rvm use 2.7.0`                    Use that version
+`$ gem install bundler`              Then reinstall gems:
+`$ bundle exec jekyll serve --watch` Run Dev Server & Build
