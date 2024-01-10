@@ -31,5 +31,6 @@ In order to reach custom resources like the *documentation* resource (i.e. https
 
 - `$ rvm install 2.7.0`                Install older Ruby version original to build
 - `$ rvm use 2.7.0`                    Use that version
-- `$ gem install bundler`              Then reinstall gems:
+- `$ gem install bundler -v 2.4.22`    Last version of bundler to support your Ruby & RubyGems
+- `$ bundle install`                   Install Ruby Gems
 - `$ bundle exec jekyll serve --watch` Run Dev Server & Build
