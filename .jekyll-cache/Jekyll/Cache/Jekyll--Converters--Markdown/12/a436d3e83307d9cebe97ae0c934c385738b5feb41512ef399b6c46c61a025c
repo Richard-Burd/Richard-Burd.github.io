@@ -1,4 +1,4 @@
-I"T<style>
+I"U<style>
   .about-container
   {
     margin: 30px auto;
@@ -31,7 +31,7 @@
   <div class="about-container">
     <img class="portrait" src="/img/misc/me.png" alt="" />
     <div class="about-text">
-      Welcome to my personal website. My name is Richard Burd and I currently work as a front end web developer.  I have a broad professional background that includes leadership, analysis, technical design, and field testing.   
+      Welcome to my personal website. My name is Richard Burd and I currently work as a full stack web developer.  I have a broad professional background that includes leadership, analysis, technical design, and field testing.   
     </div>
     <br />
     <div class="about-text">
