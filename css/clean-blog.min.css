@@ -13,9 +13,9 @@ body{font-family:Lora,'Times New Roman',serif;font-size:20px;color:#404040}p{lin
     right: 0;
     z-index: 1100;
 
-    background: #f4f4f4;
-    border-bottom: 1px solid #ddd;
-    color: #555;
+    background: #fdff77;
+    border-bottom: 1px solid #ffba24;
+    color: #8d1c1c;
     font-size: 14px;
     line-height: 20px;
     padding: 7px 15px;
@@ -23,7 +23,7 @@ body{font-family:Lora,'Times New Roman',serif;font-size:20px;color:#404040}p{lin
 }
 
 .archive-banner a {
-    color: #0085a1;
+    color: #8f4768;
     font-weight: bold;
 }
 
