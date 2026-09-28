@@ -35,6 +35,21 @@ menu: main
 </style>
 
 <body>
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+        <div class="alert alert-info text-center" role="alert">
+          <strong>This website is archived and is no longer being maintained.</strong>
+          <br>
+          Please visit my current website at
+          <a href="https://richardburd.dev" class="alert-link">
+            richardburd.dev
+          </a>.
+        </div>
+      </div>
+    </div>
+  </div>
+
   <div class="about-container">
     <img class="portrait" src="/img/misc/me.png" alt="">
     <div class="about-text">
