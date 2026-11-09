@@ -1,13 +1,33 @@
 <head>
 
-    <!-- Redirect archived website to new homepage -->
-    <meta http-equiv="refresh" content="0; url=https://www.richardburd.dev/">
+{% assign keep_old_page = false %}
 
-    <link rel="canonical" href="https://www.richardburd.dev/">
+{% if page.url == '/when_big_o_does_and_does_not_matter' or
+      page.url == '/longest_common_subsequence' %}
+    {% assign keep_old_page = true %}
+{% endif %}
+
+{% unless keep_old_page %}
+
+    <!-- Redirect all other pages to the new website -->
+    <meta http-equiv="refresh"
+          content="0; url=https://www.richardburd.dev/">
+
+    <link rel="canonical"
+          href="https://www.richardburd.dev/">
 
     <script>
         window.location.replace("https://www.richardburd.dev/");
     </script>
+
+{% else %}
+
+    <!-- Preserve the original article URL -->
+    <link rel="canonical"
+          href="{{ page.url | absolute_url }}">
+
+{% endunless %}
+
 
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -16,7 +36,13 @@
 
     <!-- There's no need for the Blog's title to always be the title for each of the other pages -->
     <!-- <title>{% if page.title %}{{ page.title }} - {{ site.title }}{% else %}{{ site.title }}{% endif %}</title> -->
-    <title>Richard Burd's Homepage</title>
+    <title>
+      {% if page.title %}
+        {{ page.title }} | Richard Burd
+      {% else %}
+        Richard Burd's Homepage
+      {% endif %}
+   </title>
 
     <!-- <link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}"> -->
 
